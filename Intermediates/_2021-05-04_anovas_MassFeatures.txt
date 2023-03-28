@@ -1,0 +1,179 @@
+3OHC12-HSL
+4-Hydroxyisoleucine
+Acetyl-L-carnitine
+Acetylglutamic acid
+Adenosine
+Adenosyl Methionine
+Alanine
+Amino Propanesulfonic Acid
+AMP
+Asparagine
+Aspartic acid
+beta-Alanine
+Betaine
+Betonicine
+C14-HSL
+Carotene
+cGMP
+Choline
+Citrulline
+Creatine
+Cys-Gly
+Cystathionine
+Cysteic Acid
+Desthiobiotin
+DHAP
+Dimethylsulfonioacetate (DMS-Ac)
+DMSP
+Ectoine
+Ethyl Dihydroxybenzoate
+FAD
+Gluconic Acid
+Glucosylglycerol
+Glutamic acid
+Glutamine
+glycerol 3 phosphate
+Glycerophosphocholine
+Glycine
+GMP
+Gonyol
+Guanine
+Histidine
+Homarine
+Homoserine
+Hypotaurine
+IAA
+Indole 3 acetamide
+Isobutyryl-L-carnitine
+Leucine
+Methylmalonyl carnitine
+Muramic Acid
+N-Acetyl-Serine
+N-Acetylglucosamine
+N-acetyltaurine
+N(e)-Acetyl-Lysine
+NAD
+Ophthalmic Acid
+PEP
+Proline
+Propionyl-L-carnitine
+Propionylglycine
+Pyridoxal
+Serine
+Stachydrine hydrochloride
+Taurine
+Threonic acid
+Threonine
+trans Hydroxyl proline
+Trigonelline
+Trimethylamine N-oxide
+Turicine
+UDP-glucosamine
+UDP-glucose
+Vitamin B2
+Vitamin B3
+Vitamin B6
+Xanthine
+(3-Carboxypropyl)trimethylammonium (TMAB)
+3OC8-HSL
+3OHC12-HSL
+4-Hydroxyisoleucine
+7-dehydrocholesterol
+Acetyl-L-carnitine
+Adenine
+Adenosyl Homocysteine
+Adenosyl Methionine
+Agmatine
+Alanine
+Amino Propanesulfonic Acid
+AMP
+Anserine
+Asparagine
+Aspartic acid
+beta-Alanine
+Betaine
+Betonicine
+Butyryl-L-carnitine
+C14-HSL
+cAMP
+Carnitine
+Carotene
+Chitobiose
+Choline
+Creatine
+Cys-Gly
+Cystathionine
+Cysteic Acid
+Cysteinesulfinic acid
+Cystine
+Cytidine
+Cytosine
+Deoxyadenosine
+Desthiobiotin
+DHPS
+Dimethylsulfonioacetate (DMS-Ac)
+DMSP
+Ethyl Dihydroxybenzoate
+FAD
+Fructose 6 phosphate
+Gluconic Acid
+Glucose 1 phosphate
+Glucosylglycerol
+Glutamic acid
+Glutamine
+Glutathione
+Glutathione Disulfide
+Glycerophosphocholine
+Glycine
+GMP
+Gonyol
+Guanine
+Histidine
+Homarine
+Homoserine
+Hydroxo B12
+Hypotaurine
+IAA
+Indole 3 methyl acetate
+Inosine
+Isethionic Acid
+Isobutyryl-L-carnitine
+Ketoglutaric Acid
+Kynurenine
+Leucine
+Methionine
+Methionine Sulfoxide
+Methylmalonyl carnitine
+Muramic Acid
+N-Acetyl-Serine
+N-Acetylglucosamine
+N-acetyltaurine
+N(e)-Acetyl-Lysine
+NAD
+Orotic Acid
+Phenylalanine
+Proline
+Propionyl-L-carnitine
+Propionylglycine
+Pyridoxal
+Ribose 5 phosphate
+RP B12
+Serine
+Stachydrine hydrochloride
+Sulfurol
+Taurine
+Thiamine monophosphate
+Threonic acid
+Threonine
+trans Hydroxyl proline
+Trigonelline
+Trimethyl-L-lysine
+Trimethylamine N-oxide
+Trimethylammonium Propionate (TMAP)
+Tryptophan
+Turicine
+Tyrosine
+UDP-glucosamine
+UDP-glucose
+Vitamin B3
+Vitamin B5

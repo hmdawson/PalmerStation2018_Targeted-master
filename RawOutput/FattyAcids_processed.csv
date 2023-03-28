@@ -1,0 +1,73 @@
+﻿Full compound name,Abbreviated compound name,mz,RT,Column,z,SampID,Estimated metabolite concentration per particulate carbon (nmol per µmol C)
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,Meltwater_T-S_A,0.029065918
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,Meltwater_T-S_B,0.018143924
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,SW_T-S_A,0.051694919
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,SW_T-S_B,0.084387703
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,SW_T-S_C,0.053142328
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,Sea ice_T-S_A,0.024425846
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,Sea ice_T-S_B,0.021083097
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,Sea ice_T-S_C,0.026605734
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,Meltwater_A,0.008490873
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,Meltwater_B,0.017547229
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,SW_08_A,0.094122313
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,SW_08_B,0.103584098
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,SW_08_C,0.083437104
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,SW_12_A,0.057477969
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,SW_12_B,0.060935451
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,SW_12_C,0.057735332
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,SW_15_A,0.055832378
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,SW_15_C,0.059795793
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,SW_17_A,0.06007091
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,SW_17_B,0.048479178
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,SW_17_C,0.06643018
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,SW_19_A,0.050861499
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,SW_19_B,0.060417989
+Arachidonic acid,ARA,303.2324,6.2,C18,-1,SW_19_C,0.066709673
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,Meltwater_T-S_A,0.598641364
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,Meltwater_T-S_B,0.421731737
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,SW_T-S_A,0.557870529
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,SW_T-S_B,0.96679214
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,SW_T-S_C,0.666015351
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,Sea ice_T-S_A,0.479335577
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,Sea ice_T-S_B,0.386812931
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,Sea ice_T-S_C,0.542318209
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,Meltwater_A,0.235228073
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,Meltwater_B,0.235728057
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,SW_08_A,0.76207744
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,SW_08_B,0.862549175
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,SW_08_C,0.691419204
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,SW_12_A,0.614074308
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,SW_12_B,0.717479821
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,SW_12_C,0.66661909
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,SW_15_A,0.647787792
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,SW_15_C,0.704483424
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,SW_17_A,0.74473738
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,SW_17_B,0.610847327
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,SW_17_C,0.788507043
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,SW_19_A,0.741287989
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,SW_19_B,0.936293046
+Eicosapentaenoic acid,EPA,301.2168,4.7,C18,-1,SW_19_C,1.007821701
+Docosahexaenoic acid,DHA,301.2168,4.7,C18,-1,Meltwater_T-S_A,0.048601369
+Docosahexaenoic acid,DHA,301.2168,4.7,C18,-1,Meltwater_T-S_B,0.037579857
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,SW_T-S_A,0.053043344
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,SW_T-S_B,0.087725447
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,SW_T-S_C,0.056357553
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,Sea ice_T-S_A,0.039532601
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,Sea ice_T-S_B,0.033363816
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,Sea ice_T-S_C,0.042643309
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,Meltwater_A,0.012891548
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,Meltwater_B,0.014278865
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,SW_08_A,0.126712381
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,SW_08_B,0.131718521
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,SW_08_C,0.108840861
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,SW_12_A,0.066202009
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,SW_12_B,0.075974736
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,SW_12_C,0.075422373
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,SW_15_A,0.069930119
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,SW_15_C,0.068611753
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,SW_17_A,0.062104701
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,SW_17_B,0.051639454
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,SW_17_C,0.064819897
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,SW_19_A,0.059878277
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,SW_19_B,0.072947234
+Docosahexaenoic acid,DHA,327.2324,5.8,C18,-1,SW_19_C,0.076288594

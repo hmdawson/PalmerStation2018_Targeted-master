@@ -1,0 +1,776 @@
+,superkingdom,phylum,clade,class,order,family,genus,species,strain,taxon
+Actinobacteria_173,Bacteria,Actinobacteria,Terrabacteria group,Acidimicrobiia,Acidimicrobiales,Acidimicrobiaceae,Acidimicrobium,Acidimicrobium ferrooxidans,Acidimicrobium ferrooxidans DSM 10331,Acidimicrobium ferrooxidans DSM 10331
+Bacteroidetes_1027,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,,,,Flavobacteriaceae
+Bacteroidetes_1039,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,,,,Flavobacteriaceae
+Bacteroidetes_1111,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,,,,Flavobacteriaceae
+Bacteroidetes_1115,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Tenacibaculum,Tenacibaculum todarodis,,Tenacibaculum todarodis
+Bacteroidetes_1124,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Polaribacter,Polaribacter sp. L3A8,,Polaribacter sp. L3A8
+Bacteroidetes_1125,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Polaribacter,,,Polaribacter
+Bacteroidetes_1126,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Polaribacter,Polaribacter sp. L12M9,,Polaribacter sp. L12M9
+Bacteroidetes_1127,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Polaribacter,,,Polaribacter
+Bacteroidetes_1133,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Polaribacter,Polaribacter reichenbachii,,Polaribacter reichenbachii
+Bacteroidetes_1144,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,,,,Flavobacteriaceae
+Bacteroidetes_1149,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Crocinitomicaceae,Fluviicola,Fluviicola taffensis,Fluviicola taffensis DSM 16823,Fluviicola taffensis DSM 16823
+Bacteroidetes_1152,Bacteria,Bacteroidetes,FCB group,,,,,,,FCB group
+Bacteroidetes_1156,Bacteria,Bacteroidetes,FCB group,,,,,,,FCB group
+Bacteroidetes_223,Bacteria,Bacteroidetes,FCB group,Saprospiria,Saprospirales,Haliscomenobacteraceae,Haliscomenobacter,Haliscomenobacter hydrossis,Haliscomenobacter hydrossis DSM 1100,Haliscomenobacter hydrossis DSM 1100
+Bacteroidetes_224,Bacteria,Bacteroidetes,FCB group,Saprospiria,Saprospirales,Saprospiraceae,Saprospira,Saprospira grandis,Saprospira grandis str. Lewin,Saprospira grandis str. Lewin
+Bacteroidetes_518,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Schleiferiaceae,Owenweeksia,Owenweeksia hongkongensis,Owenweeksia hongkongensis DSM 17368,Owenweeksia hongkongensis DSM 17368
+Bacteroidetes_94,Bacteria,Bacteroidetes,FCB group,Cytophagia,Cytophagales,,,,,Cytophagales
+Bacteroidetes_975,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Kordia,,,Kordia
+Bacteroidetes_997,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Flavivirga,Flavivirga eckloniae,,Flavivirga eckloniae
+Cyanobacteria_135,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,,,,,,
+Cyanobacteria_140,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. PCC 8807,,Synechococcus sp. PCC 8807
+Cyanobacteria_148,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Synechococcales,,,,,Synechococcales
+Cyanobacteria_15,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Synechococcales,Synechococcaceae,Cyanobium,Cyanobium gracile,Cyanobium gracile PCC 6307,Cyanobium gracile PCC 6307
+Cyanobacteria_151,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Chroococcales,Chroococcaceae,Geminocystis,Geminocystis sp. NIES-3709,,Geminocystis sp. NIES-3709
+Cyanobacteria_154,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Chroococcales,,,,,Chroococcales
+Cyanobacteria_160,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,,,,,,
+Cyanobacteria_161,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,,,,,,
+Cyanobacteria_216,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Synechococcales,,,,,Synechococcales
+Cyanobacteria_31,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Synechococcales,Leptolyngbyaceae,Leptolyngbya,,,Leptolyngbya
+Cyanobacteria_44,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,,,,,,Cyanobacteria/Melainabacteria group
+Firmicutes_Tenericutes_3380,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Halanaerobiales,Halanaerobiaceae,,,,Halanaerobiaceae
+Firmicutes_Tenericutes_3430,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia sp. SC05B48,,Blautia sp. SC05B48
+Firmicutes_Tenericutes_3723,Bacteria,Firmicutes,Terrabacteria group,Tissierellia,Tissierellales,Peptoniphilaceae,Anaerococcus,,,Anaerococcus
+Firmicutes_Tenericutes_3813,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Thermosediminibacterales,Thermosediminibacteraceae,Thermosediminibacter,Thermosediminibacter oceani,Thermosediminibacter oceani DSM 16646,Thermosediminibacter oceani DSM 16646
+Firmicutes_Tenericutes_883,Bacteria,Tenericutes,Terrabacteria group,Mollicutes,Mycoplasmatales,Mycoplasmataceae,,,,Mycoplasmataceae
+Firmicutes_Tenericutes_884,Bacteria,Tenericutes,Terrabacteria group,Mollicutes,Mycoplasmatales,Mycoplasmataceae,,,,Mycoplasmataceae
+Firmicutes_Tenericutes_887,Bacteria,Tenericutes,Terrabacteria group,Mollicutes,Mycoplasmatales,Mycoplasmataceae,Candidatus Hepatoplasma,Candidatus Hepatoplasma crinochetorum,Candidatus Hepatoplasma crinochetorum Av,Candidatus Hepatoplasma crinochetorum Av
+Fusobacteria_34,Bacteria,Fusobacteria,,Fusobacteriia,Fusobacteriales,Leptotrichiaceae,,,,Leptotrichiaceae
+Planctomycetes_68,Bacteria,Planctomycetes,PVC group,Planctomycetia,Planctomycetales,Planctomycetaceae,Fuerstia,Fuerstia marisgermanicae,,Fuerstia marisgermanicae
+Proteobacteria_1413,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Psychromonadaceae,Psychromonas,Psychromonas sp. CNPT3,,Psychromonas sp. CNPT3
+Proteobacteria_1540,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Kangiellaceae,Kangiella,,,Kangiella
+Proteobacteria_1587,Bacteria,Proteobacteria,,Gammaproteobacteria,Cellvibrionales,Halieaceae,Halioglobus,,,Halioglobus
+Proteobacteria_1595,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Oleiphilaceae,Oleiphilus,Oleiphilus messinensis,,Oleiphilus messinensis
+Proteobacteria_1628,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Alteromonadaceae,,,,Alteromonadaceae
+Proteobacteria_1634,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Hahellaceae,Spartinivicinus,Spartinivicinus ruber,,Spartinivicinus ruber
+Proteobacteria_1927,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas sp. M30-35,,Pseudomonas sp. M30-35
+Proteobacteria_2622,Bacteria,Proteobacteria,,Gammaproteobacteria,Thiotrichales,Piscirickettsiaceae,Methylophaga,,,Methylophaga
+Proteobacteria_2624,Bacteria,Proteobacteria,,Gammaproteobacteria,Methylococcales,Methylococcaceae,Methylomonas,Methylomonas rhizoryzae,,Methylomonas rhizoryzae
+Proteobacteria_2641,Bacteria,Proteobacteria,,Gammaproteobacteria,Methylococcales,Methylococcaceae,,,,Methylococcaceae
+Proteobacteria_2647,Bacteria,Proteobacteria,,Gammaproteobacteria,Chromatiales,Granulosicoccaceae,Granulosicoccus,Granulosicoccus antarcticus,Granulosicoccus antarcticus IMCC3135,Granulosicoccus antarcticus IMCC3135
+Proteobacteria_2657,Bacteria,Proteobacteria,,Gammaproteobacteria,,,Candidatus Thioglobus,Candidatus Thioglobus sp. NP1,,Candidatus Thioglobus sp. NP1
+Proteobacteria_2693,Bacteria,Proteobacteria,,Gammaproteobacteria,Thiotrichales,Piscirickettsiaceae,,,,Piscirickettsiaceae
+Proteobacteria_2797,Bacteria,Proteobacteria,,Betaproteobacteria,Nitrosomonadales,Methylophilaceae,,,,Methylophilaceae
+Proteobacteria_3031,Bacteria,Proteobacteria,,Betaproteobacteria,Neisseriales,Chromobacteriaceae,Aquaspirillum,Aquaspirillum sp. LM1,,Aquaspirillum sp. LM1
+Proteobacteria_3590,Bacteria,Proteobacteria,,Betaproteobacteria,,,Candidatus Nasuia,Candidatus Nasuia deltocephalinicola,,Candidatus Nasuia deltocephalinicola
+Proteobacteria_3956,Bacteria,Proteobacteria,,Gammaproteobacteria,Chromatiales,Thioalkalispiraceae,Sulfurivermis,Sulfurivermis fontis,,Sulfurivermis fontis
+Proteobacteria_4259,Bacteria,Proteobacteria,,Deltaproteobacteria,Desulfobacterales,Desulfobulbaceae,,,,Desulfobulbaceae
+Proteobacteria_4961,Bacteria,Proteobacteria,,Epsilonproteobacteria,Campylobacterales,Campylobacteraceae,Malaciobacter,Malaciobacter pacificus,,Malaciobacter pacificus
+Proteobacteria_4980,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Alteromonadaceae,Glaciecola,Glaciecola amylolytica,,Glaciecola amylolytica
+Proteobacteria_5121,Bacteria,Proteobacteria,,Alphaproteobacteria,Rickettsiales,Candidatus Midichloriaceae,Candidatus Fokinia,Candidatus Fokinia solitaria,,Candidatus Fokinia solitaria
+Proteobacteria_5170,Bacteria,Proteobacteria,,Alphaproteobacteria,Rickettsiales,Anaplasmataceae,Wolbachia,,,Wolbachia
+Proteobacteria_5202,Bacteria,Proteobacteria,,Alphaproteobacteria,Rickettsiales,Anaplasmataceae,,,,Anaplasmataceae
+Proteobacteria_5209,Bacteria,Proteobacteria,,Alphaproteobacteria,Rickettsiales,Anaplasmataceae,Neorickettsia,,,Neorickettsia
+Proteobacteria_5215,Bacteria,Proteobacteria,,Alphaproteobacteria,Pelagibacterales,Pelagibacteraceae,Candidatus Pelagibacter,Candidatus Pelagibacter sp. FZCC0015,,Candidatus Pelagibacter sp. FZCC0015
+Proteobacteria_5217,Bacteria,Proteobacteria,,Alphaproteobacteria,Pelagibacterales,Pelagibacteraceae,Candidatus Pelagibacter,,,Candidatus Pelagibacter
+Proteobacteria_5860,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Pseudorhodobacter,Pseudorhodobacter sp. S12M18,,Pseudorhodobacter sp. S12M18
+Proteobacteria_6016,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Sulfitobacter,Sulfitobacter pontiacus,,Sulfitobacter pontiacus
+Proteobacteria_6041,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Octadecabacter,,,Octadecabacter
+Proteobacteria_6042,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Planktomarina,Planktomarina temperata,Planktomarina temperata RCA23,Planktomarina temperata RCA23
+Proteobacteria_6043,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Yoonia,Yoonia vestfoldensis,,Yoonia vestfoldensis
+Proteobacteria_6153,Bacteria,Proteobacteria,,Alphaproteobacteria,Emcibacterales,Emcibacteraceae,Emcibacter,Emcibacter congregatus,,Emcibacter congregatus
+Proteobacteria_6455,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Magnetospira,Magnetospira sp. QH-2,,Magnetospira sp. QH-2
+Proteobacteria_6465,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Magnetospirillum,,,Magnetospirillum
+Proteobacteria_6571,Bacteria,Proteobacteria,,,,,,,,Proteobacteria
+Proteobacteria_6696,Bacteria,Proteobacteria,,Gammaproteobacteria,Thiotrichales,Francisellaceae,,,,Francisellaceae
+Proteobacteria_6782,Bacteria,Proteobacteria,,Gammaproteobacteria,,,Pseudohongiella,Pseudohongiella spirulinae,,Pseudohongiella spirulinae
+Proteobacteria_6887,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Halomonadaceae,Candidatus Carsonella,Candidatus Carsonella ruddii,,Candidatus Carsonella ruddii
+Proteobacteria_6929,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Oceanospirillaceae,Marinomonas,,,Marinomonas
+Proteobacteria_6934,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Oceanospirillaceae,Marinomonas,Marinomonas posidonica,Marinomonas posidonica IVIA-Po-181,Marinomonas posidonica IVIA-Po-181
+Proteobacteria_6937,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Oceanospirillaceae,Marinomonas,,,Marinomonas
+Proteobacteria_6941,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Oceanospirillaceae,Neptunomonas,Neptunomonas concharum,,Neptunomonas concharum
+Proteobacteria_6967,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Colwelliaceae,Colwellia,Colwellia sp. MT41,,Colwellia sp. MT41
+Proteobacteria_7061,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Alteromonadaceae,Paraglaciecola,Paraglaciecola psychrophila,Paraglaciecola psychrophila 170,Paraglaciecola psychrophila 170
+Proteobacteria_7069,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Alteromonadaceae,Glaciecola,Glaciecola nitratireducens,Glaciecola nitratireducens FR1064,Glaciecola nitratireducens FR1064
+Spirochaetes_144,Bacteria,Spirochaetes,,Spirochaetia,Spirochaetales,Borreliaceae,,,,Borreliaceae
+Spirochaetes_146,Bacteria,Spirochaetes,,Spirochaetia,Spirochaetales,,,,,Spirochaetales
+Verrucomicrobia_12,Bacteria,Verrucomicrobia,PVC group,,,,,,,PVC group
+Actinobacteria_1469,Bacteria,Actinobacteria,Terrabacteria group,,,,,,,Terrabacteria group
+Bacteroidetes_1036,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Aequorivita,,,Aequorivita
+Bacteroidetes_1123,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Polaribacter,Polaribacter sp. ALD11,,Polaribacter sp. ALD11
+Bacteroidetes_275,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Marinilabiliales,Marinifilaceae,Labilibaculum,Labilibaculum antarcticum,,Labilibaculum antarcticum
+Bacteroidetes_513,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Rikenellaceae,,,,Rikenellaceae
+Bacteroidetes_906,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Nonlabens,Nonlabens sp. MB-3u-79,,Nonlabens sp. MB-3u-79
+Bacteroidetes_919,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Maribacter,Maribacter sp. MJ134,,Maribacter sp. MJ134
+Bacteroidetes_978,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Formosa,,,Formosa
+Bacteroidetes_991,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Seonamhaeicola,Seonamhaeicola sp. S2-3,,Seonamhaeicola sp. S2-3
+Cyanobacteria_114,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Nostocales,,,,,Nostocales
+Cyanobacteria_155,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Chroococcales,,,,,Chroococcales
+Cyanobacteria_159,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,,,,,,
+Cyanobacteria_194,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Oscillatoriales,Oscillatoriaceae,Moorea,Moorea producens,Moorea producens PAL-8-15-08-1,Moorea producens PAL-8-15-08-1
+Cyanobacteria_221,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Synechococcales,Synechococcaceae,Synechococcus,Synechococcus sp. Minos11,,Synechococcus sp. Minos11
+Elusimicrobia_1,Bacteria,Elusimicrobia,,Elusimicrobia,Elusimicrobiales,Elusimicrobiaceae,Elusimicrobium,Elusimicrobium minutum,Elusimicrobium minutum Pei191,Elusimicrobium minutum Pei191
+Firmicutes_Tenericutes_3396,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Vallitaleaceae,Petrocella,Petrocella atlantisensis,,Petrocella atlantisensis
+Firmicutes_Tenericutes_840,Bacteria,Tenericutes,Terrabacteria group,Mollicutes,Mycoplasmatales,Mycoplasmataceae,,,,Mycoplasmataceae
+Firmicutes_Tenericutes_926,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Listeriaceae,Listeria,Listeria monocytogenes,,Listeria monocytogenes
+Proteobacteria_1415,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Moritellaceae,Moritella,Moritella viscosa,,Moritella viscosa
+Proteobacteria_1583,Bacteria,Proteobacteria,,Gammaproteobacteria,Cellvibrionales,Spongiibacteraceae,Oceanicoccus,Oceanicoccus sagamiensis,,Oceanicoccus sagamiensis
+Proteobacteria_1588,Bacteria,Proteobacteria,,Gammaproteobacteria,Cellvibrionales,Halieaceae,Kineobactrum,Kineobactrum salinum,,Kineobactrum salinum
+Proteobacteria_1631,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Hahellaceae,Hahella,,,Hahella
+Proteobacteria_2532,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas stutzeri,Pseudomonas stutzeri CCUG 29243,Pseudomonas stutzeri CCUG 29243
+Proteobacteria_2642,Bacteria,Proteobacteria,,Gammaproteobacteria,Thiotrichales,Piscirickettsiaceae,Cycloclasticus,Cycloclasticus sp. P1,,Cycloclasticus sp. P1
+Proteobacteria_2643,Bacteria,Proteobacteria,,Gammaproteobacteria,,,,,,Gammaproteobacteria
+Proteobacteria_2670,Bacteria,Proteobacteria,,,,,,,,Proteobacteria
+Proteobacteria_3797,Bacteria,Proteobacteria,,Betaproteobacteria,Burkholderiales,Comamonadaceae,Hydrogenophaga,Hydrogenophaga sp. PAMC20947,,Hydrogenophaga sp. PAMC20947
+Proteobacteria_3952,Bacteria,Proteobacteria,,Gammaproteobacteria,Acidiferrobacterales,Acidiferrobacteraceae,Acidiferrobacter,Acidiferrobacter sp. SPIII_3,,Acidiferrobacter sp. SPIII_3
+Proteobacteria_5059,Bacteria,Proteobacteria,,Alphaproteobacteria,Rickettsiales,Rickettsiaceae,Orientia,Orientia tsutsugamushi,,Orientia tsutsugamushi
+Proteobacteria_5116,Bacteria,Proteobacteria,,Alphaproteobacteria,Rickettsiales,Rickettsiaceae,Rickettsia,,,Rickettsia
+Proteobacteria_6026,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Sulfitobacter,Sulfitobacter sp. SK011,,Sulfitobacter sp. SK011
+Proteobacteria_6069,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Jannaschia,Jannaschia sp. CCS1,,Jannaschia sp. CCS1
+Proteobacteria_6456,Bacteria,Proteobacteria,,Alphaproteobacteria,,,,,,Alphaproteobacteria
+Proteobacteria_6632,Bacteria,Proteobacteria,,Gammaproteobacteria,Thiotrichales,Francisellaceae,Francisella,Francisella uliginis,,Francisella uliginis
+Proteobacteria_6699,Bacteria,Proteobacteria,,Gammaproteobacteria,Legionellales,Legionellaceae,Legionella,Legionella geestiana,,Legionella geestiana
+Proteobacteria_6910,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Saccharospirillaceae,Reinekea,Reinekea forsetii,,Reinekea forsetii
+Proteobacteria_6917,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Oceanospirillaceae,Oleispira,Oleispira antarctica,Oleispira antarctica RB-8,Oleispira antarctica RB-8
+Proteobacteria_6931,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Oceanospirillaceae,Marinomonas,Marinomonas primoryensis,,Marinomonas primoryensis
+Proteobacteria_6964,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Colwelliaceae,Colwellia,,,Colwellia
+Proteobacteria_6965,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Colwelliaceae,Colwellia,Colwellia sp. PAMC 20917,,Colwellia sp. PAMC 20917
+Proteobacteria_6970,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Colwelliaceae,Colwellia,,,Colwellia
+Proteobacteria_7062,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Alteromonadaceae,Paraglaciecola,,,Paraglaciecola
+Proteobacteria_7925,Bacteria,Proteobacteria,,Gammaproteobacteria,,,Candidatus Nardonella,Candidatus Nardonella dryophthoridicola,,Candidatus Nardonella dryophthoridicola
+Spirochaetes_30,Bacteria,Spirochaetes,,Spirochaetia,Leptospirales,Leptospiraceae,Turneriella,Turneriella parva,Turneriella parva DSM 21527,Turneriella parva DSM 21527
+Spirochaetes_46,Bacteria,Spirochaetes,,Spirochaetia,Spirochaetales,Spirochaetaceae,Thiospirochaeta,Thiospirochaeta perfilievii,,Thiospirochaeta perfilievii
+Verrucomicrobia_5,Bacteria,Verrucomicrobia,PVC group,Opitutae,Puniceicoccales,Puniceicoccaceae,Coraliomargarita,Coraliomargarita akajimensis,Coraliomargarita akajimensis DSM 45221,Coraliomargarita akajimensis DSM 45221
+Actinobacteria_1650,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Bifidobacteriales,Bifidobacteriaceae,Bifidobacterium,Bifidobacterium pseudolongum,Bifidobacterium pseudolongum PV8-2,Bifidobacterium pseudolongum PV8-2
+Bacteroidetes_1000,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Algibacter,Algibacter sp. L3A6,,Algibacter sp. L3A6
+Bacteroidetes_280,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,,Phocaeicola,Phocaeicola salanitronis,Phocaeicola salanitronis DSM 18170,Phocaeicola salanitronis DSM 18170
+Bacteroidetes_283,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella enoeca,,Prevotella enoeca
+Bacteroidetes_287,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,Prevotella oris,,Prevotella oris
+Bacteroidetes_326,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,,,Prevotella
+Bacteroidetes_327,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Prevotellaceae,,,,Prevotellaceae
+Bacteroidetes_347,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides xylanisolvens,,Bacteroides xylanisolvens
+Bacteroidetes_416,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Muribaculaceae,Duncaniella,Duncaniella sp. B8,,Duncaniella sp. B8
+Bacteroidetes_417,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Muribaculaceae,Muribaculum,Muribaculum intestinale,,Muribaculum intestinale
+Bacteroidetes_418,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Muribaculaceae,,,,Muribaculaceae
+Bacteroidetes_472,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Tannerellaceae,Parabacteroides,,,Parabacteroides
+Bacteroidetes_493,Bacteria,Bacteroidetes,FCB group,Bacteroidia,,,,,,Bacteroidia
+Bacteroidetes_496,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,Alistipes sp. dk3624,,Alistipes sp. dk3624
+Bacteroidetes_500,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,Alistipes communis,,Alistipes communis
+Bacteroidetes_509,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,,,Alistipes
+Bacteroidetes_981,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Winogradskyella,Winogradskyella sp. PG-2,,Winogradskyella sp. PG-2
+Cyanobacteria_195,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,,,,,,
+Firmicutes_Tenericutes_3388,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Christensenellaceae,Christensenella,Christensenella sp. Marseille-P3954,,Christensenella sp. Marseille-P3954
+Firmicutes_Tenericutes_3389,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Christensenellaceae,Christensenella,Christensenella minuta,,Christensenella minuta
+Firmicutes_Tenericutes_3403,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Lachnospiraceae,Lacrimispora,Lacrimispora saccharolytica,[Clostridium] saccharolyticum WM1,[Clostridium] saccharolyticum WM1
+Firmicutes_Tenericutes_3404,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Clostridiaceae,Hungatella,Hungatella hathewayi,Hungatella hathewayi WAL-18680,Hungatella hathewayi WAL-18680
+Firmicutes_Tenericutes_3417,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Lachnospiraceae,,,,Lachnospiraceae
+Firmicutes_Tenericutes_3433,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Lachnospiraceae,Blautia,,,Blautia
+Firmicutes_Tenericutes_3436,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,,Massilistercora,Massilistercora timonensis,,Massilistercora timonensis
+Firmicutes_Tenericutes_3445,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Lachnospiraceae,Mediterraneibacter,[Ruminococcus] gnavus,[Ruminococcus] gnavus ATCC 29149,[Ruminococcus] gnavus ATCC 29149
+Firmicutes_Tenericutes_3460,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Lachnospiraceae,Lachnoclostridium,Lachnoclostridium phytofermentans,Lachnoclostridium phytofermentans ISDg,Lachnoclostridium phytofermentans ISDg
+Firmicutes_Tenericutes_3462,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Lachnospiraceae,Anaerocolumna,Anaerocolumna sp. CTTW,,Anaerocolumna sp. CTTW
+Firmicutes_Tenericutes_3472,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Hungateiclostridiaceae,Fastidiosipila,Fastidiosipila sanguinis,,Fastidiosipila sanguinis
+Firmicutes_Tenericutes_3474,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Hungateiclostridiaceae,,,,Hungateiclostridiaceae
+Firmicutes_Tenericutes_3480,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,,,,,Clostridiales
+Firmicutes_Tenericutes_3481,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Hungateiclostridiaceae,Pseudoclostridium,Pseudoclostridium thermosuccinogenes,,Pseudoclostridium thermosuccinogenes
+Firmicutes_Tenericutes_3494,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,Ruminococcus bicirculans,,Ruminococcus bicirculans
+Firmicutes_Tenericutes_3495,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Ruminococcaceae,Ruminococcus,,,Ruminococcus
+Firmicutes_Tenericutes_3501,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Ruminococcaceae,,,,Ruminococcaceae
+Firmicutes_Tenericutes_3512,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Ruminococcaceae,Ruthenibacterium,Ruthenibacterium lactatiformans,,Ruthenibacterium lactatiformans
+Firmicutes_Tenericutes_3515,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Ruminococcaceae,,,,Ruminococcaceae
+Firmicutes_Tenericutes_3519,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Oscillospiraceae,,,,Oscillospiraceae
+Firmicutes_Tenericutes_3523,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Ruminococcaceae,Flavonifractor,Flavonifractor plautii,,Flavonifractor plautii
+Firmicutes_Tenericutes_3524,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,,Intestinimonas,Intestinimonas butyriciproducens,,Intestinimonas butyriciproducens
+Firmicutes_Tenericutes_3526,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,,Flintibacter,Flintibacter sp. KGMB00164,,Flintibacter sp. KGMB00164
+Firmicutes_Tenericutes_3533,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Eubacteriaceae,Acetobacterium,Acetobacterium woodii,Acetobacterium woodii DSM 1030,Acetobacterium woodii DSM 1030
+Firmicutes_Tenericutes_3717,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Clostridiaceae,,,,Clostridiaceae
+Firmicutes_Tenericutes_3793,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Peptostreptococcaceae,Filifactor,Filifactor alocis,Filifactor alocis ATCC 35896,Filifactor alocis ATCC 35896
+Firmicutes_Tenericutes_3808,Bacteria,Firmicutes,Terrabacteria group,,,,,,,Terrabacteria group
+Firmicutes_Tenericutes_3932,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Peptococcaceae,Thermoanaerosceptrum,Thermoanaerosceptrum fracticalcis,,Thermoanaerosceptrum fracticalcis
+Firmicutes_Tenericutes_490,Bacteria,Firmicutes,Terrabacteria group,Erysipelotrichia,Erysipelotrichales,Erysipelotrichaceae,Faecalibaculum,Faecalibaculum rodentium,,Faecalibaculum rodentium
+Firmicutes_Tenericutes_707,Bacteria,Tenericutes,Terrabacteria group,Mollicutes,Mycoplasmatales,Mycoplasmataceae,Mycoplasma,,,Mycoplasma
+Proteobacteria_1938,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Azotobacter,Azotobacter chroococcum,Azotobacter chroococcum NCIMB 8003,Azotobacter chroococcum NCIMB 8003
+Proteobacteria_2458,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas putida,,Pseudomonas putida
+Proteobacteria_2533,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas stutzeri,,Pseudomonas stutzeri
+Proteobacteria_2598,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Entomomonas,Entomomonas moraniae,,Entomomonas moraniae
+Proteobacteria_3074,Bacteria,Proteobacteria,,Betaproteobacteria,Burkholderiales,Sutterellaceae,Sutterella,,,Sutterella
+Proteobacteria_3958,Bacteria,Proteobacteria,,Gammaproteobacteria,Thiotrichales,Thiotrichaceae,Beggiatoa,Beggiatoa leptomitoformis,,Beggiatoa leptomitoformis
+Proteobacteria_4957,Bacteria,Proteobacteria,,Epsilonproteobacteria,Campylobacterales,Campylobacteraceae,Poseidonibacter,Poseidonibacter lekithochrous,,Poseidonibacter lekithochrous
+Proteobacteria_5005,Bacteria,Proteobacteria,,Deltaproteobacteria,Desulfovibrionales,Desulfovibrionaceae,Desulfovibrio,,,Desulfovibrio
+Proteobacteria_5016,Bacteria,Proteobacteria,,Deltaproteobacteria,Desulfovibrionales,Desulfovibrionaceae,Desulfovibrio,Candidatus Desulfovibrio trichonymphae,,Candidatus Desulfovibrio trichonymphae
+Proteobacteria_5218,Bacteria,Proteobacteria,,Alphaproteobacteria,Pelagibacterales,,,,,Pelagibacterales
+Proteobacteria_5272,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhizobiales,Phyllobacteriaceae,Lentilitoribacter,Lentilitoribacter sp. Alg239-R112,,Lentilitoribacter sp. Alg239-R112
+Proteobacteria_6966,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Colwelliaceae,Colwellia,Colwellia sp. 20A7,,Colwellia sp. 20A7
+Proteobacteria_9441,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Klebsiella,Klebsiella oxytoca,,Klebsiella oxytoca
+Spirochaetes_77,Bacteria,Spirochaetes,,Spirochaetia,Spirochaetales,Spirochaetaceae,Treponema,,,Treponema
+Actinobacteria_179,Bacteria,Actinobacteria,Terrabacteria group,Nitriliruptoria,Egicoccales,Egicoccaceae,Egicoccus,Egicoccus halophilus,,Egicoccus halophilus
+Bacteroidetes_1028,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,,,,Flavobacteriaceae
+Bacteroidetes_1062,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,,,,Flavobacteriaceae
+Bacteroidetes_1122,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Tenacibaculum,,,Tenacibaculum
+Bacteroidetes_1140,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Urechidicola,Urechidicola croceus,,Urechidicola croceus
+Bacteroidetes_1147,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,,,,,Flavobacteriales
+Bacteroidetes_1148,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,,,,,Flavobacteriales
+Bacteroidetes_119,Bacteria,Bacteroidetes,FCB group,Cytophagia,Cytophagales,Amoebophilaceae,,,,Amoebophilaceae
+Bacteroidetes_225,Bacteria,Bacteroidetes,FCB group,Saprospiria,Saprospirales,,,,,Saprospirales
+Bacteroidetes_970,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Aquimarina,,,Aquimarina
+Bacteroidetes_987,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Winogradskyella,,,Winogradskyella
+Cyanobacteria_123,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Oscillatoriales,Oscillatoriaceae,Oscillatoria,Oscillatoria acuminata,Oscillatoria acuminata PCC 6304,Oscillatoria acuminata PCC 6304
+Planctomycetes_37,Bacteria,Planctomycetes,PVC group,Candidatus Brocadiae,Candidatus Brocadiales,Candidatus Brocadiaceae,Candidatus Kuenenia,Candidatus Kuenenia stuttgartiensis,,Candidatus Kuenenia stuttgartiensis
+Proteobacteria_1514,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Shewanellaceae,Shewanella,Shewanella livingstonensis,,Shewanella livingstonensis
+Proteobacteria_1516,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Shewanellaceae,Shewanella,Shewanella frigidimarina,Shewanella frigidimarina NCIMB 400,Shewanella frigidimarina NCIMB 400
+Proteobacteria_1572,Bacteria,Proteobacteria,,Gammaproteobacteria,Cellvibrionales,Cellvibrionaceae,Agarilytica,Agarilytica rhodophyticola,,Agarilytica rhodophyticola
+Proteobacteria_1580,Bacteria,Proteobacteria,,Gammaproteobacteria,Cellvibrionales,Spongiibacteraceae,Zhongshania,Zhongshania aliphaticivorans,,Zhongshania aliphaticivorans
+Proteobacteria_1581,Bacteria,Proteobacteria,,Gammaproteobacteria,Cellvibrionales,Spongiibacteraceae,Spongiibacter,Spongiibacter sp. IMCC21906,,Spongiibacter sp. IMCC21906
+Proteobacteria_2509,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas psychrotolerans,,Pseudomonas psychrotolerans
+Proteobacteria_2795,Bacteria,Proteobacteria,,Betaproteobacteria,Nitrosomonadales,Methylophilaceae,Methylophilus,Methylophilus sp. TWE2,,Methylophilus sp. TWE2
+Proteobacteria_4401,Bacteria,Proteobacteria,,Oligoflexia,Bacteriovoracales,Halobacteriovoraceae,Halobacteriovorax,Halobacteriovorax sp. BALOs_7,,Halobacteriovorax sp. BALOs_7
+Proteobacteria_4402,Bacteria,Proteobacteria,,Oligoflexia,Bacteriovoracales,Halobacteriovoraceae,Halobacteriovorax,Halobacteriovorax marinus,Halobacteriovorax marinus SJ,Halobacteriovorax marinus SJ
+Proteobacteria_4403,Bacteria,Proteobacteria,,Oligoflexia,Bacteriovoracales,Halobacteriovoraceae,Halobacteriovorax,,,Halobacteriovorax
+Proteobacteria_4918,Bacteria,Proteobacteria,,Epsilonproteobacteria,Campylobacterales,Campylobacteraceae,Arcobacter,Arcobacter aquimarinus,,Arcobacter aquimarinus
+Proteobacteria_5219,Bacteria,Proteobacteria,,Alphaproteobacteria,,,,,,Alphaproteobacteria
+Proteobacteria_5612,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhizobiales,Hyphomicrobiaceae,Rhodomicrobium,Rhodomicrobium vannielii,Rhodomicrobium vannielii ATCC 17100,Rhodomicrobium vannielii ATCC 17100
+Proteobacteria_6025,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,,,,Rhodobacteraceae
+Proteobacteria_6925,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Oceanospirillaceae,Marinomonas,Marinomonas sp. SM1966,,Marinomonas sp. SM1966
+Proteobacteria_6958,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Colwelliaceae,Colwellia,Colwellia sp. Arc7-635,,Colwellia sp. Arc7-635
+Proteobacteria_7060,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Alteromonadaceae,Paraglaciecola,Paraglaciecola sp. L3A3,,Paraglaciecola sp. L3A3
+Proteobacteria_7093,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Pseudoalteromonadaceae,Pseudoalteromonas,Pseudoalteromonas phenolica,,Pseudoalteromonas phenolica
+Proteobacteria_7120,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Pseudoalteromonadaceae,Pseudoalteromonas,Pseudoalteromonas sp. SM9913,,Pseudoalteromonas sp. SM9913
+Spirochaetes_29,Bacteria,Spirochaetes,,Spirochaetia,Leptospirales,Leptospiraceae,Leptospira,Leptospira biflexa,,Leptospira biflexa
+Verrucomicrobia_24,Bacteria,Verrucomicrobia,PVC group,Verrucomicrobiae,Verrucomicrobiales,Verrucomicrobiaceae,Luteolibacter,Luteolibacter luteus,,Luteolibacter luteus
+Bacteroidetes_1138,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,,,,Flavobacteriaceae
+Proteobacteria_1925,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas sp. CC6-YY-74,,Pseudomonas sp. CC6-YY-74
+Proteobacteria_2737,Bacteria,Proteobacteria,,Acidithiobacillia,Acidithiobacillales,Acidithiobacillaceae,Acidithiobacillus,,,Acidithiobacillus
+Proteobacteria_4983,Bacteria,Proteobacteria,,Epsilonproteobacteria,,,,,,Epsilonproteobacteria
+Proteobacteria_6933,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Oceanospirillaceae,Marinomonas,Marinomonas mediterranea,Marinomonas mediterranea MMB-1,Marinomonas mediterranea MMB-1
+Actinobacteria_174,Bacteria,Actinobacteria,Terrabacteria group,Acidimicrobiia,Acidimicrobiales,Ilumatobacteraceae,Ilumatobacter,Ilumatobacter coccineus,Ilumatobacter coccineus YM16-304,Ilumatobacter coccineus YM16-304
+Bacteroidetes_1017,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Lacinutrix,,,Lacinutrix
+Bacteroidetes_273,Bacteria,Bacteroidetes,FCB group,,,,,,,FCB group
+Bacteroidetes_477,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Dysgonomonadaceae,,,,Dysgonomonadaceae
+Cyanobacteria_36,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Synechococcales,,,,,Synechococcales
+Firmicutes_Tenericutes_913,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Listeriaceae,Listeria,Listeria monocytogenes,Listeria monocytogenes serotype 1/2c str. 10-5025,Listeria monocytogenes serotype 1/2c str. 10-5025
+Proteobacteria_1559,Bacteria,Proteobacteria,,Gammaproteobacteria,Cellvibrionales,Microbulbiferaceae,Microbulbifer,,,Microbulbifer
+Proteobacteria_1589,Bacteria,Proteobacteria,,Gammaproteobacteria,Cellvibrionales,Halieaceae,Halioglobus,Halioglobus pacificus,,Halioglobus pacificus
+Proteobacteria_1910,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Moraxellaceae,Psychrobacter,Psychrobacter urativorans,,Psychrobacter urativorans
+Proteobacteria_4982,Bacteria,Proteobacteria,,Epsilonproteobacteria,Nautiliales,Nautiliaceae,Caminibacter,Caminibacter mediatlanticus,Caminibacter mediatlanticus TB-2,Caminibacter mediatlanticus TB-2
+Proteobacteria_5211,Bacteria,Proteobacteria,,Alphaproteobacteria,,,,,,Alphaproteobacteria
+Proteobacteria_5212,Bacteria,Proteobacteria,,Alphaproteobacteria,Pelagibacterales,Pelagibacteraceae,Candidatus Pelagibacter,Candidatus Pelagibacter sp. IMCC9063,,Candidatus Pelagibacter sp. IMCC9063
+Proteobacteria_5221,Bacteria,Proteobacteria,,Alphaproteobacteria,Holosporales,Caedimonadaceae,Candidatus Nucleicultrix,Candidatus Nucleicultrix amoebiphila,Candidatus Nucleicultrix amoebiphila FS5,Candidatus Nucleicultrix amoebiphila FS5
+Proteobacteria_5270,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhizobiales,Rhodobiaceae,Pyruvatibacter,Pyruvatibacter mobilis,,Pyruvatibacter mobilis
+Proteobacteria_6045,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Halocynthiibacter,Halocynthiibacter arcticus,,Halocynthiibacter arcticus
+Proteobacteria_6980,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Colwelliaceae,Thalassotalea,Thalassotalea sp. LPB0316,,Thalassotalea sp. LPB0316
+Proteobacteria_996,Bacteria,Proteobacteria,,Gammaproteobacteria,Vibrionales,Vibrionaceae,Aliivibrio,Aliivibrio fischeri,Aliivibrio fischeri ES114,Aliivibrio fischeri ES114
+Proteobacteria_3266,Bacteria,Proteobacteria,,Betaproteobacteria,Burkholderiales,Burkholderiaceae,Ralstonia,Ralstonia solanacearum,Ralstonia solanacearum PSI07,Ralstonia solanacearum PSI07
+Proteobacteria_5771,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhizobiales,Methylobacteriaceae,Methylobacterium,Methylobacterium oryzae,Methylobacterium oryzae CBMB20,Methylobacterium oryzae CBMB20
+Proteobacteria_8556,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,,Escherichia coli
+Firmicutes_Tenericutes_2347,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Bacillaceae,Bacillus,Bacillus spizizenii,Bacillus subtilis subsp. spizizenii str. W23,Bacillus subtilis subsp. spizizenii str. W23
+Firmicutes_Tenericutes_2541,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Bacillaceae,Bacillus,,,Bacillus
+Firmicutes_Tenericutes_2624,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Bacillaceae,Bacillus,,,Bacillus
+Firmicutes_Tenericutes_920,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Listeriaceae,Listeria,Listeria monocytogenes,,Listeria monocytogenes
+Firmicutes_Tenericutes_927,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Listeriaceae,Listeria,Listeria monocytogenes,,Listeria monocytogenes
+Firmicutes_Tenericutes_929,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Listeriaceae,Listeria,Listeria monocytogenes,,Listeria monocytogenes
+Firmicutes_Tenericutes_947,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Listeriaceae,Listeria,,,Listeria
+Proteobacteria_1975,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas aeruginosa,,Pseudomonas aeruginosa
+Proteobacteria_1976,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas aeruginosa,,Pseudomonas aeruginosa
+Proteobacteria_1985,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas aeruginosa,,Pseudomonas aeruginosa
+Proteobacteria_1988,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas aeruginosa,,Pseudomonas aeruginosa
+Proteobacteria_1991,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas aeruginosa,,Pseudomonas aeruginosa
+Proteobacteria_1996,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas aeruginosa,,Pseudomonas aeruginosa
+Proteobacteria_2019,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,,,Pseudomonas
+Proteobacteria_2031,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,,,Pseudomonas
+Proteobacteria_2520,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,,,,Pseudomonadaceae
+Proteobacteria_8932,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,,Escherichia coli
+Proteobacteria_8997,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Salmonella enterica,,Salmonella enterica
+Acidobacteria_5,Bacteria,Acidobacteria,,Acidobacteriia,Bryobacterales,,,,,Bryobacterales
+Bacteroidetes_862,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Flavobacterium,Flavobacterium nackdongense,,Flavobacterium nackdongense
+Bacteroidetes_965,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Aquimarina,Aquimarina sp. TRL1,,Aquimarina sp. TRL1
+Chloroflexi_4,Bacteria,Chloroflexi,Terrabacteria group,Anaerolineae,Anaerolineales,Anaerolineaceae,Pelolinea,Pelolinea submarina,,Pelolinea submarina
+Proteobacteria_1584,Bacteria,Proteobacteria,,Gammaproteobacteria,Cellvibrionales,Spongiibacteraceae,,,,Spongiibacteraceae
+Proteobacteria_1591,Bacteria,Proteobacteria,,Gammaproteobacteria,Cellvibrionales,Halieaceae,,,,Halieaceae
+Proteobacteria_2451,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,,,Pseudomonas
+Proteobacteria_2589,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,,,,Pseudomonadaceae
+Proteobacteria_2597,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,,,,Pseudomonadaceae
+Proteobacteria_2607,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,,,,Pseudomonadaceae
+Proteobacteria_2620,Bacteria,Proteobacteria,,Gammaproteobacteria,Thiotrichales,Piscirickettsiaceae,Methylophaga,Methylophaga nitratireducenticrescens,,Methylophaga nitratireducenticrescens
+Proteobacteria_2650,Bacteria,Proteobacteria,,Gammaproteobacteria,,,Candidatus Reidiella,Candidatus Reidiella endopervernicosa,,Candidatus Reidiella endopervernicosa
+Proteobacteria_2658,Bacteria,Proteobacteria,,Gammaproteobacteria,,,Candidatus Thioglobus,Candidatus Thioglobus singularis,Candidatus Thioglobus singularis PS1,Candidatus Thioglobus singularis PS1
+Proteobacteria_2694,Bacteria,Proteobacteria,,,,,,,,Proteobacteria
+Proteobacteria_3052,Bacteria,Proteobacteria,,Betaproteobacteria,Nitrosomonadales,Nitrosomonadaceae,Nitrosomonas,,,Nitrosomonas
+Proteobacteria_3130,Bacteria,Proteobacteria,,Betaproteobacteria,Burkholderiales,Oxalobacteraceae,Undibacterium,,,Undibacterium
+Proteobacteria_4415,Bacteria,Proteobacteria,,Epsilonproteobacteria,Campylobacterales,Sulfurovaceae,Sulfurovum,,,Sulfurovum
+Proteobacteria_5223,Bacteria,Proteobacteria,,Alphaproteobacteria,,,,,,Alphaproteobacteria
+Proteobacteria_5226,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Hypericibacter,,,Hypericibacter
+Proteobacteria_5269,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Ferrovibrio,Ferrovibrio terrae,,Ferrovibrio terrae
+Proteobacteria_6000,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,,,,Rhodobacteraceae
+Proteobacteria_6064,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,,,,Rhodobacteraceae
+Proteobacteria_6066,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,,,,Rhodobacteraceae
+Proteobacteria_6102,Bacteria,Proteobacteria,,Alphaproteobacteria,Caulobacterales,Caulobacteraceae,Terricaulis,Terricaulis silvestris,,Terricaulis silvestris
+Proteobacteria_6156,Bacteria,Proteobacteria,,Alphaproteobacteria,Kordiimonadales,Kordiimonadaceae,Kordiimonas,Kordiimonas pumila,,Kordiimonas pumila
+Proteobacteria_6452,Bacteria,Proteobacteria,,Alphaproteobacteria,,,,,,Alphaproteobacteria
+Proteobacteria_7071,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,,,,,Alteromonadales
+Verrucomicrobia_27,Bacteria,Verrucomicrobia,PVC group,Verrucomicrobiae,Verrucomicrobiales,,,,,Verrucomicrobiales
+Firmicutes_Tenericutes_1002,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus,Enterococcus faecium,,Enterococcus faecium
+Firmicutes_Tenericutes_1007,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus,Enterococcus faecium,,Enterococcus faecium
+Firmicutes_Tenericutes_1018,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus,Enterococcus faecium,,Enterococcus faecium
+Firmicutes_Tenericutes_1051,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus,Enterococcus avium,,Enterococcus avium
+Firmicutes_Tenericutes_1870,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Lactobacillaceae,Furfurilactobacillus,Furfurilactobacillus rossiae,,Furfurilactobacillus rossiae
+Firmicutes_Tenericutes_1915,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Lactobacillaceae,Limosilactobacillus,Limosilactobacillus fermentum,,Limosilactobacillus fermentum
+Firmicutes_Tenericutes_1926,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Lactobacillaceae,Limosilactobacillus,Limosilactobacillus fermentum,,Limosilactobacillus fermentum
+Firmicutes_Tenericutes_1931,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Lactobacillaceae,Limosilactobacillus,Limosilactobacillus fermentum,,Limosilactobacillus fermentum
+Firmicutes_Tenericutes_1938,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Lactobacillaceae,Limosilactobacillus,Limosilactobacillus fermentum,,Limosilactobacillus fermentum
+Firmicutes_Tenericutes_1945,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Lactobacillaceae,Limosilactobacillus,Limosilactobacillus fermentum,,Limosilactobacillus fermentum
+Firmicutes_Tenericutes_2048,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Lactobacillaceae,,,,Lactobacillaceae
+Firmicutes_Tenericutes_2179,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Lactobacillaceae,,,,Lactobacillaceae
+Firmicutes_Tenericutes_2241,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Lactobacillaceae,,,,Lactobacillaceae
+Firmicutes_Tenericutes_2259,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Carnobacteriaceae,,,,Carnobacteriaceae
+Firmicutes_Tenericutes_2291,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,,,,,Lactobacillales
+Firmicutes_Tenericutes_2296,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Bacillaceae,Bacillus,,,Bacillus
+Firmicutes_Tenericutes_2344,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Bacillaceae,Bacillus,,,Bacillus
+Firmicutes_Tenericutes_2519,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Bacillaceae,Bacillus,Bacillus licheniformis,,Bacillus licheniformis
+Firmicutes_Tenericutes_3040,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Bacillaceae,Terribacillus,Terribacillus goriensis,,Terribacillus goriensis
+Firmicutes_Tenericutes_3097,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Bacillaceae,Alkalihalobacillus,,,Alkalihalobacillus
+Firmicutes_Tenericutes_451,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Staphylococcaceae,,,,Staphylococcaceae
+Firmicutes_Tenericutes_890,Bacteria,,,,,,,,,Bacteria
+Firmicutes_Tenericutes_907,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Listeriaceae,Listeria,Listeria monocytogenes,Listeria monocytogenes HCC23,Listeria monocytogenes HCC23
+Firmicutes_Tenericutes_911,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Listeriaceae,Listeria,Listeria monocytogenes,,Listeria monocytogenes
+Firmicutes_Tenericutes_912,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Listeriaceae,Listeria,Listeria monocytogenes,,Listeria monocytogenes
+Firmicutes_Tenericutes_918,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Listeriaceae,Listeria,Listeria monocytogenes,Listeria monocytogenes FSL R2-561,Listeria monocytogenes FSL R2-561
+Firmicutes_Tenericutes_919,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Listeriaceae,Listeria,Listeria monocytogenes,,Listeria monocytogenes
+Firmicutes_Tenericutes_924,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Listeriaceae,Listeria,Listeria monocytogenes,Listeria monocytogenes serotype 4b str. F2365,Listeria monocytogenes serotype 4b str. F2365
+Firmicutes_Tenericutes_925,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Listeriaceae,Listeria,Listeria monocytogenes,,Listeria monocytogenes
+Proteobacteria_1990,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas aeruginosa,,Pseudomonas aeruginosa
+Proteobacteria_1992,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas aeruginosa,,Pseudomonas aeruginosa
+Proteobacteria_1995,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas aeruginosa,,Pseudomonas aeruginosa
+Proteobacteria_2004,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas aeruginosa,,Pseudomonas aeruginosa
+Proteobacteria_480,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Klebsiella,Klebsiella pneumoniae,,Klebsiella pneumoniae
+Proteobacteria_8397,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia albertii,,Escherichia albertii
+Proteobacteria_8448,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Shigella,Shigella flexneri,,Shigella flexneri
+Proteobacteria_8513,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,Escherichia coli O25b:H4-ST131,Escherichia coli O25b:H4-ST131
+Proteobacteria_8550,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,,Escherichia coli
+Proteobacteria_8575,Bacteria,Proteobacteria,,,,,,,,
+Proteobacteria_8582,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,,Escherichia coli
+Proteobacteria_8584,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,,Escherichia coli
+Proteobacteria_8898,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Shigella,Shigella dysenteriae,,Shigella dysenteriae
+Proteobacteria_8900,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Shigella,Shigella dysenteriae,,Shigella dysenteriae
+Proteobacteria_8945,Bacteria,Proteobacteria,,,,,,,,
+Proteobacteria_8998,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Salmonella enterica,,Salmonella enterica
+Proteobacteria_9000,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Salmonella enterica,,Salmonella enterica
+Proteobacteria_9001,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Salmonella enterica,,Salmonella enterica
+Proteobacteria_9005,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Salmonella enterica,,Salmonella enterica
+Proteobacteria_9009,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Salmonella enterica,,Salmonella enterica
+Proteobacteria_9010,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Salmonella enterica,,Salmonella enterica
+Proteobacteria_9091,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Salmonella enterica,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2,Salmonella enterica subsp. enterica serovar Typhimurium str. LT2
+Proteobacteria_9112,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Salmonella enterica,,Salmonella enterica
+Proteobacteria_9183,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Citrobacter,Citrobacter koseri,,Citrobacter koseri
+Proteobacteria_9369,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Cedecea,,,Cedecea
+Proteobacteria_9457,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Raoultella,,,Raoultella
+Firmicutes_Tenericutes_1419,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Streptococcaceae,Streptococcus,Streptococcus oralis,,Streptococcus oralis
+Proteobacteria_8648,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,,Escherichia coli
+Chlamydiae_39,Bacteria,Chlamydiae,PVC group,Chlamydiia,Parachlamydiales,Parachlamydiaceae,Parachlamydia,Parachlamydia acanthamoebae,Parachlamydia acanthamoebae UV-7,Parachlamydia acanthamoebae UV-7
+Cyanobacteria_121,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,,,,,,
+Cyanobacteria_210,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Synechococcales,Acaryochloridaceae,Acaryochloris,Acaryochloris marina,Acaryochloris marina MBIC11017,Acaryochloris marina MBIC11017
+Fusobacteria_36,Bacteria,Fusobacteria,,Fusobacteriia,Fusobacteriales,,,,,Fusobacteriales
+Proteobacteria_1000,Bacteria,Proteobacteria,,Gammaproteobacteria,Vibrionales,Vibrionaceae,Aliivibrio,,,Aliivibrio
+Proteobacteria_1419,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Moritellaceae,Moritella,,,Moritella
+Proteobacteria_2452,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,,,Pseudomonas
+Proteobacteria_4255,Bacteria,Proteobacteria,,Deltaproteobacteria,Desulfobacterales,Desulfobulbaceae,Desulfopila,Desulfopila sp. IMCC35004,,Desulfopila sp. IMCC35004
+Proteobacteria_4405,Bacteria,Proteobacteria,,Oligoflexia,,,,,,Oligoflexia
+Proteobacteria_4966,Bacteria,Proteobacteria,,Epsilonproteobacteria,Campylobacterales,Campylobacteraceae,,,,Campylobacteraceae
+Proteobacteria_5216,Bacteria,Proteobacteria,,Alphaproteobacteria,Pelagibacterales,Pelagibacteraceae,Candidatus Pelagibacter,Candidatus Pelagibacter ubique,Candidatus Pelagibacter ubique HTCC1062,Candidatus Pelagibacter ubique HTCC1062
+Proteobacteria_6020,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Roseobacter,Roseobacter denitrificans,Roseobacter denitrificans OCh 114,Roseobacter denitrificans OCh 114
+Proteobacteria_6436,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhizobiales,Methylocystaceae,Terasakiella,Terasakiella sp. SH-1,,Terasakiella sp. SH-1
+Proteobacteria_6453,Bacteria,Proteobacteria,,Alphaproteobacteria,,,,,,Alphaproteobacteria
+Proteobacteria_6973,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Colwelliaceae,,,,Colwelliaceae
+Bacteroidetes_1029,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,,,,Flavobacteriaceae
+Bacteroidetes_1139,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Lutibacter,Lutibacter profundi,,Lutibacter profundi
+Bacteroidetes_123,Bacteria,Bacteroidetes,FCB group,Cytophagia,Cytophagales,,,,,Cytophagales
+Bacteroidetes_857,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Flavobacterium,Flavobacterium faecale,,Flavobacterium faecale
+Bacteroidetes_908,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Nonlabens,Nonlabens dokdonensis,Nonlabens dokdonensis DSW-6,Nonlabens dokdonensis DSW-6
+Bacteroidetes_93,Bacteria,Bacteroidetes,FCB group,Cytophagia,Cytophagales,Flammeovirgaceae,Flammeovirga,,,Flammeovirga
+Bacteroidetes_973,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Kordia,Kordia antarctica,,Kordia antarctica
+Chlamydiae_38,Bacteria,Chlamydiae,PVC group,Chlamydiia,Parachlamydiales,Parachlamydiaceae,,,,Parachlamydiaceae
+Firmicutes_Tenericutes_2052,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Lactobacillaceae,Lactobacillus,Lactobacillus iners,,Lactobacillus iners
+Firmicutes_Tenericutes_3621,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Clostridiaceae,Clostridium,Clostridium perfringens,,Clostridium perfringens
+Firmicutes_Tenericutes_3797,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Peptostreptococcaceae,Peptoclostridium,Peptoclostridium acidaminophilum,Peptoclostridium acidaminophilum DSM 3953,Peptoclostridium acidaminophilum DSM 3953
+Fusobacteria_49,Bacteria,Fusobacteria,,Fusobacteriia,Fusobacteriales,Fusobacteriaceae,Fusobacterium,,,Fusobacterium
+Proteobacteria_1627,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Alteromonadaceae,Hydrocarboniclastica,Hydrocarboniclastica marina,,Hydrocarboniclastica marina
+Proteobacteria_2594,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Oblitimonas,Oblitimonas alkaliphila,,Oblitimonas alkaliphila
+Proteobacteria_2599,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,,,,Pseudomonadaceae
+Proteobacteria_2633,Bacteria,Proteobacteria,,Gammaproteobacteria,Methylococcales,Methylococcaceae,Methylomonas,,,Methylomonas
+Proteobacteria_2773,Bacteria,Proteobacteria,,,,,,,,
+Proteobacteria_3267,Bacteria,Proteobacteria,,Betaproteobacteria,Burkholderiales,Burkholderiaceae,Ralstonia,Ralstonia solanacearum,,Ralstonia solanacearum
+Proteobacteria_4250,Bacteria,Proteobacteria,,Gammaproteobacteria,Chromatiales,Ectothiorhodospiraceae,Acidihalobacter,Acidihalobacter prosperus,,Acidihalobacter prosperus
+Proteobacteria_4439,Bacteria,Proteobacteria,,Epsilonproteobacteria,Campylobacterales,Thiovulaceae,,,,Thiovulaceae
+Proteobacteria_4954,Bacteria,Proteobacteria,,Epsilonproteobacteria,Campylobacterales,Campylobacteraceae,,,,Campylobacteraceae
+Proteobacteria_5965,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Pseudohalocynthiibacter,Pseudohalocynthiibacter aestuariivivens,,Pseudohalocynthiibacter aestuariivivens
+Proteobacteria_6777,Bacteria,Proteobacteria,,Gammaproteobacteria,,,,,,Gammaproteobacteria
+Proteobacteria_6916,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Oceanospirillaceae,Bermanella,Bermanella marisrubri,,Bermanella marisrubri
+Proteobacteria_7068,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,,,,,Alteromonadales
+Proteobacteria_7072,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,,,,,Alteromonadales
+Bacteroidetes_278,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Marinilabiliales,Prolixibacteraceae,Draconibacterium,,,Draconibacterium
+Bacteroidetes_963,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Dokdonia,,,Dokdonia
+Firmicutes_Tenericutes_473,Bacteria,Tenericutes,Terrabacteria group,Mollicutes,Acholeplasmatales,Acholeplasmataceae,,,,Acholeplasmataceae
+Planctomycetes_61,Bacteria,Planctomycetes,PVC group,,,,,,,PVC group
+Proteobacteria_1535,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Kangiellaceae,Kangiella,Kangiella sediminilitoris,,Kangiella sediminilitoris
+Proteobacteria_2663,Bacteria,Proteobacteria,sulfur-oxidizing symbionts,Gammaproteobacteria,,,Candidatus Ruthia,Candidatus Ruthia endofausta,,Candidatus Ruthia endofausta
+Proteobacteria_3173,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Halomonadaceae,Candidatus Carsonella,Candidatus Carsonella ruddii,,Candidatus Carsonella ruddii
+Proteobacteria_3947,Bacteria,Proteobacteria,,Gammaproteobacteria,Nevskiales,Steroidobacteraceae,Steroidobacter,Steroidobacter denitrificans,,Steroidobacter denitrificans
+Proteobacteria_4236,Bacteria,Proteobacteria,,Gammaproteobacteria,Salinisphaerales,Salinisphaeraceae,Salinisphaera,Salinisphaera sp. LB1,,Salinisphaera sp. LB1
+Proteobacteria_5125,Bacteria,Proteobacteria,,Alphaproteobacteria,,,,,,Alphaproteobacteria
+Proteobacteria_5945,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,,,,Rhodobacteraceae
+Proteobacteria_6038,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Octadecabacter,Octadecabacter arcticus,Octadecabacter arcticus 238,Octadecabacter arcticus 238
+Proteobacteria_6575,Bacteria,Proteobacteria,,Zetaproteobacteria,Mariprofundales,Mariprofundaceae,Mariprofundus,,,Mariprofundus
+Proteobacteria_7153,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Pseudoalteromonadaceae,Pseudoalteromonas,,,Pseudoalteromonas
+Spirochaetes_148,Bacteria,Spirochaetes,,Spirochaetia,,,,,,Spirochaetia
+Bacteroidetes_1153,Bacteria,Bacteroidetes,FCB group,,,,,,,FCB group
+Planctomycetes_45,Bacteria,Planctomycetes,PVC group,Planctomycetia,Pirellulales,Pirellulaceae,Mariniblastus,Mariniblastus fucicola,,Mariniblastus fucicola
+Proteobacteria_6432,Bacteria,Proteobacteria,,Alphaproteobacteria,Sphingomonadales,,,,,Sphingomonadales
+Actinobacteria_1933,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Micrococcales,Microbacteriaceae,Candidatus Aquiluna,Candidatus Aquiluna sp. 15G-AUS-rot,,Candidatus Aquiluna sp. 15G-AUS-rot
+Bacteroidetes_1014,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Lacinutrix,Lacinutrix venerupis,,Lacinutrix venerupis
+Bacteroidetes_281,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Prevotellaceae,Paraprevotella,Paraprevotella xylaniphila,Paraprevotella xylaniphila YIT 11841,Paraprevotella xylaniphila YIT 11841
+Bacteroidetes_490,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Odoribacteraceae,Odoribacter,Odoribacter splanchnicus,,Odoribacter splanchnicus
+Cyanobacteria_46,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,,,,,,Cyanobacteria/Melainabacteria group
+Firmicutes_Tenericutes_3958,Bacteria,Firmicutes,Terrabacteria group,Negativicutes,Selenomonadales,Selenomonadaceae,Megamonas,Megamonas funiformis,,Megamonas funiformis
+Firmicutes_Tenericutes_744,Bacteria,Tenericutes,Terrabacteria group,Mollicutes,Mycoplasmatales,Mycoplasmataceae,Mycoplasma,Mycoplasma orale,,Mycoplasma orale
+Planctomycetes_53,Bacteria,Planctomycetes,PVC group,Planctomycetia,Pirellulales,Pirellulaceae,Rhodopirellula,Rhodopirellula baltica,Rhodopirellula baltica SH 1,Rhodopirellula baltica SH 1
+Proteobacteria_1381,Bacteria,Proteobacteria,,Gammaproteobacteria,Vibrionales,Vibrionaceae,Photobacterium,Photobacterium profundum,Photobacterium profundum SS9,Photobacterium profundum SS9
+Proteobacteria_1590,Bacteria,Proteobacteria,,Gammaproteobacteria,Cellvibrionales,Halieaceae,,,,Halieaceae
+Proteobacteria_3975,Bacteria,Proteobacteria,,Gammaproteobacteria,Xanthomonadales,Rhodanobacteraceae,Rhodanobacter,Rhodanobacter glycinis,,Rhodanobacter glycinis
+Proteobacteria_4219,Bacteria,Proteobacteria,,Gammaproteobacteria,Xanthomonadales,Xanthomonadaceae,Thermomonas,Thermomonas sp. HDW16,,Thermomonas sp. HDW16
+Proteobacteria_4237,Bacteria,Proteobacteria,,Gammaproteobacteria,Chromatiales,Woeseiaceae,Woeseia,Woeseia oceani,,Woeseia oceani
+Proteobacteria_6074,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Maribius,Maribius sp. THAF1,,Maribius sp. THAF1
+Proteobacteria_6101,Bacteria,Proteobacteria,,Alphaproteobacteria,Hyphomonadales,Hyphomonadaceae,,,,Hyphomonadaceae
+Proteobacteria_6147,Bacteria,Proteobacteria,,Alphaproteobacteria,Caulobacterales,Caulobacteraceae,,,,Caulobacteraceae
+Proteobacteria_6566,Bacteria,Proteobacteria,SAR116 cluster,Alphaproteobacteria,,,Candidatus Puniceispirillum,Candidatus Puniceispirillum marinum,Candidatus Puniceispirillum marinum IMCC1322,Candidatus Puniceispirillum marinum IMCC1322
+Proteobacteria_6955,Bacteria,Proteobacteria,,Gammaproteobacteria,Chromatiales,Chromatiaceae,Rheinheimera,Rheinheimera sp. D18,,Rheinheimera sp. D18
+Proteobacteria_7158,Bacteria,Proteobacteria,,Gammaproteobacteria,Aeromonadales,Succinivibrionaceae,Succinivibrio,Succinivibrio dextrinosolvens,,Succinivibrio dextrinosolvens
+Firmicutes_Tenericutes_1561,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus,Enterococcus cecorum,,Enterococcus cecorum
+Firmicutes_Tenericutes_1575,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus,Enterococcus faecalis,Enterococcus faecalis ARO1/DG,Enterococcus faecalis ARO1/DG
+Firmicutes_Tenericutes_1576,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus,Enterococcus faecalis,,Enterococcus faecalis
+Firmicutes_Tenericutes_1587,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus,Enterococcus faecalis,Enterococcus faecalis D32,Enterococcus faecalis D32
+Firmicutes_Tenericutes_1924,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Lactobacillaceae,Limosilactobacillus,Limosilactobacillus fermentum,,Limosilactobacillus fermentum
+Firmicutes_Tenericutes_2251,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Carnobacteriaceae,Carnobacterium,Carnobacterium maltaromaticum,Carnobacterium maltaromaticum LMA28,Carnobacterium maltaromaticum LMA28
+Firmicutes_Tenericutes_2256,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Carnobacteriaceae,Carnobacterium,,,Carnobacterium
+Firmicutes_Tenericutes_2274,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Aerococcaceae,Aerococcus,,,Aerococcus
+Firmicutes_Tenericutes_24,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Planococcaceae,Planococcus,Planococcus sp. PAMC 21323,,Planococcus sp. PAMC 21323
+Firmicutes_Tenericutes_928,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Listeriaceae,Listeria,Listeria monocytogenes,,Listeria monocytogenes
+Firmicutes_Tenericutes_949,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Listeriaceae,Listeria,Listeria sp. PSOL-1,,Listeria sp. PSOL-1
+Proteobacteria_1987,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas aeruginosa,,Pseudomonas aeruginosa
+Proteobacteria_2002,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas aeruginosa,,Pseudomonas aeruginosa
+Proteobacteria_2007,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas aeruginosa,Pseudomonas aeruginosa B136-33,Pseudomonas aeruginosa B136-33
+Proteobacteria_2013,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas aeruginosa,Pseudomonas aeruginosa PAO1,Pseudomonas aeruginosa PAO1
+Proteobacteria_6948,Bacteria,Proteobacteria,,,,,,,,Proteobacteria
+Proteobacteria_8180,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Salmonella enterica,Salmonella enterica subsp. enterica serovar Heidelberg str. SL476,Salmonella enterica subsp. enterica serovar Heidelberg str. SL476
+Proteobacteria_8181,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Salmonella enterica,,Salmonella enterica
+Proteobacteria_8277,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,Escherichia coli O55:H7 str. CB9615,Escherichia coli O55:H7 str. CB9615
+Proteobacteria_8393,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia albertii,,Escherichia albertii
+Proteobacteria_8572,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,Escherichia coli IHE3034,Escherichia coli IHE3034
+Proteobacteria_8577,Bacteria,Proteobacteria,,,,,,,,
+Proteobacteria_8757,Bacteria,Proteobacteria,,,,,,,,
+Proteobacteria_8942,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,Escherichia coli K-12,Escherichia coli K-12
+Proteobacteria_9002,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Salmonella enterica,,Salmonella enterica
+Proteobacteria_9054,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Salmonella enterica,,Salmonella enterica
+Proteobacteria_9107,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Salmonella enterica,Salmonella enterica subsp. enterica serovar Typhimurium str. CDC 2011K-0870,Salmonella enterica subsp. enterica serovar Typhimurium str. CDC 2011K-0870
+Proteobacteria_9111,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Salmonella enterica,,Salmonella enterica
+Bacteroidetes_222,Bacteria,Bacteroidetes,FCB group,,Bacteroidetes Order II. Incertae sedis,Rhodothermaceae,,,,Rhodothermaceae
+Chlamydiae_41,Bacteria,Chlamydiae,PVC group,Chlamydiia,Parachlamydiales,,,,,Parachlamydiales
+Proteobacteria_1913,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Moraxellaceae,Psychrobacter,Psychrobacter sp. P2G3,,Psychrobacter sp. P2G3
+Proteobacteria_3959,Bacteria,Proteobacteria,,Gammaproteobacteria,Thiotrichales,Thiotrichaceae,,,,Thiotrichaceae
+Proteobacteria_4404,Bacteria,Proteobacteria,,Oligoflexia,Bacteriovoracales,,,,,Bacteriovoracales
+Proteobacteria_5228,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,,,,Rhodospirillaceae
+Proteobacteria_6567,Bacteria,Proteobacteria,,,,,,,,Proteobacteria
+Firmicutes_Tenericutes_2526,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Bacillaceae,Bacillus,Bacillus glycinifermentans,,Bacillus glycinifermentans
+Proteobacteria_1989,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas aeruginosa,,Pseudomonas aeruginosa
+Proteobacteria_2009,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas aeruginosa,,Pseudomonas aeruginosa
+Proteobacteria_8543,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,,Escherichia coli
+Bacteroidetes_916,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Maribacter,Maribacter sp. T28,,Maribacter sp. T28
+Bacteroidetes_979,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Winogradskyella,Winogradskyella helgolandensis,,Winogradskyella helgolandensis
+Deinococcus-Thermus_61,Bacteria,Deinococcus-Thermus,Terrabacteria group,Deinococci,,,,,,Deinococci
+Proteobacteria_3098,Bacteria,Proteobacteria,,Betaproteobacteria,Burkholderiales,Oxalobacteraceae,Massilia,Massilia oculi,,Massilia oculi
+Proteobacteria_4360,Bacteria,Proteobacteria,,Deltaproteobacteria,Myxococcales,Archangiaceae,Cystobacter,Cystobacter fuscus,,Cystobacter fuscus
+Proteobacteria_6227,Bacteria,Proteobacteria,,Alphaproteobacteria,Sphingomonadales,Sphingomonadaceae,Sphingomonas,Sphingomonas alpina,,Sphingomonas alpina
+Proteobacteria_8574,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,,Escherichia coli
+Proteobacteria_8585,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,,Escherichia coli
+Proteobacteria_8903,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Shigella,Shigella dysenteriae,,Shigella dysenteriae
+Bacteroidetes_272,Bacteria,Bacteroidetes,FCB group,Chitinophagia,Chitinophagales,Chitinophagaceae,,,,Chitinophagaceae
+Proteobacteria_2634,Bacteria,Proteobacteria,,Gammaproteobacteria,Methylococcales,Methylococcaceae,Methylomicrobium,Methylomicrobium buryatense,,Methylomicrobium buryatense
+Proteobacteria_6037,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Octadecabacter,Octadecabacter antarcticus,Octadecabacter antarcticus 307,Octadecabacter antarcticus 307
+Bacteroidetes_112,Bacteria,Bacteroidetes,FCB group,Cytophagia,Cytophagales,,,,,Cytophagales
+Acidobacteria_25,Bacteria,Acidobacteria,,Acidobacteriia,Acidobacteriales,Acidobacteriaceae,Granulicella,Granulicella sp. 5B5,,Granulicella sp. 5B5
+Acidobacteria_4,Bacteria,Acidobacteria,,Acidobacteriia,Bryobacterales,Solibacteraceae,Candidatus Solibacter,Candidatus Solibacter usitatus,,Candidatus Solibacter usitatus
+Acidobacteria_6,Bacteria,Acidobacteria,,Vicinamibacteria,,Vicinamibacteraceae,Luteitalea,Luteitalea pratensis,,Luteitalea pratensis
+Actinobacteria_1378,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Nakamurellales,Nakamurellaceae,Nakamurella,,,Nakamurella
+Actinobacteria_156,Bacteria,Actinobacteria,Terrabacteria group,,,,,,,Terrabacteria group
+Actinobacteria_158,Bacteria,Actinobacteria,Terrabacteria group,Thermoleophilia,Solirubrobacterales,Conexibacteraceae,Conexibacter,Conexibacter woesei,Conexibacter woesei DSM 14684,Conexibacter woesei DSM 14684
+Actinobacteria_177,Bacteria,Actinobacteria,Terrabacteria group,Acidimicrobiia,Acidimicrobiales,,,,,Acidimicrobiales
+Actinobacteria_189,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Streptomycetales,Streptomycetaceae,Streptomyces,Streptomyces albus,,Streptomyces albus
+Actinobacteria_1937,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Micrococcales,Microbacteriaceae,Cryobacterium,Cryobacterium soli,,Cryobacterium soli
+Actinobacteria_1996,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Micrococcales,Microbacteriaceae,Salinibacterium,Salinibacterium sp. UTAS2018,,Salinibacterium sp. UTAS2018
+Actinobacteria_2002,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Micrococcales,Microbacteriaceae,Salinibacterium,Salinibacterium sp. dk2585,,Salinibacterium sp. dk2585
+Actinobacteria_2008,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Micrococcales,Microbacteriaceae,Microterricola,Microterricola viridarii,,Microterricola viridarii
+Actinobacteria_27,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Propionibacteriales,Propionibacteriaceae,Cutibacterium,Cutibacterium acnes,Cutibacterium acnes SK137,Cutibacterium acnes SK137
+Actinobacteria_934,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Corynebacteriales,Lawsonellaceae,Lawsonella,Lawsonella clevelandensis,,Lawsonella clevelandensis
+Bacteroidetes_132,Bacteria,Bacteroidetes,FCB group,Sphingobacteriia,Sphingobacteriales,Sphingobacteriaceae,Mucilaginibacter,Mucilaginibacter gotjawali,,Mucilaginibacter gotjawali
+Bacteroidetes_410,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides helcogenes,Bacteroides helcogenes P 36-108,Bacteroides helcogenes P 36-108
+Chloroflexi_22,Bacteria,Chloroflexi,Terrabacteria group,Tepidiformia,Tepidiformales,Tepidiformaceae,Tepidiforma,Tepidiforma bonchosmolovskayae,,Tepidiforma bonchosmolovskayae
+Cyanobacteria_150,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Chroococcales,Cyanobacteriaceae,Cyanobacterium,Cyanobacterium aponinum,Cyanobacterium aponinum PCC 10605,Cyanobacterium aponinum PCC 10605
+Cyanobacteria_177,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Chroococcales,Aphanothecaceae,Rippkaea,Rippkaea orientalis,Rippkaea orientalis PCC 8801,Rippkaea orientalis PCC 8801
+Firmicutes_Tenericutes_3394,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Lachnospiraceae,Anaerotignum,Anaerotignum propionicum,Anaerotignum propionicum DSM 1682,Anaerotignum propionicum DSM 1682
+Firmicutes_Tenericutes_3502,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Ruminococcaceae,Ethanoligenens,Ethanoligenens harbinense,Ethanoligenens harbinense YUAN-3,Ethanoligenens harbinense YUAN-3
+Firmicutes_Tenericutes_3511,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii,,Faecalibacterium prausnitzii
+Firmicutes_Tenericutes_3679,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Clostridiaceae,Clostridium,Clostridium estertheticum,,Clostridium estertheticum
+Firmicutes_Tenericutes_452,Bacteria,Tenericutes,Terrabacteria group,,,,Candidatus Izimaplasma,Candidatus Izimaplasma sp. HR1,,Candidatus Izimaplasma sp. HR1
+Planctomycetes_44,Bacteria,Planctomycetes,PVC group,Planctomycetia,Pirellulales,Pirellulaceae,Pirellula,Pirellula staleyi,Pirellula staleyi DSM 6068,Pirellula staleyi DSM 6068
+Proteobacteria_1468,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Shewanellaceae,Shewanella,,,Shewanella
+Proteobacteria_2147,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas sp. ADAK13,,Pseudomonas sp. ADAK13
+Proteobacteria_2775,Bacteria,Proteobacteria,,Betaproteobacteria,Nitrosomonadales,Thiobacillaceae,Sulfuritortus,Sulfuritortus calidifontis,,Sulfuritortus calidifontis
+Proteobacteria_2783,Bacteria,Proteobacteria,,Betaproteobacteria,Nitrosomonadales,Gallionellaceae,Candidatus Nitrotoga,Candidatus Nitrotoga sp. AM1P,,Candidatus Nitrotoga sp. AM1P
+Proteobacteria_3770,Bacteria,Proteobacteria,,Betaproteobacteria,Burkholderiales,Comamonadaceae,Polaromonas,Polaromonas sp. JS666,,Polaromonas sp. JS666
+Proteobacteria_3833,Bacteria,Proteobacteria,,Betaproteobacteria,Burkholderiales,Comamonadaceae,,,,Comamonadaceae
+Proteobacteria_3976,Bacteria,Proteobacteria,,Gammaproteobacteria,Xanthomonadales,Rhodanobacteraceae,Rhodanobacter,Rhodanobacter denitrificans,,Rhodanobacter denitrificans
+Proteobacteria_5590,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhizobiales,Hyphomicrobiaceae,Devosia,Devosia sp. A16,,Devosia sp. A16
+Proteobacteria_5601,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhizobiales,,Nordella,Nordella sp. HKS 07,,Nordella sp. HKS 07
+Proteobacteria_5779,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhizobiales,Methylobacteriaceae,Methylobacterium,,,Methylobacterium
+Proteobacteria_5977,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,,,,Rhodobacteraceae
+Proteobacteria_6051,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,,,,Rhodobacteraceae
+Proteobacteria_6155,Bacteria,Proteobacteria,,Alphaproteobacteria,Emcibacterales,Emcibacteraceae,Emcibacter,,,Emcibacter
+Proteobacteria_6450,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Haematospirillum,Haematospirillum jordaniae,,Haematospirillum jordaniae
+Proteobacteria_6608,Bacteria,Proteobacteria,,Gammaproteobacteria,Legionellales,Coxiellaceae,Aquicella,,,Aquicella
+Proteobacteria_6705,Bacteria,Proteobacteria,,Gammaproteobacteria,Legionellales,Legionellaceae,Tatlockia,Tatlockia micdadei,,Tatlockia micdadei
+Proteobacteria_6959,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Colwelliaceae,Colwellia,Colwellia sp. PAMC 21821,,Colwellia sp. PAMC 21821
+Proteobacteria_7067,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,,,,,Alteromonadales
+Proteobacteria_8666,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,,Escherichia coli
+Spirochaetes_45,Bacteria,Spirochaetes,,Spirochaetia,Brachyspirales,Brachyspiraceae,Brachyspira,,,Brachyspira
+Verrucomicrobia_6,Bacteria,Verrucomicrobia,PVC group,Opitutae,,,,,,Opitutae
+Actinobacteria_1939,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Micrococcales,Microbacteriaceae,Cryobacterium,,,Cryobacterium
+Bacteroidetes_1128,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Polaribacter,Polaribacter haliotis,,Polaribacter haliotis
+Bacteroidetes_944,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Sediminicola,Sediminicola sp. YIK13,,Sediminicola sp. YIK13
+Firmicutes_Tenericutes_2249,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Carnobacteriaceae,Carnobacterium,Carnobacterium sp. CP1,,Carnobacterium sp. CP1
+Firmicutes_Tenericutes_749,Bacteria,Tenericutes,Terrabacteria group,Mollicutes,Mycoplasmatales,Mycoplasmataceae,Mycoplasmopsis,Mycoplasma pulmonis,Mycoplasma pulmonis UAB CTIP,Mycoplasma pulmonis UAB CTIP
+Firmicutes_Tenericutes_788,Bacteria,Tenericutes,Terrabacteria group,Mollicutes,Mycoplasmatales,Mycoplasmataceae,Mycoplasmopsis,Mycoplasma citelli,,Mycoplasma citelli
+Planctomycetes_69,Bacteria,Planctomycetes,PVC group,Planctomycetia,Planctomycetales,Planctomycetaceae,Gimesia,Gimesia maris,,Gimesia maris
+Proteobacteria_2141,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Candidatus Pseudomonas adelgestsugas,,Candidatus Pseudomonas adelgestsugas
+Proteobacteria_2665,Bacteria,Proteobacteria,sulfur-oxidizing symbionts,Gammaproteobacteria,,,Candidatus Ruthia,,,Candidatus Ruthia
+Proteobacteria_4273,Bacteria,Proteobacteria,,Deltaproteobacteria,Desulfarculales,Desulfarculaceae,Desulfarculus,Desulfarculus baarsii,Desulfarculus baarsii DSM 2075,Desulfarculus baarsii DSM 2075
+Proteobacteria_4909,Bacteria,Proteobacteria,,Epsilonproteobacteria,Campylobacterales,Campylobacteraceae,Arcobacter,Arcobacter nitrofigilis,Arcobacter nitrofigilis DSM 7299,Arcobacter nitrofigilis DSM 7299
+Proteobacteria_5118,Bacteria,Proteobacteria,,Alphaproteobacteria,Rickettsiales,Rickettsiaceae,,,,Rickettsiaceae
+Proteobacteria_5122,Bacteria,Proteobacteria,,Alphaproteobacteria,Holosporales,Holosporaceae,,endosymbiont of Acanthamoeba sp. UWC8,,endosymbiont of Acanthamoeba sp. UWC8
+Proteobacteria_5220,Bacteria,Proteobacteria,,Alphaproteobacteria,Holosporales,Candidatus Paracaedibacteraceae,Candidatus Paracaedibacter,Candidatus Paracaedibacter acanthamoebae,,Candidatus Paracaedibacter acanthamoebae
+Proteobacteria_5428,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhizobiales,Phyllobacteriaceae,Oricola,Oricola thermophila,,Oricola thermophila
+Proteobacteria_6627,Bacteria,Proteobacteria,,Gammaproteobacteria,,,,,,Gammaproteobacteria
+Proteobacteria_6926,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Oceanospirillaceae,Marinomonas,Marinomonas sp. FW-1,,Marinomonas sp. FW-1
+Spirochaetes_47,Bacteria,Spirochaetes,,Spirochaetia,Spirochaetales,Spirochaetaceae,Oceanispirochaeta,Oceanispirochaeta crateris,,Oceanispirochaeta crateris
+Bacteroidetes_328,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Prevotellaceae,Alloprevotella,Alloprevotella sp. E39,,Alloprevotella sp. E39
+Bacteroidetes_998,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,,,,Flavobacteriaceae
+Cyanobacteria_78,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Nostocales,Aphanizomenonaceae,Cylindrospermopsis,Cylindrospermopsis curvispora,Cylindrospermopsis curvispora GIHE-G1,Cylindrospermopsis curvispora GIHE-G1
+Deinococcus-Thermus_60,Bacteria,Deinococcus-Thermus,Terrabacteria group,Deinococci,Trueperales,Trueperaceae,Truepera,Truepera radiovictrix,Truepera radiovictrix DSM 17093,Truepera radiovictrix DSM 17093
+Nitrospirae_6,Bacteria,Nitrospirae,,Nitrospira,Nitrospirales,Nitrospiraceae,,,,Nitrospiraceae
+Proteobacteria_2659,Bacteria,Proteobacteria,,Gammaproteobacteria,,,Candidatus Thioglobus,,,Candidatus Thioglobus
+Proteobacteria_3181,Bacteria,Proteobacteria,,,,,,,,
+Proteobacteria_4399,Bacteria,Proteobacteria,,Oligoflexia,Bdellovibrionales,Bdellovibrionaceae,Bdellovibrio,,,Bdellovibrio
+Proteobacteria_5124,Bacteria,Proteobacteria,,Alphaproteobacteria,,,,,,Alphaproteobacteria
+Proteobacteria_5565,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhizobiales,Phyllobacteriaceae,,,,Phyllobacteriaceae
+Proteobacteria_5607,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhizobiales,Hyphomicrobiaceae,Hyphomicrobium,,,Hyphomicrobium
+Proteobacteria_6893,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Halomonadaceae,,,,Halomonadaceae
+Bacteroidetes_50,Bacteria,Bacteroidetes,FCB group,Cytophagia,Cytophagales,Cytophagaceae,Arcticibacterium,Arcticibacterium luteifluviistationis,,Arcticibacterium luteifluviistationis
+Bacteroidetes_516,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Marinilabiliales,Salinivirgaceae,Salinivirga,Salinivirga cyanobacteriivorans,,Salinivirga cyanobacteriivorans
+Firmicutes_Tenericutes_3739,Bacteria,Firmicutes,Terrabacteria group,Tissierellia,Tissierellales,Tissierellaceae,Gudongella,Gudongella oleilytica,,Gudongella oleilytica
+Proteobacteria_1905,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Moraxellaceae,Psychrobacter,,,Psychrobacter
+Proteobacteria_2792,Bacteria,Proteobacteria,,Betaproteobacteria,Nitrosomonadales,Methylophilaceae,Methylotenera,Methylotenera versatilis,Methylotenera versatilis 301,Methylotenera versatilis 301
+Proteobacteria_3804,Bacteria,Proteobacteria,,Betaproteobacteria,Burkholderiales,Comamonadaceae,,,,Comamonadaceae
+Proteobacteria_5066,Bacteria,Proteobacteria,,Alphaproteobacteria,Rickettsiales,Rickettsiaceae,Rickettsia,,,Rickettsia
+Proteobacteria_5916,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Rhodobacter,,,Rhodobacter
+Proteobacteria_6689,Bacteria,Proteobacteria,,Gammaproteobacteria,Thiotrichales,Francisellaceae,Francisella,,,Francisella
+Proteobacteria_6862,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Halomonadaceae,Halomonas,,,Halomonas
+Proteobacteria_6972,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Colwelliaceae,Colwellia,,,Colwellia
+Firmicutes_Tenericutes_3964,Bacteria,Firmicutes,Terrabacteria group,Negativicutes,Veillonellales,Veillonellaceae,Dialister,,,Dialister
+Proteobacteria_1874,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Moraxellaceae,Moraxella,Moraxella osloensis,,Moraxella osloensis
+Proteobacteria_4137,Bacteria,Proteobacteria,,Gammaproteobacteria,Xanthomonadales,Xanthomonadaceae,Xanthomonas,Xanthomonas citri,Xanthomonas citri pv. citri str. 306,Xanthomonas citri pv. citri str. 306
+Proteobacteria_6125,Bacteria,Proteobacteria,,Alphaproteobacteria,Caulobacterales,Caulobacteraceae,Asticcacaulis,Asticcacaulis excentricus,Asticcacaulis excentricus CB 48,Asticcacaulis excentricus CB 48
+Proteobacteria_8583,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,,Escherichia coli
+Firmicutes_Tenericutes_3528,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,,,,,Clostridiales
+Firmicutes_Tenericutes_3753,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Clostridiales Family XIII. Incertae Sedis,,,,Clostridiales Family XIII. Incertae Sedis
+Firmicutes_Tenericutes_3873,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Thermoanaerobacterales,Thermoanaerobacteraceae,Thermacetogenium,Thermacetogenium phaeum,Thermacetogenium phaeum DSM 12270,Thermacetogenium phaeum DSM 12270
+Planctomycetes_40,Bacteria,Planctomycetes,PVC group,Planctomycetia,Pirellulales,Thermoguttaceae,Thermogutta,Thermogutta terrifontis,,Thermogutta terrifontis
+Planctomycetes_59,Bacteria,Planctomycetes,PVC group,Planctomycetia,,,,,,Planctomycetia
+Proteobacteria_1933,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Azotobacter,Azotobacter salinestris,,Azotobacter salinestris
+Proteobacteria_4322,Bacteria,Proteobacteria,,Deltaproteobacteria,Desulfuromonadales,Geobacteraceae,Geoalkalibacter,Geoalkalibacter subterraneus,,Geoalkalibacter subterraneus
+Proteobacteria_5227,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Defluviicoccus,Defluviicoccus vanus,,Defluviicoccus vanus
+Proteobacteria_6004,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Salipiger,,,Salipiger
+Proteobacteria_6279,Bacteria,Proteobacteria,,Alphaproteobacteria,Sphingomonadales,Sphingomonadaceae,,,,Sphingomonadaceae
+Proteobacteria_6569,Bacteria,Proteobacteria,,,,,,,,Proteobacteria
+Proteobacteria_6610,Bacteria,Proteobacteria,,Gammaproteobacteria,,,,endosymbiont of Plagiopylea sp.,,endosymbiont of Plagiopylea sp.
+Proteobacteria_6836,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Halomonadaceae,Halomonas,Halomonas sp. PA16-9,,Halomonas sp. PA16-9
+Actinobacteria_176,Bacteria,Actinobacteria,Terrabacteria group,Acidimicrobiia,Acidimicrobiales,,,,,Acidimicrobiales
+Actinobacteria_855,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Corynebacteriales,Corynebacteriaceae,Corynebacterium,Corynebacterium segmentosum,,Corynebacterium segmentosum
+Bacteroidetes_228,Bacteria,Bacteroidetes,FCB group,Chitinophagia,Chitinophagales,Chitinophagaceae,Flavisolibacter,,,Flavisolibacter
+Bacteroidetes_250,Bacteria,Bacteroidetes,FCB group,Chitinophagia,Chitinophagales,Chitinophagaceae,Niastella,Niastella koreensis,Niastella koreensis GR20-10,Niastella koreensis GR20-10
+Firmicutes_Tenericutes_1449,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Streptococcaceae,Streptococcus,Streptococcus sanguinis,,Streptococcus sanguinis
+Proteobacteria_3071,Bacteria,Proteobacteria,,Betaproteobacteria,Burkholderiales,Burkholderiaceae,Lautropia,Lautropia mirabilis,,Lautropia mirabilis
+Proteobacteria_3789,Bacteria,Proteobacteria,,Betaproteobacteria,Burkholderiales,Comamonadaceae,Serpentinomonas,Serpentinomonas mccroryi,,Serpentinomonas mccroryi
+Proteobacteria_4034,Bacteria,Proteobacteria,,Gammaproteobacteria,Xanthomonadales,Xanthomonadaceae,Stenotrophomonas,Stenotrophomonas maltophilia,,Stenotrophomonas maltophilia
+Proteobacteria_5988,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Phaeobacter,Phaeobacter inhibens,Phaeobacter inhibens 2.10,Phaeobacter inhibens 2.10
+Proteobacteria_6210,Bacteria,Proteobacteria,,Alphaproteobacteria,Sphingomonadales,Sphingomonadaceae,,,,Sphingomonadaceae
+Proteobacteria_6956,Bacteria,Proteobacteria,,Gammaproteobacteria,Chromatiales,Chromatiaceae,Rheinheimera,,,Rheinheimera
+Proteobacteria_8570,Bacteria,Proteobacteria,,,,,,,,
+Proteobacteria_8904,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Shigella,Shigella dysenteriae,,Shigella dysenteriae
+Spirochaetes_147,Bacteria,Spirochaetes,,Spirochaetia,,,,,,Spirochaetia
+Firmicutes_Tenericutes_4006,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Bacillaceae,Bacillus,Bacillus aryabhattai,,Bacillus aryabhattai
+Firmicutes_Tenericutes_933,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Listeriaceae,Listeria,,,Listeria
+Proteobacteria_1926,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas marincola,,Pseudomonas marincola
+Proteobacteria_1981,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas aeruginosa,,Pseudomonas aeruginosa
+Proteobacteria_1997,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas aeruginosa,,Pseudomonas aeruginosa
+Proteobacteria_1998,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas aeruginosa,,Pseudomonas aeruginosa
+Proteobacteria_407,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Klebsiella,Klebsiella quasipneumoniae,,Klebsiella quasipneumoniae
+Proteobacteria_8447,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Shigella,Shigella flexneri,,Shigella flexneri
+Bacteroidetes_830,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Flavobacterium,Flavobacterium kingsejongi,,Flavobacterium kingsejongi
+Proteobacteria_3773,Bacteria,Proteobacteria,,Betaproteobacteria,Burkholderiales,Comamonadaceae,Polaromonas,,,Polaromonas
+Cyanobacteria_149,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Chroococcales,Chroococcaceae,Chondrocystis,Chondrocystis sp. NIES-4102,,Chondrocystis sp. NIES-4102
+Proteobacteria_1463,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Shewanellaceae,Shewanella,,,Shewanella
+Proteobacteria_2516,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,,,Pseudomonas
+Proteobacteria_3946,Bacteria,Proteobacteria,,Gammaproteobacteria,Nevskiales,Sinobacteraceae,,,,Sinobacteraceae
+Proteobacteria_4368,Bacteria,Proteobacteria,,Deltaproteobacteria,Myxococcales,,,,,Myxococcales
+Proteobacteria_5210,Bacteria,Proteobacteria,,Alphaproteobacteria,Rickettsiales,Anaplasmataceae,,,,Anaplasmataceae
+Proteobacteria_6096,Bacteria,Proteobacteria,,Alphaproteobacteria,,,Micavibrio,Micavibrio aeruginosavorus,,Micavibrio aeruginosavorus
+Proteobacteria_6657,Bacteria,Proteobacteria,,Gammaproteobacteria,Thiotrichales,Francisellaceae,Francisella,Francisella tularensis,,Francisella tularensis
+Proteobacteria_6895,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Alcanivoracaceae,Alcanivorax,Alcanivorax borkumensis,Alcanivorax borkumensis SK2,Alcanivorax borkumensis SK2
+Spirochaetes_131,Bacteria,Spirochaetes,,Spirochaetia,Spirochaetales,Borreliaceae,Borreliella,Borreliella garinii,,Borreliella garinii
+Proteobacteria_2405,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas sp. JY-Q,,Pseudomonas sp. JY-Q
+Proteobacteria_6420,Bacteria,Proteobacteria,,Alphaproteobacteria,Sphingomonadales,Sphingomonadaceae,Sphingobium,Sphingobium cloacae,,Sphingobium cloacae
+Proteobacteria_8452,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Shigella,,,Shigella
+Proteobacteria_8530,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,Escherichia coli ABU 83972,Escherichia coli ABU 83972
+Firmicutes_Tenericutes_3475,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Hungateiclostridiaceae,Hungateiclostridium,Hungateiclostridium saccincola,,Hungateiclostridium saccincola
+Proteobacteria_2648,Bacteria,Proteobacteria,,Gammaproteobacteria,Chromatiales,Granulosicoccaceae,Sulfuriflexus,Sulfuriflexus mobilis,,Sulfuriflexus mobilis
+Cyanobacteria_116,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Chroococcidiopsidales,Chroococcidiopsidaceae,Chroococcidiopsis,Chroococcidiopsis thermalis,Chroococcidiopsis thermalis PCC 7203,Chroococcidiopsis thermalis PCC 7203
+Cyanobacteria_209,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Synechococcales,Prochlorotrichaceae,Halomicronema,Halomicronema hongdechloris,Halomicronema hongdechloris C2206,Halomicronema hongdechloris C2206
+Firmicutes_Tenericutes_2257,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Carnobacteriaceae,Dolosigranulum,Dolosigranulum pigrum,,Dolosigranulum pigrum
+Proteobacteria_1006,Bacteria,Proteobacteria,,Gammaproteobacteria,Vibrionales,Vibrionaceae,Vibrio,Vibrio splendidus,,Vibrio splendidus
+Proteobacteria_1886,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Moraxellaceae,Moraxella,Moraxella catarrhalis,Moraxella catarrhalis BBH18,Moraxella catarrhalis BBH18
+Proteobacteria_4189,Bacteria,Proteobacteria,,Gammaproteobacteria,Xanthomonadales,Xanthomonadaceae,Luteimonas,,,Luteimonas
+Proteobacteria_2611,Bacteria,Proteobacteria,,Gammaproteobacteria,Cardiobacteriales,Cardiobacteriaceae,,,,Cardiobacteriaceae
+Proteobacteria_6565,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Candidatus Endolissoclinum,Candidatus Endolissoclinum faulkneri,,Candidatus Endolissoclinum faulkneri
+Bacteroidetes_915,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Nonlabens,,,Nonlabens
+Proteobacteria_4383,Bacteria,Proteobacteria,,Deltaproteobacteria,Myxococcales,,,,,Myxococcales
+Proteobacteria_5048,Bacteria,Proteobacteria,,,,,,,,
+Proteobacteria_5050,Bacteria,Proteobacteria,,Alphaproteobacteria,Rickettsiales,Rickettsiaceae,Candidatus Phycorickettsia,Candidatus Phycorickettsia trachydisci,,Candidatus Phycorickettsia trachydisci
+Proteobacteria_6957,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Colwelliaceae,Litorilituus,Litorilituus sediminis,,Litorilituus sediminis
+Firmicutes_Tenericutes_710,Bacteria,Tenericutes,Terrabacteria group,Mollicutes,Mycoplasmatales,Mycoplasmataceae,,,,Mycoplasmataceae
+Proteobacteria_4904,Bacteria,Proteobacteria,,Epsilonproteobacteria,Campylobacterales,Campylobacteraceae,Malaciobacter,Malaciobacter halophilus,,Malaciobacter halophilus
+Bacteroidetes_1146,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,,,,,Flavobacteriales
+Bacteroidetes_120,Bacteria,Bacteroidetes,FCB group,Cytophagia,Cytophagales,Marivirgaceae,Marivirga,Marivirga tractuosa,Marivirga tractuosa DSM 4126,Marivirga tractuosa DSM 4126
+Proteobacteria_2645,Bacteria,Proteobacteria,,Gammaproteobacteria,,,Sedimenticola,Sedimenticola thiotaurini,,Sedimenticola thiotaurini
+Proteobacteria_3767,Bacteria,Proteobacteria,,Betaproteobacteria,Burkholderiales,Comamonadaceae,Polaromonas,Polaromonas naphthalenivorans,Polaromonas naphthalenivorans CJ2,Polaromonas naphthalenivorans CJ2
+Proteobacteria_4260,Bacteria,Proteobacteria,,Deltaproteobacteria,Desulfobacterales,Desulfobulbaceae,Desulfocapsa,Desulfocapsa sulfexigens,Desulfocapsa sulfexigens DSM 10523,Desulfocapsa sulfexigens DSM 10523
+Bacteroidetes_285,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Prevotellaceae,Prevotella,,,Prevotella
+Bacteroidetes_903,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,,,,Flavobacteriaceae
+Firmicutes_Tenericutes_3432,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Lachnospiraceae,Blautia,Blautia sp. LZLJ-3,,Blautia sp. LZLJ-3
+Planctomycetes_35,Bacteria,Planctomycetes,PVC group,Phycisphaerae,Phycisphaerales,Phycisphaeraceae,Phycisphaera,Phycisphaera mikurensis,Phycisphaera mikurensis NBRC 102666,Phycisphaera mikurensis NBRC 102666
+Proteobacteria_1592,Bacteria,Proteobacteria,,Gammaproteobacteria,Cellvibrionales,,,,,Cellvibrionales
+Proteobacteria_3056,Bacteria,Proteobacteria,,Betaproteobacteria,Nitrosomonadales,Nitrosomonadaceae,Nitrosospira,Nitrosospira multiformis,Nitrosospira multiformis ATCC 25196,Nitrosospira multiformis ATCC 25196
+Proteobacteria_4956,Bacteria,Proteobacteria,,Epsilonproteobacteria,Campylobacterales,Campylobacteraceae,Poseidonibacter,Poseidonibacter parvus,,Poseidonibacter parvus
+Proteobacteria_5201,Bacteria,Proteobacteria,,Alphaproteobacteria,Rickettsiales,Anaplasmataceae,,,,Anaplasmataceae
+Proteobacteria_5609,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhizobiales,Hyphomicrobiaceae,Filomicrobium,Candidatus Filomicrobium marinum,,Candidatus Filomicrobium marinum
+Proteobacteria_5850,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Paraoceanicella,Paraoceanicella profunda,,Paraoceanicella profunda
+Proteobacteria_5851,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Monaibacterium,Monaibacterium sp. ALG8,,Monaibacterium sp. ALG8
+Proteobacteria_6570,Bacteria,Proteobacteria,,Alphaproteobacteria,Magnetococcales,Magnetococcaceae,Magnetococcus,Magnetococcus marinus,Magnetococcus marinus MC-1,Magnetococcus marinus MC-1
+Verrucomicrobia_11,Bacteria,Verrucomicrobia,PVC group,Methylacidiphilae,Methylacidiphilales,Methylacidiphilaceae,Methylacidiphilum,,,Methylacidiphilum
+Actinobacteria_1524,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Micrococcales,,Luteimicrobium,Luteimicrobium xylanilyticum,,Luteimicrobium xylanilyticum
+Bacteroidetes_205,Bacteria,Bacteroidetes,FCB group,Sphingobacteriia,Sphingobacteriales,Sphingobacteriaceae,,,,Sphingobacteriaceae
+Cyanobacteria_117,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,,,,,,
+Firmicutes_Tenericutes_1779,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Leuconostocaceae,Oenococcus,,,Oenococcus
+Firmicutes_Tenericutes_2562,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Bacillaceae,Bacillus,Bacillus subtilis,,Bacillus subtilis
+Proteobacteria_1924,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Moraxellaceae,,,,Moraxellaceae
+Proteobacteria_2623,Bacteria,Proteobacteria,,Gammaproteobacteria,Methylococcales,Methylococcaceae,Methylomonas,Methylomonas sp. LL1,,Methylomonas sp. LL1
+Proteobacteria_2664,Bacteria,Proteobacteria,sulfur-oxidizing symbionts,Gammaproteobacteria,,,Candidatus Ruthia,Candidatus Ruthia magnifica,Candidatus Ruthia magnifica str. Cm (Calyptogena magnifica),Candidatus Ruthia magnifica str. Cm (Calyptogena magnifica)
+Proteobacteria_6904,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Alcanivoracaceae,,,,Alcanivoracaceae
+Proteobacteria_6968,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Colwelliaceae,Colwellia,,,Colwellia
+Proteobacteria_6979,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Colwelliaceae,,,,Colwelliaceae
+Spirochaetes_48,Bacteria,Spirochaetes,,Spirochaetia,Spirochaetales,Spirochaetaceae,,,,Spirochaetaceae
+Actinobacteria_1660,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Bifidobacteriales,Bifidobacteriaceae,Bifidobacterium,Bifidobacterium adolescentis,,Bifidobacterium adolescentis
+Firmicutes_Tenericutes_3393,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Lachnospiraceae,Cellulosilyticum,,,Cellulosilyticum
+Planctomycetes_34,Bacteria,Planctomycetes,PVC group,Phycisphaerae,Sedimentisphaerales,,,,,Sedimentisphaerales
+Proteobacteria_6776,Bacteria,Proteobacteria,,Gammaproteobacteria,,,,,,Gammaproteobacteria
+Proteobacteria_4369,Bacteria,Proteobacteria,,Deltaproteobacteria,Myxococcales,Kofleriaceae,Haliangium,Haliangium ochraceum,Haliangium ochraceum DSM 14365,Haliangium ochraceum DSM 14365
+Proteobacteria_6693,Bacteria,Proteobacteria,,Gammaproteobacteria,Thiotrichales,Francisellaceae,Allofrancisella,Allofrancisella guangzhouensis,,Allofrancisella guangzhouensis
+Proteobacteria_6795,Bacteria,Proteobacteria,,Gammaproteobacteria,Oceanospirillales,Halomonadaceae,Salinicola,Salinicola tamaricis,,Salinicola tamaricis
+Verrucomicrobia_28,Bacteria,Verrucomicrobia,PVC group,Spartobacteria,,,Candidatus Xiphinematobacter,Candidatus Xiphinematobacter sp. Idaho Grape,,Candidatus Xiphinematobacter sp. Idaho Grape
+Actinobacteria_159,Bacteria,Actinobacteria,Terrabacteria group,,,,,,,Terrabacteria group
+Actinobacteria_2107,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Micrococcales,Micrococcaceae,Pseudarthrobacter,Pseudarthrobacter sulfonivorans,,Pseudarthrobacter sulfonivorans
+Actinobacteria_29,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Propionibacteriales,Propionibacteriaceae,Cutibacterium,Cutibacterium acnes,Cutibacterium acnes KPA171202,Cutibacterium acnes KPA171202
+Chlamydiae_42,Bacteria,Chlamydiae,PVC group,Chlamydiia,Parachlamydiales,Simkaniaceae,Simkania,Simkania negevensis,Simkania negevensis Z,Simkania negevensis Z
+Cyanobacteria_182,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Chroococcales,Aphanothecaceae,Crocosphaera,Crocosphaera subtropica,Crocosphaera subtropica ATCC 51142,Crocosphaera subtropica ATCC 51142
+Cyanobacteria_211,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,Synechococcales,,,,,Synechococcales
+Firmicutes_Tenericutes_3975,Bacteria,Firmicutes,Terrabacteria group,Negativicutes,Veillonellales,Veillonellaceae,Veillonella,Veillonella parvula,,Veillonella parvula
+Fusobacteria_58,Bacteria,Fusobacteria,,Fusobacteriia,Fusobacteriales,Fusobacteriaceae,Fusobacterium,Fusobacterium gonidiaformans,Fusobacterium gonidiaformans ATCC 25563,Fusobacterium gonidiaformans ATCC 25563
+Gemmatimonadetes_4,Bacteria,Gemmatimonadetes,FCB group,Gemmatimonadetes,Gemmatimonadales,Gemmatimonadaceae,Gemmatimonas,Gemmatimonas phototrophica,,Gemmatimonas phototrophica
+Planctomycetes_60,Bacteria,Planctomycetes,PVC group,Planctomycetia,,,,,,Planctomycetia
+Proteobacteria_2619,Bacteria,Proteobacteria,,Gammaproteobacteria,,,,,,Gammaproteobacteria
+Proteobacteria_3815,Bacteria,Proteobacteria,,Betaproteobacteria,Burkholderiales,Comamonadaceae,Variovorax,Variovorax paradoxus,Variovorax paradoxus EPS,Variovorax paradoxus EPS
+Proteobacteria_4233,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Permianibacter,Permianibacter aggregans,,Permianibacter aggregans
+Proteobacteria_5875,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,,,,Rhodobacteraceae
+Proteobacteria_6554,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodospirillales,Acetobacteraceae,,,,Acetobacteraceae
+Proteobacteria_6606,Bacteria,Proteobacteria,,Gammaproteobacteria,Legionellales,Coxiellaceae,Aquicella,Aquicella siphonis,,Aquicella siphonis
+Proteobacteria_6623,Bacteria,Proteobacteria,,Gammaproteobacteria,Legionellales,Coxiellaceae,Coxiella,,,Coxiella
+Proteobacteria_6709,Bacteria,Proteobacteria,,Gammaproteobacteria,Legionellales,Legionellaceae,Legionella,Legionella clemsonensis,,Legionella clemsonensis
+Proteobacteria_8437,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Shigella,Shigella flexneri,Shigella flexneri G1663,Shigella flexneri G1663
+Firmicutes_Tenericutes_3744,Bacteria,Firmicutes,Terrabacteria group,,,,,,,Terrabacteria group
+Actinobacteria_2158,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Micrococcales,Micrococcaceae,Micrococcus,,,Micrococcus
+Actinobacteria_2251,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Micrococcales,Kytococcaceae,Kytococcus,Kytococcus sedentarius,Kytococcus sedentarius DSM 20547,Kytococcus sedentarius DSM 20547
+Bacteroidetes_1024,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Mesoflavibacter,Mesoflavibacter sp. HG37,,Mesoflavibacter sp. HG37
+Firmicutes_Tenericutes_3115,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Bacillaceae,Fictibacillus,,,Fictibacillus
+Planctomycetes_18,Bacteria,Planctomycetes,PVC group,Planctomycetia,Isosphaerales,Isosphaeraceae,Singulisphaera,Singulisphaera acidiphila,Singulisphaera acidiphila DSM 18658,Singulisphaera acidiphila DSM 18658
+Proteobacteria_1128,Bacteria,Proteobacteria,,Gammaproteobacteria,Vibrionales,Vibrionaceae,Vibrio,Vibrio alginolyticus,,Vibrio alginolyticus
+Proteobacteria_2136,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas fluorescens,Pseudomonas fluorescens A506,Pseudomonas fluorescens A506
+Proteobacteria_2553,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas stutzeri,Pseudomonas stutzeri DSM 10701,Pseudomonas stutzeri DSM 10701
+Proteobacteria_6161,Bacteria,Proteobacteria,,Alphaproteobacteria,Sphingomonadales,Sphingomonadaceae,Sphingomonas,,,Sphingomonas
+Proteobacteria_6983,Bacteria,Proteobacteria,,Gammaproteobacteria,Alteromonadales,Alteromonadaceae,Catenovulum,Catenovulum sediminis,,Catenovulum sediminis
+Proteobacteria_8554,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,,Escherichia coli
+Proteobacteria_8631,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,,Escherichia coli
+Proteobacteria_9440,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Klebsiella,Klebsiella oxytoca,,Klebsiella oxytoca
+Firmicutes_Tenericutes_102,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Staphylococcaceae,Staphylococcus,Staphylococcus agnetis,,Staphylococcus agnetis
+Firmicutes_Tenericutes_1592,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus,Enterococcus faecalis,,Enterococcus faecalis
+Firmicutes_Tenericutes_2309,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Bacillaceae,Bacillus,Bacillus altitudinis,,Bacillus altitudinis
+Firmicutes_Tenericutes_2790,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Bacillales,Bacillaceae,Bacillus,,,Bacillus
+Firmicutes_Tenericutes_972,Bacteria,Firmicutes,Terrabacteria group,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus,Enterococcus mundtii,,Enterococcus mundtii
+Proteobacteria_1977,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas aeruginosa,,Pseudomonas aeruginosa
+Proteobacteria_8208,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Salmonella enterica,,Salmonella enterica
+Proteobacteria_8455,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Shigella,Shigella boydii,,Shigella boydii
+Proteobacteria_9008,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Salmonella enterica,,Salmonella enterica
+Proteobacteria_9087,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Salmonella enterica,,Salmonella enterica
+Chloroflexi_41,Bacteria,Chloroflexi,Terrabacteria group,Dehalococcoidia,,,,,,Dehalococcoidia
+Firmicutes_Tenericutes_3759,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Peptostreptococcaceae,Peptacetobacter,Peptacetobacter hiranonis,,Peptacetobacter hiranonis
+Planctomycetes_33,Bacteria,Planctomycetes,PVC group,Phycisphaerae,Sedimentisphaerales,Anaerohalosphaeraceae,Anaerohalosphaera,Anaerohalosphaera lusitana,,Anaerohalosphaera lusitana
+Proteobacteria_2697,Bacteria,Proteobacteria,,Gammaproteobacteria,Chromatiales,Wenzhouxiangellaceae,Wenzhouxiangella,Wenzhouxiangella marina,,Wenzhouxiangella marina
+Actinobacteria_2303,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Propionibacteriales,Nocardioidaceae,Nocardioides,,,Nocardioides
+Actinobacteria_2316,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Propionibacteriales,Nocardioidaceae,Nocardioides,Nocardioides sp. S-713,,Nocardioides sp. S-713
+Actinobacteria_676,Bacteria,Actinobacteria,Terrabacteria group,Actinobacteria,Corynebacteriales,Dietziaceae,Dietzia,Dietzia sp. oral taxon 368,,Dietzia sp. oral taxon 368
+Bacteroidetes_407,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Bacteroidaceae,Bacteroides,Bacteroides uniformis,,Bacteroides uniformis
+Bacteroidetes_419,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,,,,,Bacteroidales
+Bacteroidetes_483,Bacteria,Bacteroidetes,FCB group,Bacteroidia,Bacteroidales,Paludibacteraceae,Paludibacter,Paludibacter propionicigenes,Paludibacter propionicigenes WB4,Paludibacter propionicigenes WB4
+Bacteroidetes_861,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Flavobacterium,Flavobacterium commune,,Flavobacterium commune
+Bacteroidetes_942,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,,,,Flavobacteriaceae
+Bacteroidetes_996,Bacteria,Bacteroidetes,FCB group,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,,,,Flavobacteriaceae
+Chlamydiae_43,Bacteria,Chlamydiae,PVC group,Chlamydiia,Parachlamydiales,,,,,Parachlamydiales
+Firmicutes_Tenericutes_3458,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Lachnospiraceae,Lachnospira,Lachnospira eligens,[Eubacterium] eligens ATCC 27750,[Eubacterium] eligens ATCC 27750
+Firmicutes_Tenericutes_3463,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Lachnospiraceae,Anaerocolumna,Anaerocolumna sp. CBA3638,,Anaerocolumna sp. CBA3638
+Firmicutes_Tenericutes_3465,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Lachnospiraceae,Anaerocolumna,Anaerocolumna cellulosilytica,,Anaerocolumna cellulosilytica
+Firmicutes_Tenericutes_3508,Bacteria,Firmicutes,Terrabacteria group,Clostridia,Clostridiales,Ruminococcaceae,Faecalibacterium,Faecalibacterium prausnitzii,,Faecalibacterium prausnitzii
+Proteobacteria_1872,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Moraxellaceae,Acinetobacter,,,Acinetobacter
+Proteobacteria_2822,Bacteria,Proteobacteria,,Betaproteobacteria,Neisseriales,Neisseriaceae,Vitreoscilla,Vitreoscilla sp. C1,,Vitreoscilla sp. C1
+Proteobacteria_3272,Bacteria,Proteobacteria,,Betaproteobacteria,Burkholderiales,Burkholderiaceae,Ralstonia,Ralstonia pickettii,Ralstonia pickettii 12J,Ralstonia pickettii 12J
+Proteobacteria_3781,Bacteria,Proteobacteria,,Betaproteobacteria,Burkholderiales,Comamonadaceae,Ramlibacter,Ramlibacter tataouinensis,,Ramlibacter tataouinensis
+Proteobacteria_4222,Bacteria,Proteobacteria,,Gammaproteobacteria,Xanthomonadales,Xanthomonadaceae,Thermomonas,,,Thermomonas
+Proteobacteria_5257,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Nitrospirillum,Nitrospirillum amazonense,Nitrospirillum amazonense CBAmc,Nitrospirillum amazonense CBAmc
+Proteobacteria_5856,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,,,,Rhodobacteraceae
+Proteobacteria_6010,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Parasedimentitalea,Parasedimentitalea marina,,Parasedimentitalea marina
+Proteobacteria_6174,Bacteria,Proteobacteria,,Alphaproteobacteria,Sphingomonadales,Sphingomonadaceae,Sphingomonas,Sphingomonas sp. HDW15B,,Sphingomonas sp. HDW15B
+Proteobacteria_6230,Bacteria,Proteobacteria,,Alphaproteobacteria,Sphingomonadales,Sphingomonadaceae,Sphingomonas,Sphingomonas sp. AAP5,,Sphingomonas sp. AAP5
+Proteobacteria_6335,Bacteria,Proteobacteria,,Alphaproteobacteria,Sphingomonadales,Erythrobacteraceae,Qipengyuania,Qipengyuania sediminis,,Qipengyuania sediminis
+Proteobacteria_6510,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhodospirillales,Acetobacteraceae,Gluconobacter,Gluconobacter oxydans,Gluconobacter oxydans H24,Gluconobacter oxydans H24
+Proteobacteria_6622,Bacteria,Proteobacteria,,Gammaproteobacteria,Legionellales,Coxiellaceae,Coxiella,Coxiella endosymbiont of Amblyomma americanum,,Coxiella endosymbiont of Amblyomma americanum
+Proteobacteria_8520,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,,Escherichia coli
+Proteobacteria_8558,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Moraxellaceae,Acinetobacter,Acinetobacter baumannii,,Acinetobacter baumannii
+Deferribacteres_6,Bacteria,Deferribacteres,,Deferribacteres,Deferribacterales,Deferribacteraceae,Flexistipes,Flexistipes sinusarabici,Flexistipes sinusarabici DSM 4947,Flexistipes sinusarabici DSM 4947
+Proteobacteria_5597,Bacteria,Proteobacteria,,Alphaproteobacteria,Rhizobiales,Hyphomicrobiaceae,Maritalea,Maritalea myrionectae,,Maritalea myrionectae
+Proteobacteria_1666,Bacteria,Proteobacteria,,Gammaproteobacteria,Pseudomonadales,Moraxellaceae,Acinetobacter,Acinetobacter sp. NEB149,,Acinetobacter sp. NEB149
+Proteobacteria_4275,Bacteria,Proteobacteria,,Deltaproteobacteria,Desulfobacterales,Desulfobacteraceae,Desulfobacula,Desulfobacula toluolica,Desulfobacula toluolica Tol2,Desulfobacula toluolica Tol2
+Proteobacteria_8917,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,Escherichia coli SE11,Escherichia coli SE11
+Proteobacteria_8578,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,,Escherichia coli
+Proteobacteria_8592,Bacteria,Proteobacteria,,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Escherichia coli,,Escherichia coli
+Cyanobacteria_198,Bacteria,Cyanobacteria,Cyanobacteria/Melainabacteria group,,,,,,,Cyanobacteria/Melainabacteria group
+Proteobacteria_1551,Bacteria,Proteobacteria,,Gammaproteobacteria,Cellvibrionales,Microbulbiferaceae,Microbulbifer,Microbulbifer hydrolyticus,,Microbulbifer hydrolyticus
+Proteobacteria_4234,Bacteria,Proteobacteria,,Gammaproteobacteria,,,,,,Gammaproteobacteria
+Proteobacteria_4386,Bacteria,Proteobacteria,,Deltaproteobacteria,Myxococcales,,,,,Myxococcales
+Proteobacteria_6591,Bacteria,Proteobacteria,,Gammaproteobacteria,Chromatiales,Ectothiorhodospiraceae,Spiribacter,Spiribacter sp. 2438,,Spiribacter sp. 2438
+Proteobacteria_6625,Bacteria,Proteobacteria,,Gammaproteobacteria,Legionellales,Coxiellaceae,Coxiella,,,Coxiella

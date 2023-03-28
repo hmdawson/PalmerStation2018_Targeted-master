@@ -1,0 +1,180 @@
+"","List.of.MFs","list.of.pvals"
+"Culture1","3OHC12-HSL",0.0158570715668298
+"Culture2","4-Hydroxyisoleucine",0.00376110870803224
+"Culture3","Acetyl-L-carnitine",0.000648755611092437
+"Culture4","Acetylglutamic acid",0.00146152334618839
+"Culture5","Adenosine",0.000465147034656507
+"Culture6","Adenosyl Methionine",0.00577646418975184
+"Culture7","Alanine",0.00576815297274834
+"Culture8","Amino Propanesulfonic Acid",0.00337375717079224
+"Culture9","AMP",0.00654872206368118
+"Culture10","Asparagine",0.0136715746434565
+"Culture11","Aspartic acid",0.00197118551718644
+"Culture12","beta-Alanine",0.0269922162133888
+"Culture13","Betaine",0.00200172514622275
+"Culture14","Betonicine",0.00455869086485334
+"Culture15","C14-HSL",0.0268555448586246
+"Culture16","Carotene",0.0179620602677077
+"Culture17","cGMP",0.0440357142320122
+"Culture18","Choline",0.0248111964902667
+"Culture19","Citrulline",0.0247132567108725
+"Culture20","Creatine",0.0045427773735591
+"Culture21","Cys-Gly",0.00500999902324622
+"Culture22","Cystathionine",0.00644591714548962
+"Culture23","Cysteic Acid",4.9649685010878e-05
+"Culture24","Desthiobiotin",5.54598385018514e-05
+"Culture25","DHAP",0.0315757702985617
+"Culture26","Dimethylsulfonioacetate (DMS-Ac)",5.79388966708939e-05
+"Culture27","DMSP",1.35077793197006e-08
+"Culture28","Ectoine",0.00215076311269626
+"Culture29","Ethyl Dihydroxybenzoate",0.019494504602956
+"Culture30","FAD",0.018964483139711
+"Culture31","Gluconic Acid",0.025546972421466
+"Culture32","Glucosylglycerol",0.00981703228573203
+"Culture33","Glutamic acid",0.00449499772238792
+"Culture34","Glutamine",0.00709961130103123
+"Culture35","glycerol 3 phosphate",0.00161940524024273
+"Culture36","Glycerophosphocholine",0.000418510156172197
+"Culture37","Glycine",0.00585377413648774
+"Culture38","GMP",0.00425927692988962
+"Culture39","Gonyol",0.0472793749190469
+"Culture40","Guanine",0.012815875396342
+"Culture41","Histidine",0.0176527412937396
+"Culture42","Homarine",0.00115679495176783
+"Culture43","Homoserine",0.000211203144224406
+"Culture44","Hypotaurine",3.64663468459956e-05
+"Culture45","IAA",0.00535618944353016
+"Culture46","Indole 3 acetamide",0.0106060201380845
+"Culture47","Isobutyryl-L-carnitine",0.00542733728269367
+"Culture48","Leucine",3.85582361193895e-05
+"Culture49","Methylmalonyl carnitine",0.00519653896169788
+"Culture50","Muramic Acid",0.000672957090159973
+"Culture51","N-Acetyl-Serine",0.0221554190390453
+"Culture52","N-Acetylglucosamine",0.0224922995611825
+"Culture53","N-acetyltaurine",0.00180505510547757
+"Culture54","N(e)-Acetyl-Lysine",8.59246106580291e-05
+"Culture55","NAD",0.000215878000625375
+"Culture56","Ophthalmic Acid",0.00218514550204302
+"Culture57","PEP",0.0239380365469702
+"Culture58","Proline",4.29906751167102e-05
+"Culture59","Propionyl-L-carnitine",0.0202990460461432
+"Culture60","Propionylglycine",0.0242948483973494
+"Culture61","Pyridoxal",0.0420425943795088
+"Culture62","Serine",9.06281217363462e-06
+"Culture63","Stachydrine hydrochloride",0.00120873762310936
+"Culture64","Taurine",8.12073859357547e-06
+"Culture65","Threonic acid",0.00342434828720814
+"Culture66","Threonine",0.0212217186455697
+"Culture67","trans Hydroxyl proline",0.0243989880219037
+"Culture68","Trigonelline",0.000145441462037602
+"Culture69","Trimethylamine N-oxide",0.00975441909836186
+"Culture70","Turicine",3.17131875303024e-05
+"Culture71","UDP-glucosamine",0.025061115942143
+"Culture72","UDP-glucose",0.0431911612476757
+"Culture73","Vitamin B2",0.0388104117122575
+"Culture74","Vitamin B3",0.0160310402309353
+"Culture75","Vitamin B6",0.00290555027944738
+"Culture76","Xanthine",0.0144445394547338
+"Field1","(3-Carboxypropyl)trimethylammonium (TMAB)",0.00457019408209479
+"Field2","3OC8-HSL",7.23112741603261e-08
+"Field3","3OHC12-HSL",9.36366166923372e-07
+"Field4","4-Hydroxyisoleucine",1.09142387273157e-05
+"Field5","7-dehydrocholesterol",5.30456888349623e-05
+"Field6","Acetyl-L-carnitine",0.00655889501948753
+"Field7","Adenine",1.66679774891326e-05
+"Field8","Adenosyl Homocysteine",0.033650329560435
+"Field9","Adenosyl Methionine",0.0103708105687571
+"Field10","Agmatine",0.00427253133641176
+"Field11","Alanine",5.81793910157972e-05
+"Field12","Amino Propanesulfonic Acid",2.56786369944569e-08
+"Field13","AMP",0.000129129817743859
+"Field14","Anserine",1.60516017558738e-07
+"Field15","Asparagine",6.92860231171784e-05
+"Field16","Aspartic acid",0.0012758305066646
+"Field17","beta-Alanine",2.02779712411606e-07
+"Field18","Betaine",0.00060311284286369
+"Field19","Betonicine",0.0191413724261999
+"Field20","Butyryl-L-carnitine",9.73408551122833e-07
+"Field21","C14-HSL",0.00193188622970186
+"Field22","cAMP",0.0496319417237979
+"Field23","Carnitine",0.00826278376181132
+"Field24","Carotene",0.0289803109290134
+"Field25","Chitobiose",0.00212606892235455
+"Field26","Choline",0.0214981136912258
+"Field27","Creatine",0.000407056632771378
+"Field28","Cys-Gly",0.0133985089408679
+"Field29","Cystathionine",0.00190828996093278
+"Field30","Cysteic Acid",3.90190446060117e-06
+"Field31","Cysteinesulfinic acid",0.00203181981667846
+"Field32","Cystine",8.80563458643283e-07
+"Field33","Cytidine",0.0125679808454268
+"Field34","Cytosine",0.0405849509279423
+"Field35","Deoxyadenosine",6.93909265332127e-06
+"Field36","Desthiobiotin",1.68863551598469e-07
+"Field37","DHPS",0.00237650603825569
+"Field38","Dimethylsulfonioacetate (DMS-Ac)",3.42542045843588e-07
+"Field39","DMSP",0.000981337669365697
+"Field40","Ethyl Dihydroxybenzoate",0.0202998449092779
+"Field41","FAD",6.05828282826067e-07
+"Field42","Fructose 6 phosphate",0.0113026898820683
+"Field43","Gluconic Acid",0.00595837017822108
+"Field44","Glucose 1 phosphate",0.0100986153176684
+"Field45","Glucosylglycerol",0.00141663200907738
+"Field46","Glutamic acid",0.000592498764743186
+"Field47","Glutamine",0.00379591334940353
+"Field48","Glutathione",1.37415532643208e-10
+"Field49","Glutathione Disulfide",0.000356286093002084
+"Field50","Glycerophosphocholine",5.79421717599636e-05
+"Field51","Glycine",0.0104379631708284
+"Field52","GMP",0.0168362568061607
+"Field53","Gonyol",0.000165561547075291
+"Field54","Guanine",8.98616677726794e-08
+"Field55","Histidine",0.00395460705372626
+"Field56","Homarine",3.48709093994575e-06
+"Field57","Homoserine",0.00208459325566518
+"Field58","Hydroxo B12",1.29976498895301e-05
+"Field59","Hypotaurine",1.24301285262133e-05
+"Field60","IAA",0.000353638934055855
+"Field61","Indole 3 methyl acetate",0.00342294340054777
+"Field62","Inosine",0.00108452754998572
+"Field63","Isethionic Acid",3.57002817463871e-10
+"Field64","Isobutyryl-L-carnitine",0.000308844905364383
+"Field65","Ketoglutaric Acid",0.00100499957706603
+"Field66","Kynurenine",1.90740731148618e-05
+"Field67","Leucine",0.0209758987801606
+"Field68","Methionine",0.0414473172941698
+"Field69","Methionine Sulfoxide",0.0310161385352609
+"Field70","Methylmalonyl carnitine",0.00024638794788422
+"Field71","Muramic Acid",0.0298271705913552
+"Field72","N-Acetyl-Serine",0.0198187471307022
+"Field73","N-Acetylglucosamine",0.000182463980446538
+"Field74","N-acetyltaurine",1.78811274251659e-05
+"Field75","N(e)-Acetyl-Lysine",3.51226879947236e-09
+"Field76","NAD",5.04008432834877e-20
+"Field77","Orotic Acid",0.000471975632320138
+"Field78","Phenylalanine",0.00375300732255212
+"Field79","Proline",1.45234077902969e-05
+"Field80","Propionyl-L-carnitine",9.91114789673297e-06
+"Field81","Propionylglycine",2.12003634017856e-06
+"Field82","Pyridoxal",3.81979100507156e-07
+"Field83","Ribose 5 phosphate",0.000143766119207276
+"Field84","RP B12",5.65424603910193e-07
+"Field85","Serine",0.00266658850386097
+"Field86","Stachydrine hydrochloride",9.38336740995182e-05
+"Field87","Sulfurol",4.82430896974285e-07
+"Field88","Taurine",1.38021847265267e-06
+"Field89","Thiamine monophosphate",8.80563458643283e-07
+"Field90","Threonic acid",2.47374198958127e-06
+"Field91","Threonine",0.00416263923987497
+"Field92","trans Hydroxyl proline",0.0116948422456848
+"Field93","Trigonelline",0.00661141343339466
+"Field94","Trimethyl-L-lysine",0.0445742215791961
+"Field95","Trimethylamine N-oxide",7.07263209456076e-06
+"Field96","Trimethylammonium Propionate (TMAP)",0.000325649294249662
+"Field97","Tryptophan",0.0154882597789022
+"Field98","Turicine",0.0199739489529302
+"Field99","Tyrosine",0.000254830811113154
+"Field100","UDP-glucosamine",2.76803716731067e-05
+"Field101","UDP-glucose",0.000393077359717354
+"Field102","Vitamin B3",0.00290760116173476
+"Field103","Vitamin B5",0.00461255961188874

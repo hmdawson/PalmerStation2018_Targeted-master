@@ -1,0 +1,41 @@
+﻿SampID,CultureID_short,Sample_type,Site,Ice_or_no,Temp,Exp_group,Withinexp,Melt_hyp,FigureID,Figure_SampID,Figure_SampID_metab,FigureID_separated,FigureID_rep,FigureID_rep_amp,Average,Average_YN,Average_YN_2,Average_2
+20ppt3C_A,20ppt3C,Exp_Melted,Incubation,Culture_melt,3,Culture,melt.SW,Low salinity,Meltwater_T,"""Meltwater""_A","""Meltwater""_A",Meltwater_T,Meltwater_T_A,Meltwater_T_A,Meltwater_T_A,N,N,Meltwater_T_A
+20ppt3C_B,20ppt3C,Exp_Melted,Incubation,Culture_melt,3,Culture,melt.SW,Low salinity,Meltwater_T,"""Meltwater""_B","""Meltwater""_B",Meltwater_T,Meltwater_T_B,Meltwater_T_B,Meltwater_T_B,N,N,Meltwater_T_B
+20ppt3C_C,20ppt3C,Exp_Melted,Incubation,Culture_melt,3,Culture,melt.SW,Low salinity,Meltwater_T,"""Meltwater""_C","""Meltwater""_C",Meltwater_T,Meltwater_T_C,Meltwater_T_C,Meltwater_T_C,N,N,Meltwater_T_C
+35ppt0C_A,35ppt0C,Exp_Ambient,Incubation,Culture_amb,0,Culture,melt.SW,Ambient SW salinity,Seawater_T,"""Seawater""_A","""Seawater""_A",Seawater_T,Seawater_T_A,Seawater_T_A,Seawater_T_A,N,N,Seawater_T_A
+35ppt0C_B,35ppt0C,Exp_Ambient,Incubation,Culture_amb,0,Culture,melt.SW,Ambient SW salinity,Seawater_T,"""Seawater""_B","""Seawater""_B",Seawater_T,Seawater_T_B,Seawater_T_B,Seawater_T_B,N,N,Seawater_T_B
+35ppt0C_C,35ppt0C,Exp_Ambient,Incubation,Culture_amb,0,Culture,melt.SW,Ambient SW salinity,Seawater_T,"""Seawater""_C","""Seawater""_C",Seawater_T,Seawater_T_C,Seawater_T_C,Seawater_T_C,N,N,Seawater_T_C
+50ppt-3C_A,50ppt-3C,Exp_Frozen,Incubation,Culture_frozen,-3,Culture,frozen,High salinity,Sea ice_T,"""Sea ice""_A","""Sea ice""_A",Sea ice_T,Sea ice_T_A,Sea ice_T_A,Sea ice_T_A,N,N,Sea ice_T_A
+50ppt-3C_B,50ppt-3C,Exp_Frozen,Incubation,Culture_frozen,-3,Culture,frozen,High salinity,Sea ice_T,"""Sea ice""_B","""Sea ice""_B",Sea ice_T,Sea ice_T_B,Sea ice_T_B,Sea ice_T_B,N,N,Sea ice_T_B
+50ppt-3C_C,50ppt-3C,Exp_Frozen,Incubation,Culture_frozen,-3,Culture,frozen,High salinity,Sea ice_T,"""Sea ice""_C","""Sea ice""_C",Sea ice_T,Sea ice_T_C,Sea ice_T_C,Sea ice_T_C,N,N,Sea ice_T_C
+Ev15SW_A,Ev15SW,Underice_SW,Underice,Underice,,Field,,Low salinity,Sea-ice core,,,Sea-ice core,,,,,,
+Ev32Core_A,Ev32Core,Core,Sea ice,Ice,,Field,,Low salinity,Sea-ice core,Core1_A,Core1_A,Sea-ice core_1,Sea-ice core_1_A,Sea-ice core_1_A,Sea-ice core_1_A,N,N,Sea-ice core_1_A
+Ev32Core_B,Ev32Core,Core,Sea ice,Ice,,Field,,Low salinity,Sea-ice core,Core1_B,Core1_B,Sea-ice core_1,Sea-ice core_1_B,Sea-ice core_1_B,Sea-ice core_1_B,N,N,Sea-ice core_1_B
+Ev32Core_C,Ev32Core,Core,Sea ice,Ice,,Field,,Low salinity,Sea-ice core,Core1_C,Core1_C,Sea-ice core_1,Sea-ice core_1_C,Sea-ice core_1_C,Sea-ice core_1_C,N,N,Sea-ice core_1_C
+Ev37Core_A,Ev37Core,Core,Sea ice,Ice,,Field,,Low salinity,Sea-ice core,Core_3,Core_3,Sea-ice core_3,Sea-ice core_3,Sea-ice core_3,Sea-ice core_3,N,N,Sea-ice core_3
+Ev51Slush_A,Ev51Slush,CoreSlush,Underice,Underice,,Field,,Low salinity,Sea-ice core,,,Sea-ice core,,,,,,
+EvXCore_A,EvXCore,Core,Sea ice,Ice,,Field,,Low salinity,Sea-ice core,Core_2,Core_2,Sea-ice core_2,Sea-ice core_2,Sea-ice core_2,Sea-ice core_2,N,N,Sea-ice core_2
+EvXSW_A,EvXSW,Underice_SW,Underice,Underice,,Field,,Not,Sea-ice core,,,Sea-ice core,,,,,,
+Hero1_A,Hero,Melted_hero,Meltwater,Field_melt,,Field,,Low salinity,Meltwater,Hero_A,Hero_A,Meltwater,Meltwater_A,Meltwater_A,Meltwater,Y,Y,Meltwater
+Hero1_B,Hero,Melted_hero,Meltwater,Field_melt,,Field,,Low salinity,Meltwater,Hero_B,Hero_B,Meltwater,Meltwater_B,Meltwater_B,Meltwater,Y,Y,Meltwater
+Hero1_C,Hero,Melted_hero,Meltwater,Field_melt,,Field,,Low salinity,Meltwater,Hero_C,Hero_C,Meltwater,Meltwater_C,Meltwater_C,Meltwater,Y,Y,Meltwater
+StaB1_A,StaB1,SW_Station B1,Seawater,Field,-0.9,Field,,Ambient SW salinity,SW_2018-11-08,SW1_A_cut,SW1_A,SW_2018-11-08,SW_2018-11-08_A,SW_2018-11-08_A_cut,SW_2018-11-08,Y,Y,SW_2018-11-08
+StaB1_B,StaB1,SW_Station B1,Seawater,Field,-0.9,Field,,Ambient SW salinity,SW_2018-11-08,SW1_A,SW1_B,SW_2018-11-08,SW_2018-11-08_B,SW_2018-11-08_A,SW_2018-11-08,Y,Y,SW_2018-11-08
+StaB1_C,StaB1,SW_Station B1,Seawater,Field,-0.9,Field,,Ambient SW salinity,SW_2018-11-08,SW1_B,SW1_C,SW_2018-11-08,SW_2018-11-08_C,SW_2018-11-08_B,SW_2018-11-08,Y,Y,SW_2018-11-08
+StaB1_D,StaB1,SW_Station B1,Seawater,Field,-0.9,Field,,Ambient SW salinity,SW_2018-11-08,SW1_C,SW1_C,SW_2018-11-08,SW_2018-11-08_D,SW_2018-11-08_C,SW_2018-11-08,Y,Y,SW_2018-11-08
+StaB1_E,StaB1,SW_Station B1,Seawater,Field,-0.9,Field,,Ambient SW salinity,SW_2018-11-08,SW1_D,SW1_D,SW_2018-11-08,SW_2018-11-08_E,SW_2018-11-08_E,SW_2018-11-08,Y,Y,SW_2018-11-08
+StaB2_A,StaB2,SW_Station B2,Seawater,Field,-0.7,Field,,Ambient SW salinity,SW_2018-11-12,SW2_A,SW2_A,SW_2018-11-12,SW_2018-11-12_A,SW_2018-11-12_A,SW_2018-11-12,Y,Y,SW_2018-11-12
+StaB2_B,StaB2,SW_Station B2,Seawater,Field,-0.7,Field,,Ambient SW salinity,SW_2018-11-12,SW2_B,SW2_B,SW_2018-11-12,SW_2018-11-12_B,SW_2018-11-12_B,SW_2018-11-12,Y,Y,SW_2018-11-12
+StaB2_C,StaB2,SW_Station B2,Seawater,Field,-0.7,Field,,Ambient SW salinity,SW_2018-11-12,SW2_C,SW2_C,SW_2018-11-12,SW_2018-11-12_C,SW_2018-11-12_C,SW_2018-11-12,Y,Y,SW_2018-11-12
+StaB3_A,StaB3,SW_Station B3,Seawater,Field,-0.3,Field,,Ambient SW salinity,SW_2018-11-15,SW3_A,SW3_A,SW_2018-11-15,SW_2018-11-15_A,SW_2018-11-15_A,SW_2018-11-15,Y,Y,SW_2018-11-15
+StaB3_B,StaB3,SW_Station B3,Seawater,Field,-0.3,Field,,Ambient SW salinity,SW_2018-11-15,SW3_B,SW3_B,SW_2018-11-15,SW_2018-11-15_B,SW_2018-11-15_B,SW_2018-11-15,Y,Y,SW_2018-11-15
+StaB3_C,StaB3,SW_Station B3,Seawater,Field,-0.3,Field,,Ambient SW salinity,SW_2018-11-15,SW3_C,SW3_C,SW_2018-11-15,SW_2018-11-15_C,SW_2018-11-15_C,SW_2018-11-15,Y,Y,SW_2018-11-15
+StaB4_A,StaB4,SW_Station B4,Seawater,Field,-0.1,Field,,Ambient SW salinity,SW_2018-11-17,SW4_A,SW4_A,SW_2018-11-17,SW_2018-11-17_A,SW_2018-11-17_A,SW_2018-11-17,Y,Y,SW_2018-11-17
+StaB4_B,StaB4,SW_Station B4,Seawater,Field,-0.1,Field,,Ambient SW salinity,SW_2018-11-17,SW4_B,SW4_B,SW_2018-11-17,SW_2018-11-17_B,SW_2018-11-17_B,SW_2018-11-17,Y,Y,SW_2018-11-17
+StaB4_C,StaB4,SW_Station B4,Seawater,Field,-0.1,Field,,Ambient SW salinity,SW_2018-11-17,SW4_C,SW4_C,SW_2018-11-17,SW_2018-11-17_C,SW_2018-11-17_C,SW_2018-11-17,Y,Y,SW_2018-11-17
+StaB5_A,StaB5,SW_Station B5,Seawater,Field,0,Field,,Ambient SW salinity,SW_2018-11-19,SW5_A,SW5_A,SW_2018-11-19,SW_2018-11-19_A,SW_2018-11-19_A,SW_2018-11-19,Y,Y,SW_2018-11-19
+StaB5_B,StaB5,SW_Station B5,Seawater,Field,0,Field,,Ambient SW salinity,SW_2018-11-19,SW5_B,SW5_B,SW_2018-11-19,SW_2018-11-19_B,SW_2018-11-19_B,SW_2018-11-19,Y,Y,SW_2018-11-19
+StaB5_C,StaB5,SW_Station B5,Seawater,Field,0,Field,,Ambient SW salinity,SW_2018-11-19,SW5_C,SW5_C,SW_2018-11-19,SW_2018-11-19_C,SW_2018-11-19_C,SW_2018-11-19,Y,Y,SW_2018-11-19
+Dockslush_A,Dockslush,Dockslush,Seawater,Field,,Field,,Ambient SW salinity,,,,,,,,,,
+Dockslush_B,Dockslush,Dockslush,Seawater,Field,,Field,,Ambient SW salinity,,,,,,,,,,
+Dockslush_C,Dockslush,Dockslush,Seawater,Field,,Field,,Ambient SW salinity,,,,,,,,,,

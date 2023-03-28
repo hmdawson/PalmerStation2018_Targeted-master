@@ -1,0 +1,31 @@
+﻿Internal_Standards,Matched_Compounds,Concentration_nM
+"DL-Alanine, D3",Alanine,5000
+"DL-Histidine, 15N",Histidine,2500
+"DL-Proline, D7",Proline,1000
+"DL-Valine, D8",Valine,1000
+"L-Isoleucine, 15N",Isoleucine,500
+"L-Methionine, D3",Methionine,1000
+"Adenosine Monophosphate, 15N5",AMP,5000
+"Guanosine Monophosphate, 15N5",GMP,2000
+"Isethionic Acid, 13C2",Isethionic Acid,500
+"L-Cysteic Acid, D3",Cysteic Acid,1000
+"Succinic Acid, D4",Succinic Acid,10000
+"Sulfoacetic Acid, 13C2",Sulfoacetic Acid,2500
+"Sulfolactic Acid, 13C3",Sulfolactic Acid,1000
+"Taurine, D4",Taurine,1000
+"Sucrose, 13C",Sucrose,5000
+"Trehalose, 13C",Trehalose,5000
+"Thymine, D4",Thymine,6000
+"Betaine, 13C5-15N",Betaine,1000
+"Adenine, 15N2",Adenine,1000
+"Cytosine, 13C2-15N3",Cytosine,2000
+"Guanine, 13C-15N2",Guanine,2000
+"Arsenobetaine, 13C2",Arsenobetaine,1000
+"Homarine, D3",Homarine,4000
+"Indole 3 Acetic Acid, D5",IAA,5000
+"L-Phenylalanine, D8",Phenylalanine,100
+"L-Tryptophan, D3",Tryptophan,100
+"Pyridoxal, D3",Pyridoxal,200
+"Riboflavin-dioxopyrimidine, 13C4, 15N2",Vitamin B2,100
+"Thiamine Hydrochloride, 13C3",Vitamin B1,200
+"Tryptamine Hydrochloride, D4",Tryptamine,2500

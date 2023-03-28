@@ -1,0 +1,140 @@
+---
+title: "From Skyline on"
+author: "Hannah Dawson - adapted from Katherine Heal 8/28/2019l"
+date: "January 12, 2021"
+output: html_document
+---
+Organization notes:
+As of 2/7/2021 
+Updated post-BMIS organization and created source file for this
+Created source code to organize data for quantification code
+Updated calculateRF code for this data (no RF matcher)
+LTC no RP DF
+Didn't need to update stds list to get good IS data since csv specified IS and concentrations
+Fixed quant source code run error
+Ran Calc RF with duplicates removed - fixed some bad RFratio calcs
+Removed compounds in NO samples at combine and tidy, get NA for MAssFeature_Column when joining mf.dat to stds and filter out
+
+
+Analysis notes:
+Ran HILIC B-MIS without Acetyl CoA, AMP, GMP, Uracil, Sulfolactic acid and used 0.2 and 0.1 cutoffs
+Adapted RP BMIS for one fraction, exluded riboflavin, tryptamine, and thiamine IS
+RFratio calculation threshold applied (if matrix in h20<std in water, RFratio=1)
+Quantification performed with volume normalization and carbon separately, both outputs
+RFratios no thresholds applied since all reasonable values, glutathione replaced with Boysen et al. literature value
+Changed quantification code to fix carbon nomralization (only correcting for vol SW filtered once)
+Added back in replicatemin filter but exempt sea ice samples
+Added samplemin filter (=6)
+
+```{r, message=FALSE, error=FALSE}
+library(tidyverse)
+library(cowplot)
+theme_set(theme_cowplot())
+library(here)
+```
+
+# Quality control field and experimental samples and fill NAs
+Run the qualtiy contorl (QC) for each analytical fraction for the culture samples, combine and make tidy to compare with environmental samples
+```{r, message=FALSE, error=FALSE, warning=FALSE, }
+source("SourceCode/QC_HILICPos_Ant18.R")
+remove(list = ls())
+
+source("SourceCode/QC_HILICNeg_Ant18.R")
+remove(list = ls())
+
+source("SourceCode/QC_RP_Ant18.R")
+remove(list = ls())
+
+source("SourceCode/PostQCforBMIS.R")
+remove(list = ls())
+```
+
+# BMIS on the HILIC output from Skyline, save output in BMISReports Folder, remove the intermediate output
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('SourceCode/BMIS_QEHILIC_Ant18.R')
+ggsave("Intermediates/BMISReports/BMIS_IS_StandardsRep_HILIC.pdf", plot = BMISlist[[1]], device = "pdf", width = 10, height = 10, units = "in")
+write_file(BMISlist[[2]], "Intermediates/BMISReports/BMIS_Summary_HILIC.txt")
+ggsave("Intermediates/BMISReports/BMIS_IS_StandardsTest_HILIC.pdf", plot = BMISlist[[3]], device = "pdf", width = 10, height = 10, units = "in")
+write_csv(BMISlist[[4]], "Intermediates/BMISReports/BMISd_Areas_long_HILIC.csv")
+rm(BMISlist)
+```
+
+# BMIS on the CyanoAq output from Skyline, save output in BMISReports Folder, remove the intermediate output
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('SourceCode/BMIS_QECyano_Ant18.R')
+ggsave("Intermediates/BMISReports/BMIS_IS_StandardsRep_Cyano.pdf", plot = BMISlist[[1]], device = "pdf", width = 10, height = 10, units = "in")
+write_file(BMISlist[[2]], "Intermediates/BMISReports/BMIS_Summary_Cyano.txt")
+ggsave("Intermediates/BMISReports/BMIS_IS_StandardsTest_Cyano.pdf", plot = BMISlist[[3]], device = "pdf", width = 10, height = 10, units = "in")
+write_csv(BMISlist[[4]], "Intermediates/BMISReports/BMISd_Areas_long_Cyano.csv")
+
+rm(BMISlist)
+```
+
+# Combine and Tidy environmental and experimental data
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('SourceCode/Combine_Clean_postBMIS.R')
+
+remove(list = ls())
+```
+
+# Create quantification input files
+This creates std only files from QC results for calculating RF and RF ratios and renames QC total files (not sure if need to do this).
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('SourceCode/Quantification_inputs.R')
+
+remove(list = ls())
+```
+
+# Quantify compounds that we are able to
+1. Calculate response factor (RF) and response factor ratio (RFratio) for each compound in each data set using integrated standards. 
+2.  Apply these response factors and get the concentrations in vial, then in environment for each compound in each data set
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+#Calculate RF and RF ratios for all our quantifiable compounds
+source('SourceCode/CalculateRF_andRFratios_Ant18.R')
+remove(list = ls())
+
+#Use RF and RF ratios to calculate concentrations in environmental samples 
+source('SourceCode/Quantification_EnvironSamples_Ant18.R')
+remove(list = ls())
+```
+
+
+#NEED TO ADD amplicon data curation here
+This takes paprica output and makes data into workable shapes for analyses and plotting (filters data, assigns taxonomy, etc.)
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('SourceCode/Amplicon_curation.R')
+remove(list = ls())
+
+```
+
+#NEED TO ADD ANOVA statistics here (from diversity and C:N if including)
+
+# Calculate ANOSIM statistics to accompany NMDS plots
+#NEED TO make these actually write out the results in a nice way (right now just copying them)
+
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+#Calculate and write out ANOSIM results for 18S and 16S composition
+source('SourceCode/ANOSIM_amplicon_unique.R')
+remove(list = ls())
+
+#Calculate and write out ANOSIM results for metabolite composition
+source('SourceCode/ANOSIM_metab.R')
+remove(list = ls())
+```
+
+
+#NEED TO ADD Procrustes statistics here (or keep with figure?)
+
+#NEED TO ADD correlation matrix statistics here (or keep with figure?) unless Natalia is diong this
+
+#NEED TO ADD metabolite vector loading statistics here (or keep with figure?)
+
+#NEED TO ADD ANOVA statistics here (from total metabolite concentrations)
+
+#NEED TO ADD ANOVA statistics here (from T/S experiment metabs, needed to make figure)
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('SourceCode/Statistics_culture.R')
+remove(list = ls())
+```
+
+

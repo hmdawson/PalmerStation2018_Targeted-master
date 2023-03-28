@@ -1,0 +1,11 @@
+"0","
+s.melt <- melt(s)
+"
+"2","Using  as id variables
+"
+"0","s.melt$SampleID <- rownames(s)"
+"0","s.melt <- s.melt %>% filter(value != 0)"
+"0","s.melt$taxa <- index[s.melt$variable, 'phylum']"
+"0","subjmeans <- cast(s.melt, SampleID~taxa, sum)"
+"0",""
+"0","write.csv(subjmeans, file=""18S_dino_genus.csv"")"

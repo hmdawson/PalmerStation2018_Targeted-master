@@ -1,0 +1,105 @@
+"0","library(vegan)"
+"0","library(phyloseq)"
+"2","
+Attaching package: ‘phyloseq’
+
+"
+"2","The following object is masked from ‘package:ecodist’:
+
+    distance
+
+"
+"0","library(ggplot2)"
+"0","#library(DESeq2)"
+"0","library(tidyverse)"
+"0","library(rstatix)"
+"2","
+Attaching package: ‘rstatix’
+
+"
+"2","The following object is masked from ‘package:MASS’:
+
+    select
+
+"
+"2","The following object is masked from ‘package:stats’:
+
+    filter
+
+"
+"0","library(ggpubr)"
+"2","
+Attaching package: ‘ggpubr’
+
+"
+"2","The following object is masked from ‘package:cowplot’:
+
+    get_legend
+
+"
+"2","The following object is masked from ‘package:VennDiagram’:
+
+    rotate
+
+"
+"2","The following object is masked from ‘package:ape’:
+
+    rotate
+
+"
+"0","library(RColorBrewer)"
+"0","library(plyr)"
+"2","------------------------------------------------------------------------------------------------------------
+"
+"2","You have loaded plyr after dplyr - this is likely to cause problems.
+If you need functions from both plyr and dplyr, please load plyr first, then dplyr:
+library(plyr); library(dplyr)
+"
+"2","------------------------------------------------------------------------------------------------------------
+"
+"2","
+Attaching package: ‘plyr’
+
+"
+"2","The following object is masked from ‘package:ggpubr’:
+
+    mutate
+
+"
+"2","The following objects are masked from ‘package:rstatix’:
+
+    desc, mutate
+
+"
+"2","The following object is masked from ‘package:here’:
+
+    here
+
+"
+"2","The following object is masked from ‘package:purrr’:
+
+    compact
+
+"
+"2","The following objects are masked from ‘package:dplyr’:
+
+    arrange, count, desc, failwith, id, mutate, rename, summarise, summarize
+
+"
+"0","library(pheatmap)"
+"0","library(cowplot)"
+"0","library(reshape2)"
+"2","
+Attaching package: ‘reshape2’
+
+"
+"2","The following object is masked from ‘package:tidyr’:
+
+    smiths
+
+"
+"0","#bacteria"
+"0","unique <- read.csv('2021.02.15_dawson.eukarya.unique_tally.csv', header = T, row.names = 1)"
+"0",""
+"0","## convert all na's to 0"
+"0","unique[is.na(unique)] <- 0"

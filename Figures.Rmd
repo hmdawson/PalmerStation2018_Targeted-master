@@ -1,0 +1,118 @@
+---
+title: "Make figures here"
+author: "Hannah Dawson"
+date: "March 28 2023"
+output: html_document
+--
+
+Figures for Dawson *et. al* manuscript and associated presentations
+
+
+```{r setup, include=FALSE}
+library(tidyverse)
+```
+
+# Ancillary data in main figures and supplemental figure (growth rate, POC, C:N)
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Figures/Code/Ancillary_plots_fieldandinc.R')
+remove(list = ls())
+```
+
+# Amplicon diversity box plots
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Figures/Code/Diversity_boxplot.R')
+remove(list = ls())
+```
+
+# Amplicon composition tileplots
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Figures/Code/Tileplot_amplicon.R')
+remove(list = ls())
+```
+
+# NMDS and Procrustes for environmental and incubation samples and NMDS vector loading supplemental figure as well as statistics table of loadings
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Figures/Code/NMDS_figure_revisions.R')
+remove(list = ls())
+detach("package:vegan", unload=TRUE)
+detach("package:MASS", unload=TRUE)
+```
+
+# Quantifiable compounds in environmental and incubation samples, Stacked bar plot of mole fraction C and %POC and %PN
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+#mol fraction C, %POC, %PN
+source('Figures/Code/Barplot_metabolites.R')
+remove(list = ls())
+
+```
+
+# Metabolite tileplot of differences between incubation treatments and individual compound barplots for compatible solutes and acyl carnitines as well as writes tables for tileplot significance, dendrogram for significant metabolites, and tileplot of false metabolites (p>0.5) not different between treatments
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+#metabolite tile plot, compatible solutes, and acyl carnitines
+source('Figures/Code/Metab_experiment.R')
+remove(list = ls())
+```
+
+# Amplicon composition barplots at class level for 18S and 16S
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+#Amplicon 18S and 16S class barplots
+source('Figures/Code/Barplot_amplicon_Class_mean.R')
+remove(list = ls())
+```
+
+# Correlation heatmap across amplicon sequences (18S vs 16S ASVs) and network visualization to accompany, also writes statistics tables for correlation analysis
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+#Correlation heatmap and statistics
+source('Figures/Code/Correlation_CLR.R')
+
+#Network visualization
+source('Figures/Code/Network_visualization_Josh.R')
+remove(list = ls())
+```
+
+# NMDS for environmental and incubation samples with overlay of salinity of samples
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Figures/Code/NMDS_all_molfracC_salinityhypothesis.R')
+remove(list = ls())
+detach("package:vegan", unload=TRUE)
+detach("package:MASS", unload=TRUE)
+```
+
+# Metabolite vs Amplicon scatterplot of multivarite distances between samples
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Figures/Code/MetabvAmplicon_scatter.R')
+remove(list = ls())
+```
+
+# Quantifiable compounds in environmental and incubation samples, nmol metabolite C per L (nM C) of water filtered
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Figures/Code/Barplot_nMC.R')
+remove(list = ls())
+```
+
+# Quantifiable compounds in environmental and incubation samples, stacked barplot of %POC
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Figures/Code/Barplot_percentPC.R')
+remove(list = ls())
+```
+
+# Quantifiable compounds in environmental and incubation samples, stacked barplot of %PN
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Figures/Code/Barplot_percentPN.R')
+remove(list = ls())
+```
+
+# Fatty acid differences between treatments barplots
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Figures/Code/barplot_individual_FA.R')
+remove(list = ls())
+```
+
+# NMDS for environmental and incubation samples with f/2 nutrients detected in metabolites removed (Cyanocobalamin and Vitamin B1)
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Figures/Code/NMDS_figure_novitamins.R')
+remove(list = ls())
+detach("package:vegan", unload=TRUE)
+detach("package:MASS", unload=TRUE)
+```
+

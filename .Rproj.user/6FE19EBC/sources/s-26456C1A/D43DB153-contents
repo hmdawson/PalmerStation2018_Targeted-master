@@ -1,0 +1,84 @@
+---
+title: "Make figures here"
+author: "Hannah Dawson"
+date: "July 21 2022"
+output: html_document
+---
+Figures for Dawson *et. al* manuscript and associated presentations
+
+##To change
+##Fix the tile plots to make them standardized
+
+```{r setup, include=FALSE}
+library(tidyverse)
+```
+
+# Ancillary data in main figures and supplemental (growth rate, POC, C:N)
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Figures/Code/Ancillary_plots_fieldandinc.R')
+remove(list = ls())
+```
+
+# Amplicon diversity box plots
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Figures/Code/Diversity_boxplot.R')
+remove(list = ls())
+```
+
+# Amplicon composition heatmaps
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Figures/Code/Heatmap_amplicon.R')
+remove(list = ls())
+```
+
+# NMDS and Procrustes for environmental samples and for experiment and NMDS vector loading supplemental
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Figures/Code/NMDS_figure.R')
+remove(list = ls())
+detach("package:vegan", unload=TRUE)
+detach("package:MASS", unload=TRUE)
+```
+
+# Quantifiable compounds in environmental samples, Stacked bar plots
+#NEED TO make this actually one set of code or keep as is and make sure they save out correctly
+ Barplot_molfracC, Barplot_nMC, Barplot_percent PC, and Barplot_percent PN first
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+#mol fraction C
+source('Figures/Code/Barplot_molfracC.R')
+
+
+#nmole C/L
+source('Figures/Code/Barplot_nMC.R')
+
+
+#percent PC
+source('Figures/Code/Barplot_percentPC.R')
+
+
+#Percent PN
+source('Figures/Code/Barplot_percentPN.R')
+
+
+#Combination figure of all of the above
+source('Figures/Code/Metab_comboplot.R')
+remove(list = ls())
+
+```
+
+# Metabolite heatmap and individual compound barplots
+#NEED TO make this one code or could keep as is separate
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+#metabolite tile plot
+source('Figures/Code/Tileplot_metabolites_trueonly.R')
+
+
+#Individual carnitine bar plots
+source('Figures/Code/barplot_individual_Carnitines.R')
+
+
+#Individual compatible solutes bar plots and combination
+source('Figures/Code/barplot_individual_CS_comboall.R')
+remove(list = ls())
+```
+
+

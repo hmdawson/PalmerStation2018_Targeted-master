@@ -1,0 +1,574 @@
+#Code for main text and supplemental ancillary figures
+#Edited 3/10/23 to put everything into Data_processing project
+
+#TO DO:
+#Double check that ANOVA stats aren't needed for any plots/included in text
+#Fix Figure 1 so that seawater bar on panel a isn't huge (ugh, making it vertical instead is hard)
+#Ask Josh about x-axis label question
+
+library(ggplot2)
+library(tidyverse)
+library(cowplot)
+
+#set group_by to dplyr
+group_by <- dplyr::group_by
+
+
+#import metadata for all
+
+#Name inputs-----
+meta.dat.file <- "Metadata/Ant18_metadata_plots.csv"
+#Load up meta.dat
+meta.dat <- read_csv(meta.dat.file)%>%
+  dplyr::select(CultureID_short, Exp_group, FigureID) %>% unique()
+
+
+#---------------------------------------------------------------------------------------------------------
+#Figure 1 (specific growth rate, POC, CN)
+#---------------------------------------------------------------------------------------------------------
+
+#Read in data to make specific growth rate plot
+GR1 <- read_csv("RawOutput/Ancillary/Growth_Rates_total.csv")%>%
+  mutate(CultureID_short = Treatment)%>%
+  left_join(meta.dat, by = "CultureID_short")%>%
+  mutate(Exp_group =ifelse(is.na(Exp_group), "Field", Exp_group))%>%
+  mutate(FigureID = ifelse(is.na(FigureID), "Seawater", FigureID))
+
+
+#Clean data and get summary stats
+GR <- GR1 %>%
+  dplyr::group_by(Exp_group, Treatment, FigureID) %>%
+  summarise(aveGR = mean(u),
+            stdevGR = sd(u))
+
+#reorder samples
+TankGR <- GR
+
+TankGR$FigureID <- factor(TankGR$FigureID, levels = c("Meltwater_T-S","SW_T-S","Sea ice_T-S", "Seawater"))
+
+
+
+
+
+
+#Growth rates bar plot
+TankGR_plot <-ggplot(TankGR, aes(x=FigureID, y=aveGR, fill= Exp_group, alpha = FigureID)) +
+  geom_bar(stat = "identity", color = "black") +
+  # geom_point(aes (x=FigureID, y = 0.025, fill = FigureID, shape = FigureID), size = 10) +
+  geom_errorbar(aes(ymin = aveGR - stdevGR, ymax = aveGR + stdevGR), width =0.2, color = "black", alpha = 1)+
+  facet_grid(. ~ Exp_group, scales = "free", space='free')+
+  # scale_shape_manual(values = c(21, 22, 21, 22)) +
+  # scale_fill_manual(values = c("grey","grey", "black", "white"))  +
+  scale_y_continuous(expand = c(0, 0), limits = c(0,0.45)) +
+  theme(plot.title = element_text(size = 12),
+        legend.position="none",
+        axis.ticks = element_line(color="black"),
+        axis.line = element_line(color="black"),
+        axis.text.y=element_text(size = 11, color = "black"),
+        axis.text.x=element_text(size = 11, angle=-70, hjust=0, color = "black"),
+        axis.ticks.x=element_blank(),
+        axis.title.x = element_blank(),
+        strip.background = element_blank(), 
+        strip.text.x = element_blank(),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank())+
+  ggtitle("Specific growth rate") +
+  labs(x="Treatment",y= bquote('Growth rate ('*day^-1*')'))
+TankGR_plot  
+
+#save_plot("Growthrate_fieldandtank.pdf",TankGR_plot)
+
+
+# #Can check for statistical differences here (not in manuscript)
+# #ANOVA
+# NormArea_Compound.aov<-aov(u~Treatment,data=GR1)
+# summary(NormArea_Compound.aov)
+# # capture.output(summary(NormArea_Compound.aov), file="ANOVA_growthrate.csv")
+# 
+# #Post-hoc Tukey's HSD if ANOVA interaction significant
+# TukeyHSD(NormArea_Compound.aov)
+# TKHSD_Compound <- TukeyHSD(NormArea_Compound.aov)
+# # capture.output(TKHSD_Compound, file = "TKHSD_growthrate.csv")
+# 
+# dimnames(TKHSD_Compound[[3]])
+
+
+
+#POC
+##------------------------------------------------------------------------------------------
+
+#import data
+POC1 <- read_csv("RawOutput/Ancillary/PC.csv")%>%
+  mutate(CultureID_short = Treatment)%>%
+  left_join(meta.dat, by = "CultureID_short") 
+
+#Get summary statistics
+POC <- POC1 %>%
+  group_by(Org, Treatment, FigureID, Exp_group) %>%
+  summarise(avePC = mean(PC),
+            stdevPC = sd(PC))
+TankPOC <- POC
+
+#reorder samples
+TankPOC$FigureID <- factor(TankPOC$FigureID, levels = c("Meltwater_T-S","SW_T-S","Sea ice_T-S", "SW_08", "SW_12", "SW_15", "SW_17", "SW_19", "Meltwater"))
+
+
+
+#PC bar plot 
+PC_plot <-ggplot(TankPOC, aes(x=FigureID, y=avePC, fill= Exp_group, alpha = FigureID)) +
+  geom_bar(stat = "identity", color = "black") +
+  geom_errorbar(aes(ymin = avePC - stdevPC, ymax = avePC + stdevPC), width =0.2, color = "black", alpha = 1)+
+  facet_grid(. ~ Exp_group, scales = "free", space='free')+
+  scale_y_continuous(expand = c(0, 0)) +
+  theme(plot.title = element_text(size = 12),
+        legend.position="none",
+        axis.ticks = element_line(color="black"),
+        axis.line = element_line(color="black"),
+        axis.text.y=element_text(size = 11, color = "black"),
+        axis.text.x=element_text(size = 11, angle=-70, hjust=0, color = "black"),
+        axis.ticks.x=element_blank(),
+        strip.background = element_blank(), 
+        strip.text.x = element_blank(),
+        axis.title.x = element_blank(),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank())+
+  ggtitle("POC") +
+  labs(x="Station",y= bquote('POC (µM C)'))
+
+PC_plot  
+
+#save_plot("POC_TankandField.pdf",PC_plot)
+
+
+#Optional stats
+# #ANOVA
+# NormArea_Compound.aov<-aov(POC~Treatment,data=POC1)
+# summary(NormArea_Compound.aov)
+# # capture.output(summary(NormArea_Compound.aov), file="ANOVA_growthrate.csv")
+# 
+# #Post-hoc Tukey's HSD if ANOVA interaction significant
+# TukeyHSD(NormArea_Compound.aov)
+# TKHSD_Compound <- TukeyHSD(NormArea_Compound.aov)
+# # capture.output(TKHSD_Compound, file = "TKHSD_growthrate.csv")
+# 
+# dimnames(TKHSD_Compound[[3]])
+# 
+
+#CN
+##------------------------------------------------------------------------------------------
+
+#import data
+CN1 <- read_csv("RawOutput/Ancillary/CN.csv")%>%
+  mutate(CultureID_short = Treatment)%>%
+  left_join(meta.dat, by = "CultureID_short")
+
+#Get summary statistics
+CN <- CN1 %>%
+  group_by(Org, Treatment, Exp_group, FigureID) %>%
+  summarise(aveCN = mean(CN),
+            stdevCN = sd(CN))
+TankCN <- CN
+
+#reorder samples
+TankCN$FigureID <- factor(TankCN$FigureID, levels = c("Meltwater_T-S","SW_T-S","Sea ice_T-S", "SW_08", "SW_12", "SW_15", "SW_17", "SW_19", "Meltwater"))
+
+
+
+#CN barplot
+CN_plot <-ggplot(TankCN, aes(x=FigureID, y=aveCN, fill= Exp_group, alpha = FigureID)) +
+  geom_bar(stat = "identity", color = "black") +
+  geom_errorbar(aes(ymin = aveCN - stdevCN, ymax = aveCN + stdevCN), width =0.2, color = "black", alpha = 1)+
+  facet_grid(. ~ Exp_group, scales = "free", space='free')+
+  scale_y_continuous(expand = c(0, 0)) +
+  theme(plot.title = element_text(size = 12),
+        legend.position="none",
+        axis.ticks = element_line(color="black"),
+        axis.line = element_line(color="black"),
+        axis.text.y=element_text(size = 11, color = "black"),
+        axis.text.x=element_text(size = 11, angle=-70, hjust=0, color = "black"),
+        axis.ticks.x=element_blank(),
+        axis.title.x = element_blank(),
+        strip.background = element_blank(), 
+        strip.text.x = element_blank(),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank())+
+  ggtitle("C:N") +
+  labs(x="Station",y= bquote('C:N (mol:mol)'))
+
+CN_plot  
+
+#save_plot("CN_TankandField.pdf",CN_plot)
+
+#Optional statistics
+#ANOVA
+# NormArea_Compound.aov<-aov(CN~Treatment,data=CN1)
+# summary(NormArea_Compound.aov)
+# # capture.output(summary(NormArea_Compound.aov), file="ANOVA_growthrate.csv")
+# 
+# #Post-hoc Tukey's HSD if ANOVA interaction significant
+# TukeyHSD(NormArea_Compound.aov)
+# TKHSD_Compound <- TukeyHSD(NormArea_Compound.aov)
+# # capture.output(TKHSD_Compound, file = "TKHSD_growthrate.csv")
+# 
+# dimnames(TKHSD_Compound[[3]])
+
+
+#save out combo plot for final MS draft figure 1 (growth rates, POC, C:N)
+
+Fig1 <- plot_grid(TankGR_plot, PC_plot, CN_plot,
+                  labels = "AUTO", ncol = 1, rel_heights = c(2,2,2), align = "h")
+Fig1
+
+save_plot("~/Documents/Research/Ant18_Tank_manuscript/DATA/Metabolomics/Data_processing/Figures/Preliminary/Draft_MS_Revisions/Figure_1_ancillary_color.pdf", Fig1, base_width = 4.5, base_height = 10, units = "in")
+
+
+#save with cairo so uM saves correctly
+# library(ggplot2)
+# cairo_pdf("~/Documents/Research/Ant18_Tank_manuscript/DATA/Metabolomics/Data_processing/Figures/Preliminary/Draft_MS/Figure_1_ancillary.pdf", height = 4.5, width = 10)
+# plot_grid(TankGR_plot, PC_plot, CN_plot,
+#           labels = "AUTO", ncol = 3, rel_heights = c(2,2,2))
+# dev.off()
+
+
+
+
+#---------------------------------------------------------------------------------------------------------
+#Figure S1 (Growth curve culture, growth curve field, pEPS, dEPS, DOC)
+#---------------------------------------------------------------------------------------------------------
+
+#Read in data to make RFU vs time plot
+Tankdat <- read_csv("RawOutput/Ancillary/Ant18_Tank_RFU.csv") %>%
+  mutate(CultureID_short = TREATMENT)%>%
+  left_join(meta.dat, by = "CultureID_short") 
+
+
+#Clean data and get summary stats, separate out data into dataframe with and without extrapolation of RFU to day 10
+Tanksumm <- Tankdat %>%
+  filter(DAY < 11) %>%
+  group_by(DAY, TREATMENT, FigureID) %>%
+  summarise(LN_RFU_ave = mean(`LN(RFU)`),
+            LN_RFU_sd = sd(`LN(RFU)`),
+            RFU_ave = mean(`RFU`),
+            RFU_sd = sd(`RFU`)) 
+
+Tanksumm_2 <- Tankdat %>%
+  filter(DAY < 11) %>%
+  filter(!((DAY == '10' & TREATMENT == '20ppt3C') |
+             (DAY == '10' & TREATMENT == '35ppt0C'))) %>%
+  group_by(DAY, TREATMENT, FigureID) %>%
+  summarise(LN_RFU_ave = mean(`LN(RFU)`),
+            LN_RFU_sd = sd(`LN(RFU)`),
+            RFU_ave = mean(`RFU`),
+            RFU_sd = sd(`RFU`)) 
+
+
+
+#if error bars or points overlap, use position dodge to move them horizontally
+pd <- position_dodge(0.08)
+
+
+#plot data RFU vs time with RFU or LN(RFU) on y-axis and DAY on x-axis using ggplot
+
+#RFU no day 10 for extrapolations
+Tank_plot_rfu_noext <- ggplot(Tanksumm_2, aes(x=DAY, y=RFU_ave, fill= TREATMENT)) + 
+  geom_errorbar(aes(ymin = RFU_ave - RFU_sd, ymax = RFU_ave + RFU_sd), width = .3, position = pd) +
+  geom_line(aes(), position = pd, size = 1) +
+  geom_point(aes(shape = TREATMENT), size = 3, position = pd) +
+  scale_shape_manual(values = c(22,21,22,21)) +
+  scale_fill_manual(values = c("grey","grey","black","black"))+
+  labs(x="Time after inoculation (days)",y="RFU")+
+  annotate("segment", x = 9, xend = 9, y = 50, yend = 200, colour = "black", size = 1, arrow = arrow(length =unit(0.30,"cm")))+
+  annotate("segment", x = 8, xend = 8, y = 900, yend = 750, colour = "grey", size = 1, arrow = arrow(length =unit(0.30,"cm")))+
+  scale_x_continuous(expand = c(0,0), limits = c(0,10.5)) + 
+  scale_y_continuous(expand = c(0,0), limits = c(0,1100)) +
+  ggtitle("Incubation growth") +
+  theme(plot.title = element_text(size = 12),
+        legend.position="none",
+        axis.ticks = element_line(color="black"),
+        axis.line = element_line(color="black"),
+        axis.text.y=element_text(size = 11, color = "black"),
+        axis.text.x=element_text(size = 11, color = "black"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank())+
+  guides(scale = "none")
+Tank_plot_rfu_noext
+
+
+
+
+#------------------------------------------------------------------------------------------------------------
+#Plot field growth curve PC
+#------------------------------------------------------------------------------------------------------------
+
+Fielddat <- read_csv("RawOutput/Ancillary/Ant18_TankField_RFUPC.csv")%>%
+  filter(TREATMENT == "StationB")
+
+Fieldsumm <- Fielddat %>%
+  group_by(DAY, TREATMENT) %>%
+  summarise(LN_PC_ave = mean(`LN(PC)`),
+            LN_PC_sd = sd(`LN(PC)`),
+            PC_ave = mean(`PC`),
+            PC_sd = sd(`PC`)) 
+
+#ln(PC)
+# Field_plot_ln <- ggplot(Fieldsumm, aes(x=DAY, y=LN_PC_ave, fill= TREATMENT)) + 
+#   geom_errorbar(aes(ymin = LN_PC_ave - LN_PC_sd, ymax = LN_PC_ave + LN_PC_sd), width = .3, position = pd) +
+#   geom_line(aes(), position = pd, size = 1) +
+#   geom_point(aes(shape = TREATMENT), size = 3, position = pd) +
+#   # scale_shape_manual(values = c(22,21,22,21)) +
+#   # scale_fill_manual(values = c("grey","grey","black","black"))+
+#   labs(x="Time of bloom (days)",y="ln(PC)")+
+#   # annotate("segment", x = 9, xend = 9, y = 4.9, yend = 5.3, colour = "black", size = 1, arrow = arrow(length =unit(0.30,"cm")))+
+#   # annotate("segment", x = 8, xend = 8, y = 7.1, yend = 6.7, colour = "grey", size = 1, arrow = arrow(length =unit(0.30,"cm")))+
+#   scale_x_continuous(expand = c(0.01, 0.01), limits = c(0,12.5)) + 
+#   scale_y_continuous(expand = c(0.01, 0.01), limits = c(2,4)) +
+#   ggtitle("Field growth") +
+#   theme(plot.title = element_text(size = 14),
+#         legend.position="none",
+#         axis.title = element_text(size = 9),
+#         axis.text.y=element_text(size = 9),
+#         axis.text.x=element_text(size = 9))+
+#   guides(fill=FALSE)
+# Field_plot_ln
+
+
+
+#PC
+Field_plot_PC <- ggplot(Fieldsumm, aes(x=DAY, y=PC_ave, fill= TREATMENT)) + 
+  geom_errorbar(aes(ymin = PC_ave - PC_sd, ymax = PC_ave + PC_sd), width = .3, position = pd) +
+  geom_line(aes(), position = pd, size = 1) +
+  geom_point(aes(shape = TREATMENT), size = 3, position = pd) +
+  scale_shape_manual(values = c(22)) +
+  scale_fill_manual(values = c("white"))+
+  labs(x="Bloom progression (days)",y="POC (µM C)")+
+  scale_x_continuous(expand = c(0,0), limits = c(0,12.5)) +
+  scale_y_continuous(expand = c(0,0), limits = c(0,50)) +
+  ggtitle("Station B growth") +
+  theme(plot.title = element_text(size = 12),
+        legend.position="none",
+        axis.ticks = element_line(color="black"),
+        axis.line = element_line(color="black"),
+        axis.text.y=element_text(size = 11, color = "black"),
+        axis.text.x=element_text(size = 11, color = "black"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank())+
+  guides(scale = "none")
+Field_plot_PC
+
+
+
+#save out combo plots of just growth curves and growth rates
+# 
+# all2_rfu <- plot_grid(Tank_plot_rfu_noext, Field_plot_PC, TankGR_plot, labels = "AUTO", ncol = 3, rel_heights = c(2,2,2))
+# all2_rfu
+
+#save_plot("Curves_and_bars_rfuPC.pdf", all2_rfu, base_width = 10, base_height = 4, units = "in")
+
+
+
+
+#pEPS
+##------------------------------------------------------------------------------------------
+
+#import data
+pEPS1 <- read_csv("RawOutput/Ancillary/pEPS.csv")%>%
+  mutate(CultureID_short = Treatment)%>%
+  left_join(meta.dat, by = "CultureID_short") 
+
+
+#Get summary statistics
+pEPS <- pEPS1 %>%
+  group_by(Org, Treatment, Exp_group, FigureID) %>%
+  summarise(avepEPS = mean(pEPS),
+            stdevpEPS = sd(pEPS))
+
+
+#reorder samples
+pEPS$FigureID <- factor(pEPS$FigureID, levels = c("Meltwater_T-S","SW_T-S","Sea ice_T-S", "SW_08", "SW_12", "SW_15", "SW_17", "SW_19", "Meltwater"))
+
+
+#Make pEPS barplot 
+pEPS_plot <-ggplot(pEPS, aes(x=FigureID, y=avepEPS)) +
+  geom_bar(stat = "identity", color = "black", fill = "white") +
+  geom_errorbar(aes(ymin = avepEPS - stdevpEPS, ymax = avepEPS + stdevpEPS), width =0.2)+
+  scale_y_continuous(expand = c(0, 0)) +
+  facet_grid(. ~ Exp_group, scales = "free", space='free')+
+  theme(plot.title = element_text(size = 12),
+        legend.position="none",
+        strip.background = element_blank(), 
+        strip.text.x = element_blank(),
+        axis.ticks = element_line(color="black"),
+        axis.line = element_line(color="black"),
+        axis.title.x = element_blank(),
+        axis.text.y=element_text(size = 11, color = "black"),
+        axis.text.x=element_text(size = 11, angle=-70, hjust=0, color = "black"),
+        axis.ticks.x=element_blank(),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank())+
+  ggtitle("Particulate EPS") +
+  labs(x="Station",y= bquote('pEPS (µM C)'))
+pEPS_plot  
+
+#save_plot("pEPS_fieldandinc.pdf",pEPS_plot)
+
+#Optional statistics
+#ANOVA
+# NormArea_Compound.aov<-aov(pEPS~Treatment,data=pEPS1)
+# summary(NormArea_Compound.aov)
+# # capture.output(summary(NormArea_Compound.aov), file="ANOVA_growthrate.csv")
+# 
+# #Post-hoc Tukey's HSD if ANOVA interaction significant
+# TukeyHSD(NormArea_Compound.aov)
+# TKHSD_Compound <- TukeyHSD(NormArea_Compound.aov)
+# # capture.output(TKHSD_Compound, file = "TKHSD_growthrate.csv")
+# 
+# dimnames(TKHSD_Compound[[3]])
+
+
+#dEPS
+##------------------------------------------------------------------------------------------
+
+#import data
+dEPS1 <- read_csv("RawOutput/Ancillary/dEPS.csv")%>%
+  mutate(CultureID_short = Treatment)%>%
+  left_join(meta.dat, by = "CultureID_short") 
+
+#Get summary statistics
+dEPS <- dEPS1 %>%
+  group_by(Org, Treatment, FigureID, Exp_group) %>%
+  summarise(avedEPS = mean(dEPS),
+            stdevdEPS = sd(dEPS))
+
+#reorder samples
+dEPS$FigureID <- factor(dEPS$FigureID, levels = c("Meltwater_T-S","SW_T-S","Sea ice_T-S", "SW_08", "SW_12", "SW_15", "SW_17", "SW_19", "Meltwater"))
+
+
+#dEPS barplot
+dEPS_plot <-ggplot(dEPS, aes(x=FigureID, y=avedEPS)) +
+  geom_bar(stat = "identity", color = "black", fill = "white") +
+  geom_errorbar(aes(ymin = avedEPS - stdevdEPS, ymax = avedEPS + stdevdEPS), width =0.2)+
+  scale_y_continuous(expand = c(0, 0)) +
+  facet_grid(. ~ Exp_group, scales = "free", space='free')+
+  theme(plot.title = element_text(size = 12),
+        legend.position="none",
+        strip.background = element_blank(), 
+        strip.text.x = element_blank(),
+        axis.title.x = element_blank(),
+        axis.ticks = element_line(color="black"),
+        axis.line = element_line(color="black"),
+        axis.text.y=element_text(size = 11, color = "black"),
+        axis.text.x=element_text(size = 11, angle=-70, hjust=0, color = "black"),
+        axis.ticks.x=element_blank(),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank())+
+  ggtitle("Dissolved EPS") +
+  labs(x="Station",y= bquote('dEPS (µM C)'))
+dEPS_plot  
+
+#save_plot("dEPS_fieldandinc.pdf",dEPS_plot)
+
+#Optional statistics
+#ANOVA
+# NormArea_Compound.aov<-aov(dEPS~Treatment,data=dEPS1)
+# summary(NormArea_Compound.aov)
+# # capture.output(summary(NormArea_Compound.aov), file="ANOVA_growthrate.csv")
+# 
+# #Post-hoc Tukey's HSD if ANOVA interaction significant
+# TukeyHSD(NormArea_Compound.aov)
+# TKHSD_Compound <- TukeyHSD(NormArea_Compound.aov)
+# # capture.output(TKHSD_Compound, file = "TKHSD_growthrate.csv")
+# 
+# dimnames(TKHSD_Compound[[3]])
+
+
+#DOC
+##------------------------------------------------------------------------------------------
+
+#import data
+DOC1 <- read_csv("RawOutput/Ancillary/DOC.csv")%>%
+  mutate(CultureID_short = Treatment)%>%
+  left_join(meta.dat, by = "CultureID_short") %>% 
+  filter(!str_detect(Org, "Field" ))
+
+#Get summary statistics
+DOC <- DOC1 %>%
+  group_by(Org, Treatment, Exp_group, FigureID) %>%
+  summarise(aveDOC = mean(DOC),
+            stdevDOC = sd(DOC))
+
+
+#reorder samples
+DOC$FigureID <- factor(DOC$FigureID, levels = c("Meltwater_T-S","SW_T-S","Sea ice_T-S", "SW_08", "SW_12", "SW_15", "SW_17", "SW_19", "Meltwater"))
+
+
+#DOC barplot
+DOC_plot <-ggplot(DOC, aes(x=FigureID, y=aveDOC)) +
+  geom_bar(stat = "identity", color = "black", fill = "white") +
+  geom_errorbar(aes(ymin = aveDOC - stdevDOC, ymax = aveDOC + stdevDOC), width =0.2)+
+  scale_y_continuous(expand = c(0, 0)) +
+  theme(plot.title = element_text(size = 12),
+        legend.position="none",
+        axis.title.x = element_blank(),
+        axis.ticks = element_line(color="black"),
+        axis.line = element_line(color="black"),
+        axis.text.y=element_text(size = 11, color = "black"),
+        axis.text.x=element_text(size = 11, angle=-70, hjust=0, color = "black"),
+        axis.ticks.x=element_blank(),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank())+
+  ggtitle("DOC") +
+  labs(x="Station",y= bquote('DOC (µM C)'))
+DOC_plot  
+
+#save_plot("DOC_fieldandinc.pdf",DOC_plot)
+
+#Optional statistics
+#ANOVA
+# NormArea_Compound.aov<-aov(DOC~Treatment,data=DOC1)
+# summary(NormArea_Compound.aov)
+# # capture.output(summary(NormArea_Compound.aov), file="ANOVA_growthrate.csv")
+# 
+# #Post-hoc Tukey's HSD if ANOVA interaction significant
+# TukeyHSD(NormArea_Compound.aov)
+# TKHSD_Compound <- TukeyHSD(NormArea_Compound.aov)
+# # capture.output(TKHSD_Compound, file = "TKHSD_growthrate.csv")
+# 
+# dimnames(TKHSD_Compound[[3]])
+
+
+
+
+#Save out combo plot for final MS figure S1
+bottom <- plot_grid(pEPS_plot, dEPS_plot, DOC_plot,
+                    labels = c("C", "D", "E"), ncol = 3, rel_heights = c(2,2,2), align = "h", axis = "b")
+bottom
+
+top <- plot_grid(Tank_plot_rfu_noext, Field_plot_PC,
+                 labels = c("A", "B"), nrow = 1, rel_heights = c(2,2), rel_widths = c(2,2), align = "v")
+
+top
+
+FigS1 <- plot_grid(top, bottom,
+                   labels = c("", ""), nrow = 2, rel_heights = c(2,2), rel_widths = c(2,2), align = "v")
+FigS1
+
+save_plot("~/Documents/Research/Ant18_Tank_manuscript/DATA/Metabolomics/Data_processing/Figures/Preliminary/Draft_MS_Revisions/FigureS1_ancillary.pdf", 
+          FigS1, base_width = 8, base_height = 6, units = "in")
+
+
+# #save with cairo so uM saves correctly
+# library(ggplot2)
+# cairo_pdf("~/Documents/Research/Ant18_Tank_manuscript/DATA/Metabolomics/Data_processing/Figures/Preliminary/Draft_MS/Figure_S1_ancillary.pdf", height = 6, width = 10)
+# plot_grid(Tank_plot_rfu_noext, Field_plot_PC, pEPS_plot, dEPS_plot, DOC_plot,
+#           labels = "AUTO", ncol = 3, rel_heights = c(2,2,2,2,2))
+# dev.off()
+
+

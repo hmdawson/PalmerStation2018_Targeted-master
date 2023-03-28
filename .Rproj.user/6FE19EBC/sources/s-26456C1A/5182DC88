@@ -1,0 +1,27 @@
+{
+    "id": "5182DC88",
+    "path": "~/Documents/Research/Ant18_Tank_manuscript/DATA/Metabolomics/Data_processing/Figures/Code/Diversity_boxplot.R",
+    "project_path": "Figures/Code/Diversity_boxplot.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1659411657289.0,
+    "source_on_save": false,
+    "relative_order": 12,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "251,2",
+        "scrollLine": "234"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1679950260,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1679950260590,
+    "read_only": false,
+    "read_only_alternatives": []
+}

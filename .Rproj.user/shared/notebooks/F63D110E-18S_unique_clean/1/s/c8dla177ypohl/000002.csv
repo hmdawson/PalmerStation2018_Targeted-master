@@ -1,0 +1,7 @@
+"0","s.melt <- melt(s)
+"
+"2","No id variables; using all as measure variables
+"
+"0","s.melt$SampleID <- rownames(s)"
+"0","s.melt <- s.melt %>% filter(value != 0)"
+"0","s.melt$taxa <- index[s.melt$variable, 'phylum']"

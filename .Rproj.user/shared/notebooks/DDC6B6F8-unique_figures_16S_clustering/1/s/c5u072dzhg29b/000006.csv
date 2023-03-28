@@ -1,0 +1,18 @@
+"0","s <- unique.select
+index <- as.data.frame(colnames(s))
+index$phylum <- mapfile[index$`colnames(s)`, 'Genus']
+colnames(s) <- 1:length(s)
+
+#melt for bar plot
+
+s.melt <- melt(s)
+"
+"2","Using  as id variables
+"
+"0","s.melt$SampleID <- rownames(s)"
+"0","s.melt <- s.melt %>% filter(value != 0)"
+"0","s.melt$taxa <- index[s.melt$variable, 'phylum']"
+"0","subjmeans <- cast(s.melt, SampleID~taxa, sum)"
+"0",""
+"0","write.csv(subjmeans, file=""16S_genus.csv"")"
+"0",""

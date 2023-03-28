@@ -1,0 +1,661 @@
+---
+title: "unique_figures_18S"
+author: "Beth"
+date: "6/7/2021"
+output: html_document
+---
+
+Read in and combine unique files for eukarya
+
+```{r}
+library(vegan)
+library(phyloseq)
+library(ggplot2)
+#library(DESeq2)
+library(tidyverse)
+library(rstatix)
+library(ggpubr)
+library(RColorBrewer)
+library(plyr)
+library(pheatmap)
+library(cowplot)
+library(MASS)
+library(reshape2)
+library(reshape)
+library(dplyr)
+
+#bacteria
+unique <- read.csv('2021.02.15_dawson.eukarya.unique_tally.csv', header = T, row.names = 1)
+
+## convert all na's to 0
+unique[is.na(unique)] <- 0
+```
+
+Read in and combine taxa & map files  also sample metadata. 
+
+```{r}
+
+taxa <- read.csv('2021.02.15_dawson.eukarya.taxon_map.csv', header = T, row.names = 1, as.is = T)
+map <- read.csv('2021.02.15_dawson.eukarya.seq_edge_map.csv',header = T, row.names = 1, as.is = T)
+
+
+#sample metadata
+metadata <- read.csv('dawson_metadata.csv',header = T)
+metadata <- metadata[1:63 ,]
+
+#create mapfile combining taxa and map
+mapfile <- map[colnames(unique),]
+Yep <- map[colnames(unique), 'global_edge_num']
+tax <- taxa[Yep, 'taxon']
+tax[tax == ""] <- 'Unclassified Eukaryota'
+tax[is.na(tax)] <- 'Unclassified Eukaryota'
+mapfile$Taxa <- tax
+Fam <-taxa[Yep, 'family']
+Fam[Fam == ""] <- 'Unclassified Eukaryota'
+Fam[is.na(Fam)] <- 'Unclassified Eukaryota'
+mapfile$Family <- Fam
+Phylum <- taxa[Yep, 'division']
+Phylum[Phylum == ""] <- 'Unclassified Eukaryota'
+Phylum[is.na(Phylum)] <- 'Unclassified Eukaryota'
+mapfile$Phylum <- Phylum
+
+#if problem arises from mapfile, comment out from here below
+Kingdom <- taxa[Yep, 'kingdom']
+Kingdom[Kingdom == ""] <- 'Unclassified Eukaryota'
+Kingdom[is.na(Kingdom)] <- 'Unclassified Eukaryota'
+mapfile$Kingdom <- Kingdom
+
+Supergroup <- taxa[Yep, 'supergroup']
+Supergroup[Supergroup == ""] <- 'Unclassified Eukaryota'
+Supergroup[is.na(Supergroup)] <- 'Unclassified Eukaryota'
+mapfile$Supergroup <- Supergroup
+
+Class <- taxa[Yep, 'class']
+Class[Class == ""] <- 'Unclassified Eukaryota'
+Class[is.na(Class)] <- 'Unclassified Eukaryota'
+mapfile$Class <- Class
+
+Order <- taxa[Yep, 'order']
+Order[Order == ""] <- 'Unclassified Eukaryota'
+Order[is.na(Order)] <- 'Unclassified Eukaryota'
+mapfile$Order <- Order
+
+Genus <- taxa[Yep, 'genus']
+Genus[Genus == ""] <- 'Unclassified Eukaryota'
+Genus[is.na(Genus)] <- 'Unclassified Eukaryota'
+mapfile$Genus <- Genus
+
+Species <- taxa[Yep, 'species']
+Species[Species == ""] <- 'Unclassified Eukaryota'
+Species[is.na(Species)] <- 'Unclassified Eukaryota'
+mapfile$Species <- Species
+
+rm(Fam, Phylum, Yep, Kingdom, Supergroup, Class, Order, Genus, Species)
+
+```
+
+unique.qc - change sample names from paprica files, change ASV names to unique IDs and remove Cyanos (as they are plastids, not bacteria)
+
+```{r}
+#remove cyanos
+unique.qc <- unique
+
+#rename row names
+rownames(metadata) <- metadata$paprica_file_18S
+rownames(unique.qc) <- metadata[rownames(unique.qc), 'Better_SampID']
+rownames(metadata) <- metadata$Better_SampID
+
+               
+```
+
+
+unique.select - Limit to samples of interest, remove bad library builds, change ASVs to sequence names
+
+```{r}
+#limit to station B and carboy samples
+unique.select <- unique.qc[grep('B|ppt|Ev|Hero', rownames(unique.qc)),]
+unique.select <-  unique.select %>% mutate(SampleID = rownames(unique.select))%>%
+       filter(!str_detect(SampleID, "EvXSW_A|Ev51Slush_A|Ev15SW_A|B1_1" ))%>%
+       dplyr::select(-SampleID)
+
+
+## remove any low abundance samples (i.e. bad library builds), and also low abundance reads, reorder alphabetically
+
+unique.select <- unique.select[rowSums(unique.select) > 1,]
+unique.select <- unique.select[,colSums(unique.select) > 0]
+unique.select <- unique.select[order(rownames(unique.select)),]
+
+#normalize by sample abundace
+
+unique.s <- unique.select
+
+unique.select <- unique.select/rowSums(unique.select)
+
+#calculate total reads
+q <- unique.s
+colnames(q) <- mapfile[colnames(q), 'Taxa']
+
+q.fix <-as.data.frame(t(rowsum(t(q), group = colnames(q), na.rm = T)))
+q.fix <- q.fix %>%
+  mutate(Total = rowSums(q.fix))
+
+#this gives sample read totals
+q.fix$Total
+
+#this gives read totals across all samples
+Total_reads <- colSums(q.fix)
+Total_reads
+
+#Write out wide data with cleaned ASVs, raw abundance
+wide_abu <- unique.s %>%
+  mutate(SampleID = rownames(unique.s))
+
+write.csv(wide_abu, file="18S_unique_raw_cleaned.csv")
+
+#write out clean data ASVs with all taxonomic assignments, relative abundance
+abu_ID <- t(unique.select)
+abu_ID_join <- merge(abu_ID, mapfile, by="row.names")
+
+write.csv(abu_ID_join, file="18S_unique_rel_ID.csv")
+
+
+
+```
+
+
+Phylum level bar plot
+
+
+```{r}
+library(ggplot2)
+library(tidyr)
+#change ASV sequences to Phylum classification 
+s <- unique.select
+index <- as.data.frame(colnames(s))
+index$phylum <- mapfile[index$`colnames(s)`, 'Phylum']
+colnames(s) <- 1:length(s)
+
+#melt for bar plot
+
+s.melt <- melt(s)
+s.melt$SampleID <- rownames(s)
+s.melt <- s.melt %>% filter(value != 0)
+s.melt$taxa <- index[s.melt$variable, 'phylum']
+subjmeans <- cast(s.melt, SampleID~taxa, sum)
+
+#write out csv of wide phyla data for CCA
+write.csv(subjmeans, file="18S_phyla.csv")
+
+#make long for bar plot
+sum.long <- melt(subjmeans, id.vars=c("SampleID", "taxa"))
+
+bp <- function(x, y){
+ggplot() +
+geom_bar(aes( y = value, x = SampleID, fill= taxa), data = x, stat = "identity")+ 
+  theme(axis.text.x = element_text(angle = 90)) +
+   labs(title = y) +
+   labs(x = "", y = "Relative Abundance (%)", fill = "class") 
+}  
+
+bp(sum.long, "18S Relative Abundance")
+
+bplot <- bp(sum.long, "18S Relative Abundance")
+save_plot("Euk_barplot.pdf", bplot, base_height = 10, base_width = 10, units="in")
+
+#use similar code to get top supergroups
+s <- unique.select
+index <- as.data.frame(colnames(s))
+index$phylum <- mapfile[index$`colnames(s)`, 'Supergroup']
+colnames(s) <- 1:length(s)
+
+
+#melt for bar plot
+
+s.melt <- melt(s)
+s.melt$SampleID <- rownames(s)
+s.melt <- s.melt %>% filter(value != 0)
+s.melt$taxa <- index[s.melt$variable, 'phylum']
+subjmeans <- cast(s.melt, SampleID~taxa, sum)
+
+write.csv(subjmeans, file="18S_supergroup.csv")
+
+
+#make long for bar plot
+sum.long <- melt(subjmeans, id.vars=c("SampleID", "taxa"))
+
+bp <- function(x, y){
+ggplot() +
+geom_bar(aes( y = value, x = SampleID, fill= taxa), data = x, stat = "identity")+ 
+  theme(axis.text.x = element_text(angle = 90)) +
+   labs(title = y) +
+   labs(x = "", y = "Relative Abundance (%)", fill = "class") 
+}  
+
+bp(sum.long, "18S Relative Abundance")
+
+bplot <- bp(sum.long, "18S Relative Abundance")
+save_plot("Euk_barplot.pdf", bplot, base_height = 10, base_width = 10, units="in")
+
+
+#use similar code to get top class
+s <- unique.select
+index <- as.data.frame(colnames(s))
+index$phylum <- mapfile[index$`colnames(s)`, 'Class']
+colnames(s) <- 1:length(s)
+
+#melt for bar plot
+
+s.melt <- melt(s)
+s.melt$SampleID <- rownames(s)
+s.melt <- s.melt %>% filter(value != 0)
+s.melt$taxa <- index[s.melt$variable, 'phylum']
+subjmeans <- cast(s.melt, SampleID~taxa, sum)
+
+write.csv(subjmeans, file="18S_class.csv")
+
+
+#use similar code to get top genus
+s <- unique.select
+index <- as.data.frame(colnames(s))
+index$phylum <- mapfile[index$`colnames(s)`, 'Genus']
+colnames(s) <- 1:length(s)
+
+#melt for bar plot
+
+s.melt <- melt(s)
+s.melt$SampleID <- rownames(s)
+s.melt <- s.melt %>% filter(value != 0)
+s.melt$taxa <- index[s.melt$variable, 'phylum']
+subjmeans <- cast(s.melt, SampleID~taxa, sum)
+
+write.csv(subjmeans, file="18S_genus.csv")
+
+
+##try making barplot of diatoms only
+abu_diatom <- abu_ID_join %>%
+  filter(str_detect(Class, "Bacillariophyta"))
+
+#take out extra id info for now
+abu_diatom <- abu_diatom[,1:33]
+
+#make row names back into row names
+rownames(abu_diatom) <- abu_diatom[,1]
+abu_diatom[,1] <- NULL
+
+#use similar code to get top genus diatoms
+s <- as.data.frame(t(abu_diatom))
+index <- as.data.frame(colnames(s))
+index$phylum <- mapfile[index$`colnames(s)`, 'Genus']
+colnames(s) <- 1:length(s)
+
+#melt for bar plot
+
+s.melt <- melt(s)
+s.melt$SampleID <- rownames(s)
+s.melt <- s.melt %>% filter(value != 0)
+s.melt$taxa <- index[s.melt$variable, 'phylum']
+subjmeans <- cast(s.melt, SampleID~taxa, sum)
+
+write.csv(subjmeans, file="18S_diatom_genus.csv")
+
+#make version filled so all out of 1 (total diatom proportion)
+subjmeans_prop <- data.stand((as.matrix(subjmeans)), method='total', margin='row', plot=F)
+write.csv(subjmeans_prop, file="18S_diatom_genus_proportional.csv")
+
+#make long for bar plot
+sum.long <- melt(subjmeans, id.vars=c("SampleID", "taxa"))
+
+bp <- function(x, y){
+ggplot() +
+geom_bar(aes( y = value, x = SampleID, fill= taxa), position = "fill", data = x, stat = "identity")+ 
+  theme(axis.text.x = element_text(angle = 90)) +
+   labs(title = y) +
+   labs(x = "", y = "Relative Abundance (%)", fill = "class") 
+}  
+
+bp(sum.long, "18S Relative Abundance")
+
+bplot <- bp(sum.long, "18S Relative Abundance")
+save_plot("Euk_barplot_diatoms.pdf", bplot, base_height = 10, base_width = 10, units="in")
+
+#make version filled so all out of 1 (total diatom proportion)
+subjmeans_prop <- data.stand((as.matrix(subjmeans)), method='total', margin='row', plot=F)
+write.csv(subjmeans_prop, file="18S_diatom_genus_proportional.csv")
+
+
+##try making barplot of dinos only
+abu_dino <- abu_ID_join %>%
+  filter(str_detect(Class, "Dinophyceae"))
+
+#take out extra id info for now
+abu_dino <- abu_dino[,1:33]
+
+#make row names back into row names
+rownames(abu_dino) <- abu_dino[,1]
+abu_dino[,1] <- NULL
+
+#use similar code to get top genus diatoms
+s <- as.data.frame(t(abu_dino))
+index <- as.data.frame(colnames(s))
+index$phylum <- mapfile[index$`colnames(s)`, 'Genus']
+colnames(s) <- 1:length(s)
+
+#melt for bar plot
+
+s.melt <- melt(s)
+s.melt$SampleID <- rownames(s)
+s.melt <- s.melt %>% filter(value != 0)
+s.melt$taxa <- index[s.melt$variable, 'phylum']
+subjmeans <- cast(s.melt, SampleID~taxa, sum)
+
+write.csv(subjmeans, file="18S_dino_genus.csv")
+
+#make version filled so all out of 1 (total dino proportion)
+subjmeans_prop <- data.stand((as.matrix(subjmeans)), method='total', margin='row', plot=F)
+write.csv(subjmeans_prop, file="18S_dino_genus_proportional.csv")
+
+
+
+```
+top 20 taxa heatmap
+
+```{r}
+r <- unique.select
+colnames(r) <- mapfile[colnames(r), 'Taxa']
+   
+# 
+r.fix <-as.data.frame(t(rowsum(t(r), group = colnames(r), na.rm = T)))
+# r.fix <- sapply(split.default(r, names(r)), rowSums, na.rm = TRUE) %>%as.data.frame()
+# r.2<- sort(colSums(r.fix), decreasing =TRUE)
+
+
+#try heatmaps with melt/cast to get combined taxa names (no repeats)
+# s <- unique.select
+# index <- as.data.frame(colnames(s))
+# index$taxa <- mapfile[index$`colnames(s)`, 'Taxa']
+# colnames(s) <- 1:length(s)
+# 
+# s.melt <- melt(s)
+# s.melt$SampleID <- rownames(s)
+# s.melt <- s.melt %>% filter(value != 0)
+# s.melt$taxa <- index[s.melt$variable, 'taxa']
+# 
+# s.melt <- s.melt %>%
+#    group_by(SampleID, taxa) %>%
+#   mutate(total_mmol = sum(value))
+# 
+# subjmeans <- cast(s.melt, SampleID~taxa, sum)
+# 
+# r<-subjmeans
+# row.names(r) <- subjmeans$SampleID
+# r <- r %>%
+#    select(-SampleID)
+
+#save for correlation top 99.9%
+collapsed.select <- r.fix[,colMeans(r.fix) > 0.001]
+ write.csv(collapsed.select, file="18S_taxa_correlation.csv")
+
+#save for CCA top taxa
+ metab_cca <- r.fix[, colSums(metab_cca!=0) > 0]
+  top_20 <- names(sort(colSums(r.fix), decreasing =TRUE)[1:20])
+  tally.top <- r.fix[top_20] 
+  
+  write.csv(tally.top, file="18S_taxa_top20.csv")
+
+
+hm <- function(x,y) {
+x <- x[, colSums(x!=0) > 0]
+top_20 <- names(sort(colSums(x), decreasing =TRUE)[1:20])
+tally.top <- x[top_20]
+pheatmap(t(tally.top), main = y, cex = 1)
+}
+
+hm(r.fix, "18S Most Abundant Taxa")
+
+
+#all with bray clustering
+r <- unique.select 
+colnames(r) <- mapfile[colnames(r), 'Taxa']
+
+hm <- function(x,y) {
+x <- x[, colSums(x!=0) > 0]
+top_20 <- names(sort(colSums(x), decreasing =TRUE)[1:20])
+tally.top <- x[top_20]
+siteDist <- vegdist(t(tally.top), "bray", diag = TRUE)
+siteDistcol<-vegdist(tally.top, 'bray', diag=TRUE)
+pheatmap(t(tally.top), main = y, cex = 1, clustering_distance_rows = siteDist, clustering_distance_cols = siteDistcol)
+}
+
+EukTop20 <- hm(r.fix, "18S Most Abundant Taxa")
+
+save_pheatmap_pdf <- function(x, filename, width=10, height=10) {
+  stopifnot(!missing(x))
+  stopifnot(!missing(filename))
+  pdf(filename, width=width, height=height)
+  grid::grid.newpage()
+  grid::grid.draw(x$gtable)
+  dev.off()
+}
+save_pheatmap_pdf(EukTop20, "EukTop20_all_bray.pdf")
+
+#just incubation
+ r.inc <- r[grep('ppt', rownames(r)),]
+
+hm <- function(x,y) {
+x <- x[, colSums(x!=0) > 0]
+top_20 <- names(sort(colSums(x), decreasing =TRUE)[1:20])
+tally.top <- x[top_20]
+pheatmap(t(tally.top), main = y, cex = 1)
+}
+
+hm(r.inc, "18S Most Abundant Taxa")
+
+#just field with bray clustering
+  r.field <- r.fix[grep('B|Ev|Hero', rownames(r.fix)),] 
+
+hm <- function(x,y) {
+x <- x[, colSums(x!=0) > 0]
+top_20 <- names(sort(colSums(x), decreasing =TRUE)[1:20])
+tally.top <- x[top_20]
+siteDist <- vegdist(t(tally.top), "bray", diag = TRUE)
+siteDistcol<-vegdist(tally.top, 'bray', diag=TRUE)
+pheatmap(t(tally.top), main = y, cex = 1, clustering_distance_rows = siteDist, clustering_distance_cols = siteDistcol)
+}
+
+EukTop20 <- hm(r.field, "18S Most Abundant Taxa")
+
+save_pheatmap_pdf <- function(x, filename, width=10, height=10) {
+  stopifnot(!missing(x))
+  stopifnot(!missing(filename))
+  pdf(filename, width=width, height=height)
+  grid::grid.newpage()
+  grid::grid.draw(x$gtable)
+  dev.off()
+}
+save_pheatmap_pdf(EukTop20, "EukTop20_field_bray_fix.pdf")
+
+
+#just inc with bray clustering
+ r.inc <- r.fix[grep('ppt', rownames(r.fix)),]
+ 
+hm <- function(x,y) {
+x <- x[, colSums(x!=0) > 0]
+top_20 <- names(sort(colSums(x), decreasing =TRUE)[1:20])
+tally.top <- x[top_20]
+siteDist <- vegdist(t(tally.top), "bray", diag = TRUE)
+siteDistcol<-vegdist(tally.top, 'bray', diag=TRUE)
+pheatmap(t(tally.top), main = y, cex = 1, clustering_distance_rows = siteDist, clustering_distance_cols = siteDistcol)
+}
+
+EukTop20 <-hm(r.inc, "18S Most Abundant Taxa")
+
+
+save_pheatmap_pdf <- function(x, filename, width=10, height=10) {
+  stopifnot(!missing(x))
+  stopifnot(!missing(filename))
+  pdf(filename, width=width, height=height)
+  grid::grid.newpage()
+  grid::grid.draw(x$gtable)
+  dev.off()
+}
+save_pheatmap_pdf(EukTop20, "EukTop20_inc_bray_fix.pdf")
+```
+
+diversity indexes with anova
+
+```{r}
+library(vegan)
+library(ggplot2)
+
+#restrict metadata to useful samples 
+
+data <- metadata[grep('Station|ppt|Core|Hero', rownames(metadata)),]
+data[,1:3] <- NULL
+#data <- data[-1,] 
+# data <- data[-31,] 
+
+#shannon diversity index
+shann <- diversity(unique.s) #use data from BEFORE normalizing
+
+# Simpson index
+simp <- diversity(unique.s, "simpson")  
+
+#inverse Simpson
+insimp <- diversity(unique.s, "invsimpson")
+
+par(mfrow = c(1, 3))  # to generate panels with 1 row of 3 graphs
+hist(shann)
+hist(simp)
+hist(insimp)
+
+#add inverse simpson diversity metric (looked best) to metadata
+a <- as.data.frame(insimp)
+data$InvSimpson  <- a[rownames(data), 'insimp']
+
+#write out csv of wide metadata+diversity for CCA
+write.csv(data, file="18S_meta.csv")
+
+#plots divided by different sampling metrics (not sure which you think is most important)
+ggplot(data, aes(x = as.factor(TempC), y = InvSimpson, fill=Sample_type)) + 
+  geom_boxplot()
+
+ggplot(data, aes(x = as.factor(Salinity), y = InvSimpson, fill=Sample_type)) + geom_boxplot()
+
+
+invSimp<-ggplot(data, aes(x = as.factor(sample_type), y = InvSimpson, fill=sample_type)) + geom_boxplot()
+invSimp
+save_plot("InvSimp_18S.pdf", invSimp, base_height = 10, base_width = 10, units="in")
+
+anova_result <- aov(InvSimpson ~ as.factor(TempC), data)
+summary(anova_result)
+
+anova_result_sal <- aov(InvSimpson ~ as.factor(Salinity), data)
+summary(anova_result_sal)
+
+anova_result_samp <- aov(InvSimpson ~ as.factor(sample_type), data)
+summary(anova_result_samp)
+capture.output(summary(anova_result_samp), file="ANOVA_18SSimpson.csv")
+
+#Post-hoc Tukey's HSD if ANOVA interaction significant
+TukeyHSD(anova_result_samp)
+TKHSD_Compound <- TukeyHSD(anova_result_samp)
+capture.output(TKHSD_Compound, file = "TKHSD_18SSimpson.csv")
+
+
+
+#try with inc samples only
+data_inc <- data %>%
+  filter(str_detect(Better_SampID, "ppt"))
+anova_result_samp <- aov(InvSimpson ~ as.factor(sample_type), data_inc)
+summary(anova_result_samp)
+
+
+#try with field samples only
+data_field <- data %>%
+  filter(!str_detect(Better_SampID, "ppt"))
+anova_result_samp <- aov(InvSimpson ~ as.factor(sample_type), data_field)
+summary(anova_result_samp)
+
+#not significant (barely), could run a Tukey (the negative temp looks like it could be significant)
+
+```
+
+CA
+
+```{r}
+library(ca)
+library(factoextra)
+#hellinger transform data
+Hellinger_unique <- decostand(unique.s, method = "hellinger", na.rm = TRUE) 
+Hellinger_unique <- Hellinger_unique[ order(row.names(Hellinger_unique)), ]
+#ca
+unique.select.ca <- ca(Hellinger_unique)
+unique.select.ca.var <- get_eigenvalue(unique.select.ca)
+unique.select.ca.res <- get_ca_col(unique.select.ca)
+samples.x <- unique.select.ca$rowcoord[,1]
+samples.y <- unique.select.ca$rowcoord[,2]
+
+dim.1.var <- round(unique.select.ca.var$variance.percent[1], 1)
+dim.2.var <- round(unique.select.ca.var$variance.percent[2], 2)
+envi_color<-c(seawater='purple', low='orange', mid='green', high='pink')
+plot(samples.x, samples.y,
+ylab = paste0('Dim 2: ', dim.2.var, '%'),
+xlab = paste0('Dim 1: ', dim.1.var, '%'),
+pch = 21,col="black", cex=1, bg=envi_color[data$location])
+row$coord
+
+#remove outliers
+
+
+```
+
+
+
+
+
+
+NMDS 
+
+```{r}
+library(phyloseq)
+####################### Ordination Plots ############################
+Hellinger_unique <- decostand(unique.s, method = "hellinger", na.rm = TRUE) 
+
+#transform dataframes into matrices, switching the rows and columns for downstream analyses
+Hellinger_unique <- t(Hellinger_unique) #flip
+
+#create OTU matrix
+OTUmat <- as.matrix(Hellinger_unique)
+#create taxa matrix
+taxmat <- as.matrix(mapfile[,4])
+
+#combine into a phyloseq object
+OTU = otu_table(OTUmat, taxa_are_rows = TRUE)
+TAX = taxa_names(taxmat)
+sampledata <- data
+physeq = phyloseq(OTU,TAX,sampledata)
+physeq
+
+#ordination 
+theme_set(theme_bw())
+ord2 <- ordinate(physeq, "NMDS", "bray")
+
+plot_ordination(physeq, ord2, type="sample_type", color = "TempC") +       geom_point(size=3) + 
+   facet_wrap(~TempC, labeller = depth_labeller) +            theme(legend.position = "top", legend.title = element_blank()) + scale_shape_discrete(labels = c("Shaved", "Not Shaved"))
+
+
+#permutation MANOVA vegan package
+df = data.frame(sample_data(physeq))
+d = phyloseq::distance(physeq, "bray")
+
+adonis(formula = d ~ treatment*shave + depth, data = df) 
+#Homogeneity of dispersion test
+beta <- betadisper(d, df$treatment)
+permutest(beta) #betadisper results are not sig, meaning we reject null hypothesis that tour groups have the same dispersions... confident in result
+
+#p.adj to correct for multiple comparisons
+p_perm <- c(0.001, 0.0152, 0.001, 0.133)
+p.adjust(p_perm, "bonferroni")
+
+
+```

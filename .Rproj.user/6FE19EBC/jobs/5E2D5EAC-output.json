@@ -1,0 +1,5 @@
+[1,"Installing 'wesanderson' ...\n"]
+[2,"trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.1/wesanderson_0.3.6.tgz'\n"]
+[1,"The downloaded binary packages are in\n"]
+[1,"\t/var/folders/0q/9vrmk0sd03v709_4ll71147w0000gn/T//RtmpeJDrZr/downloaded_packages\n"]
+[2,"Content type 'application/x-gzip' length 17794 bytes (17 KB)\n==================================================\ndownloaded 17 KB\n\n\n\n✔ Package 'wesanderson' successfully installed.\n"]

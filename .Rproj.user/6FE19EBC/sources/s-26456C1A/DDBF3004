@@ -1,0 +1,27 @@
+{
+    "id": "DDBF3004",
+    "path": "~/Documents/Research/Ant18_Tank_manuscript/DATA/Metabolomics/Data_processing/Figures/Code/Ancillary_plots_fieldandinc_horizontal.R",
+    "project_path": "Figures/Code/Ancillary_plots_fieldandinc_horizontal.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1678493382181.0,
+    "source_on_save": false,
+    "relative_order": 37,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "79,0",
+        "scrollLine": "67",
+        "softWrapLines": "true"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1679605075,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1679605075755,
+    "read_only": false,
+    "read_only_alternatives": []
+}

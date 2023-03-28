@@ -1,0 +1,6 @@
+                       Df Sum Sq Mean Sq F value Pr(>F)   
+as.factor(sample_type)  9  517.1   57.46   3.759 0.0054 **
+Residuals              22  336.3   15.29                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+1 observation deleted due to missingness

@@ -1,0 +1,110 @@
+# %TO DO: make supplemental table of quantification scheme for each compound 
+#TO DO: Check for duplicates
+# TO DO: 
+  #should read "Relative RF and Matched RFratio" if no std so used matcher to get an RF and other run to get RFratio
+  #should read "Relative RF and Assumed RFratio" if no std so used matcher to get an RF and RFratio didn't meet threshold
+  #should read "External RF and Assumed RFratio" if std there so got own RF but RFratio didn't meet threshold
+#TO DO: add fig names (Abbreviated) to aid reader
+
+
+# \begin{table}[ht]
+# \centering
+# \caption{\label{Quantified_methods} Summary of quantification method used for each quantifiable compound.} 
+# \end{table}
+
+
+library(tidyverse)
+
+#Read in your dat files
+dat.filename <- "Intermediates/Quantified_LongDat_perC_Ant18_new.csv"
+#dat.filename.culture <- "Intermediates/Culture_Intermediates/combined_long_withquan.csv"
+dat.matcher.filename <- "Date_sampleset_key.csv"
+dat.RF.matcher.filename <- "RFs_relativeRFmatcher_species.csv"
+
+
+#Get list of better names
+std.url <- "https://raw.githubusercontent.com/IngallsLabUW/Ingalls_Standards/master/Ingalls_Lab_Standards.csv"
+stds.dat <- read.csv(text = getURL(std.url), header = T) %>%
+  rename(Identification = Compound_Name_Original,
+         BestMatch = Compound_Name_Figure) %>%
+  select(BestMatch, Identification) %>% unique()
+
+Predat <- read_csv(dat.filename) %>%
+  left_join(stds.dat, by = "Identification") %>%
+  rename(AbbreviatedCompoundName = BestMatch)
+
+#Check out data, removed those with NAs for Adjusted_area so only looking at those that were actually quantified
+dat <- Predat %>%
+  filter(!str_detect(`SampID`, "Ev51Slush_A|EvXSW_A|Ev15SW_A|StaB1_D|StaB1_E"))%>%
+  mutate(Identification = `Identification` %>%
+           str_replace("Leucine","(Iso)leucine")) %>%
+  mutate(AbbreviatedCompoundName = `AbbreviatedCompoundName` %>%
+           str_replace("Leucine","(Iso)leucine")) %>%
+  mutate(RFFlag2 = ifelse(is.na(nmolperumolCinEnviroave), "Not quantified", "NA")) 
+dat2 <- dat %>%
+  filter(str_detect(`RFFlag2`, "NA")) 
+
+  
+#dat.cul <- read_csv(dat.filename.culture)
+# date.matcher <- read_csv(dat.matcher.filename)
+# RF.matcher <- read_csv(dat.RF.matcher.filename) 
+
+#Make Enviro data into good format, as is uses SampID rather than Date to join 
+dat.cell <- dat2 %>%
+  select(Identification, AbbreviatedCompoundName, RFFlag, RFratioFlag, SampID, Date) %>%
+  select(-SampID) %>% unique() %>%
+  arrange(Identification) %>%
+  mutate(Quantification_method = ifelse(RFFlag == "used relative RF", "relative RF and RF ratio",
+                                        ifelse(RFFlag == "Matched IS", "isotopologue", NA) )) %>%
+  mutate(Quantification_method = ifelse(is.na(Quantification_method), "direct RF and RF ratio",  Quantification_method)) %>%
+  mutate(Quantification_method2 = ifelse(RFratioFlag == "Literature value", "assumed", NA)) %>%
+  mutate(Quantification_method2 = ifelse(is.na(RFFlag), NA, Quantification_method2)) %>% #fixes isotopologues being labeled assumed
+  mutate(Quantification_method2 = ifelse(is.na(Quantification_method2), "", Quantification_method2)) %>%
+  mutate(Quantification_method = paste(Quantification_method, Quantification_method2, sep = " ")) %>%
+  select(Identification, AbbreviatedCompoundName, Quantification_method)
+
+dat.cell.clean <- dat.cell %>%
+  group_by(Identification, AbbreviatedCompoundName, Quantification_method) %>%
+  filter(!is.na(Identification))
+
+
+#Extra junk to figure things out
+# mutate(Quantification_method2 = ifelse(RFratioFlag == "used stdlist RFratio", "assumed", NA)) %>%
+#   %>%
+#   mutate(RFratioFlag = ifelse(RFFlag == "Matched IS", "NA", RFratioFlag))
+
+
+#Make Culture data into good format
+# dat.culture <- dat.cul %>%
+#   select(Identification, RFFlag, Date) %>%
+#   left_join(date.matcher %>% select(Date, Sample_set), by = "Date")%>%
+#   select(-Date) %>% unique() %>%
+#   arrange(Identification) %>%
+#   mutate(Quantification_method = ifelse(RFFlag == "used relative RF", "relative RF and RF ratio", 
+#                                         ifelse(RFFlag == "Matched IS", "isotopologue", NA) )) %>%
+#   mutate(Quantification_method = ifelse(is.na(Quantification_method), "external RF and RF ratio",  Quantification_method)) %>%
+#   left_join(RF.matcher, by = "Identification") %>%
+#   mutate(`Proxy compound for relative RF` = ifelse(Quantification_method == "relative RF and RF ratio", 
+#                                                    Identification_Matched, NA)) 
+# 
+# dat.culture.clean <- dat.culture %>%
+#   group_by(Identification, Quantification_method) %>%
+#   summarise(Sample_set_Cultures = paste(Sample_set, collapse=", ")) %>%
+#   filter(!is.na(Identification))
+
+
+#Clean it up!
+dat.clean <- dat.cell.clean %>%
+  #full_join(dat.culture.clean,
+            #by = c("Identification", "Quantification_method")) %>%
+  rename(`Full compound name` = Identification,
+         `Quantification method` = Quantification_method,
+         `Abbreviated compound name` = AbbreviatedCompoundName) %>%
+  arrange(`Full compound name`)
+
+#Write out appropriate comment
+comment <- "Quantification method for each quantified metabolite in each sample set."
+con <- file("Tables/Manuscript_tables/S3_Full_Quan_Methods.csv", open="wt")
+writeLines(paste(comment), con)
+write.csv(dat.clean, con)
+close(con)

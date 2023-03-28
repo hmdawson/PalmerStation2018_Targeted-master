@@ -1,0 +1,7 @@
+"0","#Calculate RF and RF ratios for all our quantifiable compounds"
+"0","source('SourceCode/CalculateRF_andRFratios_Ant18.R')"
+"0","remove(list = ls())"
+"0",""
+"0","#Use RF and RF ratios to calculate concentrations in environmental samples "
+"0","source('SourceCode/Quantification_EnvironSamples_Ant18.R')"
+"0","remove(list = ls())"

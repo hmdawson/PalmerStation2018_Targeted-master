@@ -1,0 +1,2 @@
+"0","write_file(BMISlist[[2]], ""Intermediates/BMISReports/BMIS_Summary_HILIC.txt"")"
+"0","ggsave(""Intermediates/BMISReports/BMIS_IS_StandardsTest_HILIC.pdf"", plot = BMISlist[[3]], device = ""pdf"", width = 10, height = 10, units = ""in"")"

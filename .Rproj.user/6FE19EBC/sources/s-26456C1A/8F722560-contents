@@ -1,0 +1,144 @@
+# %TO DO: make supplemental table 
+#TO DO: Change sample replicate names to be more informative
+#TO DO: Add figure names
+#TO DO: add avg and stdev
+
+# \begin{table}[ht]
+# \centering
+# \caption{\label{FullQuanTable} Full Quantified results - each sample and compound, not a summary.} 
+# \end{table}
+
+library(tidyverse)
+library(tidyverse)
+library(here)
+library(RColorBrewer)
+library(cowplot)
+theme_set(theme_cowplot())
+library(RCurl)
+library(Cairo)
+
+#Read in your dat files
+dat.filename <- "Quantified_LongDat_Species_revisions.csv" 
+stds.url <- "https://raw.githubusercontent.com/IngallsLabUW/Ingalls_Standards/master/Ingalls_Lab_Standards_NEW.csv"
+culture.meta.dat.filename <- "CultureMetaData_HD_revisions_tables.csv"
+
+
+#Change names, 
+stds.dat <- read.csv(text = getURL(stds.url), header = T) %>%
+  rename(Identification = Compound.Name_old,
+         Better_Identification = Compound.Name_figure) %>%
+  select(Better_Identification, Identification) %>% unique()
+
+
+#Load meta data
+meta.dat <- read_csv(culture.meta.dat.filename) %>% rename(SampID = CultureID) %>% select(SampID, CultureID_short, Org_Name, Org_name_plots)
+
+predat <- read_csv(dat.filename) %>% left_join(meta.dat, by = "SampID") 
+
+
+#Check out data
+dat <- predat  
+  
+
+
+#Calculate avg and stdev per species
+  dat.mean <- dat %>%
+    group_by(Identification, CultureID_short, Org_name_plots) %>%
+    summarise(mmolcell_ave = mean(mmolcell, na.rm = TRUE),
+              mmolcell_sd = sd(mmolcell, na.rm = TRUE)) %>%
+    select( -Org_name_plots) %>%
+    mutate(mmolcell_ave = ifelse(mmolcell_ave == "NaN", NA, mmolcell_ave))%>%
+    mutate(mmolcell_sd = ifelse(mmolcell_ave == "NaN", NA, mmolcell_sd))
+    
+  
+  
+  #mutate(mmolcell = ifelse(is.na(mmolcell), 0 , mmolcell)) %>%
+  
+#Make avg data wide
+  dat.mean.wide <- dat %>%
+    left_join(dat.mean, by = c("Identification", "CultureID_short"))%>%
+    select(Identification, Org_name_plots, mmolcell_ave) %>% unique() %>%
+    mutate(Org_name_plots = paste0(Org_name_plots, "_ave")) %>%
+    spread(key = Org_name_plots, value = mmolcell_ave)
+  
+  #Make stdev data wide
+  dat.stdev.wide <- dat %>%
+    left_join(dat.mean, by = c("Identification", "CultureID_short"))%>%
+    select(Identification, Org_name_plots, mmolcell_sd) %>% unique() %>%
+    mutate(Org_name_plots = paste0(Org_name_plots, "_sd")) %>%
+    spread(key = Org_name_plots, value = mmolcell_sd)
+    
+  
+
+
+#Make quant data mmolcell per rep it wide
+dat.wide <- dat %>%
+  select(Identification, SampID, mmolcell) %>%
+  mutate(SampID = SampID %>%
+           str_replace("NpB12SL_1","Npell_1")%>%
+           str_replace("NpB12SL_2","Npell_2")%>%
+           str_replace("NpB12SL_3","Npell_3")%>%
+           str_replace("Np_1","Nperm_1")%>%
+           str_replace("Np_2","Nperm_2")%>%
+           str_replace("TpB12SL_1","Tp_1")%>%
+           str_replace("TpB12SL_2","Tp_2")%>%
+           str_replace("TpB12SL_3","Tp_3")%>%
+           str_replace("TpB12LL_1","Tp_LL_1")%>%
+           str_replace("TpB12LL_2","Tp_LL_2")%>%
+           str_replace("TpB12LL_3","Tp_LL_3")%>%
+           str_replace("TpLB12LL_1","Tp_LB12LL_1")%>%
+           str_replace("TpLB12LL_2","Tp_LB12LL_2")%>%
+           str_replace("TpLB12LL_3","Tp_LB12LL_3")%>%     
+           str_replace("TpLB12SL_1","Tp_LB12SL_1")%>%
+           str_replace("TpLB12SL_2","Tp_LB12SL_2")%>%
+           str_replace("TpLB12SL_3","Tp_LB12SL_3")%>%
+           str_replace("32ppt-1C_1","Nl_32ppt-1C_1")%>%
+           str_replace("32ppt-1C_2","Nl_32ppt-1C_2")%>%
+           str_replace("32ppt-1C_3","Nl_32ppt-1C_3")%>%
+           str_replace("32ppt4C_1","Nl_32ppt4C_1")%>%
+           str_replace("32ppt4C_2","Nl_32ppt4C_2")%>%
+           str_replace("32ppt4C_3","Nl_32ppt4C_3")%>%
+           str_replace("41ppt4C_1","Nl_41ppt4C_1")%>%
+           str_replace("41ppt4C_2","Nl_41ppt4C_2")%>%
+           str_replace("41ppt4C_3","Nl_41ppt4C_3")%>%
+           str_replace("41ppt-1C_1","Nl_41ppt-1C_1")%>%
+           str_replace("41ppt-1C_2","Nl_41ppt-1C_2")%>%
+           str_replace("41ppt-1C_3","Nl_41ppt-1C_3"))%>%
+  spread(key = SampID, value = mmolcell) 
+
+
+#Join mean and sd info with mmolcell info per rep, correct names
+dat.join <- dat.wide %>%
+  left_join(dat.mean.wide, by = "Identification")%>%
+  left_join(dat.stdev.wide, by = "Identification") %>%
+  left_join(stds.dat, by = "Identification") %>%
+  select(Identification, Better_Identification, Fc_1, Fc_2, Fc_ave, Fc_sd, Nperm_1, Nperm_2, Nperm_ave, Nperm_sd, Nl_1, Nl_2, 
+         Nl_ave, Nl_sd, `Nl_32ppt-1C_1`, `Nl_32ppt-1C_2`, `Nl_32ppt-1C_3`, `Nl_32ppt-1C_ave`,`Nl_32ppt-1C_sd`, 
+         `Nl_32ppt4C_1`, `Nl_32ppt4C_2`, `Nl_32ppt4C_3`, `Nl_32ppt4C_ave`,`Nl_32ppt4C_sd`,
+         `Nl_41ppt-1C_1`, `Nl_41ppt-1C_2`, `Nl_41ppt-1C_3`, `Nl_41ppt-1C_ave`,`Nl_41ppt-1C_sd`,
+         `Nl_41ppt4C_1`, `Nl_41ppt4C_2`, `Nl_41ppt4C_3`, `Nl_41ppt4C_ave`,`Nl_41ppt4C_sd`,
+         Npell_1, Npell_2, Npell_3, Npell_ave, Npell_sd, 
+         Tp_1, Tp_2, Tp_3, Tp_ave, Tp_sd, Tp_LL_1, Tp_LL_2, Tp_LL_3, Tp_LL_ave, Tp_LL_sd,
+         Tp_LB12SL_1, Tp_LB12SL_2, Tp_LB12SL_3, Tp_LB12SL_ave, Tp_LB12SL_sd,
+         Tp_LB12LL_1, Tp_LB12LL_2, Tp_LB12LL_3, Tp_LB12LL_ave, Tp_LB12LL_sd)
+
+#clean up
+dat.clean <- dat.join %>%
+  mutate(Identification = `Identification` %>%
+           str_replace("Isoleucine","(Iso)leucine"))%>%
+  mutate(Better_Identification = `Better_Identification` %>%
+           str_replace("Isoleucine","(Iso)leucine"))%>%
+  rename(`Full compound name` = Identification,
+         `Abbreviated compound name` = Better_Identification) %>%
+  arrange(`Full compound name`) 
+  
+  
+
+
+#Write out appropriate comment
+comment <- "Full results with statistics for quantified metabolites"
+
+con <- file("Full_Quan_Results_revisions.csv", open="wt")
+writeLines(paste(comment), con)
+write.csv( dat.clean, con)
+close(con)

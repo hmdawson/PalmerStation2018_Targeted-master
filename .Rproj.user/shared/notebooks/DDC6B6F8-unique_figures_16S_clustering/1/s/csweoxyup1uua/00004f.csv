@@ -1,0 +1,17 @@
+"0","
+save_pheatmap_pdf <- function(x, filename, width=10, height=10) {
+  stopifnot(!missing(x))
+  stopifnot(!missing(filename))
+  pdf(filename, width=width, height=height)
+  grid::grid.newpage()
+  grid::grid.draw(x$gtable)
+  dev.off()
+}
+save_pheatmap_pdf(ProTop20, ""ProTop20_inc_bray_fix.pdf"")
+"
+"1","null device "
+"1","
+"
+"1","          1 "
+"1","
+"

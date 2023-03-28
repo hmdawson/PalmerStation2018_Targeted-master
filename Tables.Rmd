@@ -1,0 +1,38 @@
+---
+title: "Make tables here"
+author: "Hannah Dawson"
+date: "March 28 2023"
+output: html_document
+--
+
+Tables for Dawson *et. al* manuscript and associated presentations
+
+
+```{r setup, include=FALSE}
+library(tidyverse)
+```
+
+# Ancillary data summary statistics
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Tables/Code/Inc_ancillary_stats.R')
+remove(list = ls())
+```
+
+# Quantification methods for metabolites
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Tables/Code/Table_quantmethod.R')
+remove(list = ls())
+```
+
+# Full quantified metabolite data for supplemental tables
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Tables/Code/Table_fullquantdata.R')
+remove(list = ls())
+```
+
+# Full quantified metabolite data for deposition
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Tables/Code/Table_fullquantdata_deposition.R')
+remove(list = ls())
+```
+

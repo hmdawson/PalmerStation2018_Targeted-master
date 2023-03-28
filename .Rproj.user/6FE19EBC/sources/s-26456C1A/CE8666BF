@@ -1,0 +1,27 @@
+{
+    "id": "CE8666BF",
+    "path": "~/Documents/Research/Ant18_Tank_manuscript/DATA/Metabolomics/Data_processing/Figures/Code/Tileplot_amplicon.R",
+    "project_path": "Figures/Code/Tileplot_amplicon.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1678316824986.0,
+    "source_on_save": false,
+    "relative_order": 29,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "284,43",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1678398026,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1678398026328,
+    "read_only": false,
+    "read_only_alternatives": []
+}

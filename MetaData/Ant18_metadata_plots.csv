@@ -1,0 +1,41 @@
+﻿SampID,CultureID_short,Sample_type,Site,Ice_or_no,Temp,Exp_group,Withinexp,Melt_hyp,FigureID,Figure_SampID,Figure_SampID_metab,FigureID_separated,FigureID_rep,FigureID_rep_amp,Average,Average_YN,Average_YN_2,Average_2,Sample_group,Salinity
+20ppt3C_A,20ppt3C,Exp_Melted,Incubation,Culture_melt,3,Culture,melt.SW,Low salinity,Meltwater_T-S,"""Meltwater""_A","""Meltwater""_A",Meltwater_T-S,Meltwater_T-S_A,Meltwater_T-S_A,Meltwater_T-S_A,N,N,Meltwater_T-S_A,Incubation,21
+20ppt3C_B,20ppt3C,Exp_Melted,Incubation,Culture_melt,3,Culture,melt.SW,Low salinity,Meltwater_T-S,"""Meltwater""_B","""Meltwater""_B",Meltwater_T-S,Meltwater_T-S_B,Meltwater_T-S_B,Meltwater_T-S_B,N,N,Meltwater_T-S_B,Incubation,21
+20ppt3C_C,20ppt3C,Exp_Melted,Incubation,Culture_melt,3,Culture,melt.SW,Low salinity,Meltwater_T-S,"""Meltwater""_C","""Meltwater""_C",Meltwater_T-S,Meltwater_T-S_C,Meltwater_T-S_C,Meltwater_T-S_C,N,N,Meltwater_T-S_C,Incubation,21
+35ppt0C_A,35ppt0C,Exp_Ambient,Incubation,Culture_amb,0,Culture,melt.SW,Ambient SW salinity,SW_T-S,"""Seawater""_A","""Seawater""_A",SW_T-S,SW_T-S_A,SW_T-S_A,SW_T-S_A,N,N,SW_T-S_A,Incubation,35
+35ppt0C_B,35ppt0C,Exp_Ambient,Incubation,Culture_amb,0,Culture,melt.SW,Ambient SW salinity,SW_T-S,"""Seawater""_B","""Seawater""_B",SW_T-S,SW_T-S_B,SW_T-S_B,SW_T-S_B,N,N,SW_T-S_B,Incubation,35
+35ppt0C_C,35ppt0C,Exp_Ambient,Incubation,Culture_amb,0,Culture,melt.SW,Ambient SW salinity,SW_T-S,"""Seawater""_C","""Seawater""_C",SW_T-S,SW_T-S_C,SW_T-S_C,SW_T-S_C,N,N,SW_T-S_C,Incubation,35
+50ppt-3C_A,50ppt-3C,Exp_Frozen,Incubation,Culture_frozen,-3,Culture,frozen,High salinity,Sea ice_T-S,"""Sea ice""_A","""Sea ice""_A",Sea ice_T-S,Sea ice_T-S_A,Sea ice_T-S_A,Sea ice_T-S_A,N,N,Sea ice_T-S_A,Incubation,52
+50ppt-3C_B,50ppt-3C,Exp_Frozen,Incubation,Culture_frozen,-3,Culture,frozen,High salinity,Sea ice_T-S,"""Sea ice""_B","""Sea ice""_B",Sea ice_T-S,Sea ice_T-S_B,Sea ice_T-S_B,Sea ice_T-S_B,N,N,Sea ice_T-S_B,Incubation,52
+50ppt-3C_C,50ppt-3C,Exp_Frozen,Incubation,Culture_frozen,-3,Culture,frozen,High salinity,Sea ice_T-S,"""Sea ice""_C","""Sea ice""_C",Sea ice_T-S,Sea ice_T-S_C,Sea ice_T-S_C,Sea ice_T-S_C,N,N,Sea ice_T-S_C,Incubation,52
+Ev15SW_A,Ev15SW,Underice_SW,Underice,Underice,,Field,,Low salinity,Sea ice,,,Sea-ice core,,,,,,,Field,
+Ev32Core_A,Ev32Core,Core,Sea ice,Ice,,Field,,Low salinity,Sea ice,Core1_A,Core1_A,Sea ice_1,Sea ice_1_A,Sea ice_1_A,Sea ice_1_A,N,N,Sea ice_1_A,Field,12
+Ev32Core_B,Ev32Core,Core,Sea ice,Ice,,Field,,Low salinity,Sea ice,Core1_B,Core1_B,Sea ice_1,Sea ice_1_B,Sea ice_1_B,Sea ice_1_B,N,N,Sea ice_1_B,Field,12
+Ev32Core_C,Ev32Core,Core,Sea ice,Ice,,Field,,Low salinity,Sea ice,Core1_C,Core1_C,Sea ice_1,Sea ice_1_C,Sea ice_1_C,Sea ice_1_C,N,N,Sea ice_1_C,Field,12
+Ev37Core_A,Ev37Core,Core,Sea ice,Ice,,Field,,Low salinity,Sea ice,Core_3,Core_3,Sea ice_3,Sea ice_3,Sea ice_3,Sea ice_3,N,N,Sea ice_3,Field,20
+Ev51Slush_A,Ev51Slush,CoreSlush,Underice,Underice,,Field,,Low salinity,Sea ice,,,Sea-ice core,,,,,,,Field,
+EvXCore_A,EvXCore,Core,Sea ice,Ice,,Field,,Low salinity,Sea ice,Core_2,Core_2,Sea ice_2,Sea ice_2,Sea ice_2,Sea ice_2,N,N,Sea ice_2,Field,15
+EvXSW_A,EvXSW,Underice_SW,Underice,Underice,,Field,,Not,Sea ice,,,Sea-ice core,,,,,,,Field,
+Hero1_A,Hero,Melted_hero,Meltwater,Field_melt,-0.7,Field,,Low salinity,Meltwater,Hero_A,Hero_A,Meltwater,Meltwater_A,Meltwater_A,Meltwater,Y,Y,Meltwater,Field,25
+Hero1_B,Hero,Melted_hero,Meltwater,Field_melt,-0.7,Field,,Low salinity,Meltwater,Hero_B,Hero_B,Meltwater,Meltwater_B,Meltwater_B,Meltwater,Y,Y,Meltwater,Field,25
+Hero1_C,Hero,Melted_hero,Meltwater,Field_melt,-0.7,Field,,Low salinity,Meltwater,Hero_C,Hero_C,Meltwater,Meltwater_C,Meltwater_C,Meltwater,Y,Y,Meltwater,Field,25
+StaB1_A,StaB1,SW_Station B1,Seawater,Field,-0.9,Field,,Ambient SW salinity,SW_08,SW1_A_cut,SW1_A,SW_08,SW_08_A,SW_08_A_cut,SW_08,Y,Y,SW_08,Field,35.7
+StaB1_B,StaB1,SW_Station B1,Seawater,Field,-0.9,Field,,Ambient SW salinity,SW_08,SW1_A,SW1_B,SW_08,SW_08_B,SW_08_A,SW_08,Y,Y,SW_08,Field,35.7
+StaB1_C,StaB1,SW_Station B1,Seawater,Field,-0.9,Field,,Ambient SW salinity,SW_08,SW1_B,SW1_C,SW_08,SW_08_C,SW_08_B,SW_08,Y,Y,SW_08,Field,35.7
+StaB1_D,StaB1,SW_Station B1,Seawater,Field,-0.9,Field,,Ambient SW salinity,SW_08,SW1_C,SW1_C,SW_08,SW_08_D,SW_08_C,SW_08,Y,Y,SW_08,Field,35.7
+StaB1_E,StaB1,SW_Station B1,Seawater,Field,-0.9,Field,,Ambient SW salinity,SW_08,SW1_D,SW1_D,SW_08,SW_08_E,SW_08_E,SW_08,Y,Y,SW_08,Field,35.7
+StaB2_A,StaB2,SW_Station B2,Seawater,Field,-0.7,Field,,Ambient SW salinity,SW_12,SW2_A,SW2_A,SW_12,SW_12_A,SW_12_A,SW_12,Y,Y,SW_12,Field,35.2
+StaB2_B,StaB2,SW_Station B2,Seawater,Field,-0.7,Field,,Ambient SW salinity,SW_12,SW2_B,SW2_B,SW_12,SW_12_B,SW_12_B,SW_12,Y,Y,SW_12,Field,35.2
+StaB2_C,StaB2,SW_Station B2,Seawater,Field,-0.7,Field,,Ambient SW salinity,SW_12,SW2_C,SW2_C,SW_12,SW_12_C,SW_12_C,SW_12,Y,Y,SW_12,Field,35.2
+StaB3_A,StaB3,SW_Station B3,Seawater,Field,-0.3,Field,,Ambient SW salinity,SW_15,SW3_A,SW3_A,SW_15,SW_15_A,SW_15_A,SW_15,Y,Y,SW_15,Field,35.2
+StaB3_B,StaB3,SW_Station B3,Seawater,Field,-0.3,Field,,Ambient SW salinity,SW_15,SW3_B,SW3_B,SW_15,SW_15_B,SW_15_B,SW_15,Y,Y,SW_15,Field,35.2
+StaB3_C,StaB3,SW_Station B3,Seawater,Field,-0.3,Field,,Ambient SW salinity,SW_15,SW3_C,SW3_C,SW_15,SW_15_C,SW_15_C,SW_15,Y,Y,SW_15,Field,35.2
+StaB4_A,StaB4,SW_Station B4,Seawater,Field,-0.1,Field,,Ambient SW salinity,SW_17,SW4_A,SW4_A,SW_17,SW_17_A,SW_17_A,SW_17,Y,Y,SW_17,Field,35.2
+StaB4_B,StaB4,SW_Station B4,Seawater,Field,-0.1,Field,,Ambient SW salinity,SW_17,SW4_B,SW4_B,SW_17,SW_17_B,SW_17_B,SW_17,Y,Y,SW_17,Field,35.2
+StaB4_C,StaB4,SW_Station B4,Seawater,Field,-0.1,Field,,Ambient SW salinity,SW_17,SW4_C,SW4_C,SW_17,SW_17_C,SW_17_C,SW_17,Y,Y,SW_17,Field,35.2
+StaB5_A,StaB5,SW_Station B5,Seawater,Field,0,Field,,Ambient SW salinity,SW_19,SW5_A,SW5_A,SW_19,SW_19_A,SW_19_A,SW_19,Y,Y,SW_19,Field,35.2
+StaB5_B,StaB5,SW_Station B5,Seawater,Field,0,Field,,Ambient SW salinity,SW_19,SW5_B,SW5_B,SW_19,SW_19_B,SW_19_B,SW_19,Y,Y,SW_19,Field,35.2
+StaB5_C,StaB5,SW_Station B5,Seawater,Field,0,Field,,Ambient SW salinity,SW_19,SW5_C,SW5_C,SW_19,SW_19_C,SW_19_C,SW_19,Y,Y,SW_19,Field,35.2
+Dockslush_A,Dockslush,Dockslush,Seawater,Field,,Field,,Ambient SW salinity,,,,,,,,,,,Field,
+Dockslush_B,Dockslush,Dockslush,Seawater,Field,,Field,,Ambient SW salinity,,,,,,,,,,,Field,
+Dockslush_C,Dockslush,Dockslush,Seawater,Field,,Field,,Ambient SW salinity,,,,,,,,,,,Field,

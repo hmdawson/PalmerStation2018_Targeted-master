@@ -1,0 +1,27 @@
+{
+    "id": "A1CBCC84",
+    "path": "~/Documents/Research/Ant18_Tank_manuscript/DATA/Metabolomics/Data_processing/Figures/Code/Ancillary_plots_fieldandinc.R",
+    "project_path": "Figures/Code/Ancillary_plots_fieldandinc.R",
+    "type": "r_source",
+    "hash": "2743313575",
+    "contents": "",
+    "dirty": false,
+    "created": 1679790611734.0,
+    "source_on_save": false,
+    "relative_order": 28,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "212,45",
+        "scrollLine": "197",
+        "softWrapLines": "true"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1679950037,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1679950037370,
+    "read_only": false,
+    "read_only_alternatives": []
+}

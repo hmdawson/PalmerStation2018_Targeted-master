@@ -1,0 +1,293 @@
+#Amplicon heatmaps
+
+
+
+#load libraries
+library(vegan)
+library(phyloseq)
+library(ggplot2)
+library(tidyverse)
+library(rstatix)
+library(ggpubr)
+library(RColorBrewer)
+library(plyr)
+library(pheatmap)
+library(cowplot)
+library(MASS)
+library(reshape2)
+library(reshape)
+library(dplyr)
+
+#-----------------------------------------------------------------------------------
+#18S
+#-----------------------------------------------------------------------------------
+
+#load formatted data
+r.fix <- read.csv('Intermediates/18S_unique_rel_cleaned_heatmap.csv', header = T, row.names = 1)
+
+#reorder
+r.fix <- r.fix[ order(row.names(r.fix)), ]
+
+#select top taxa for plotting
+top_20 <- names(sort(colSums(r.fix), decreasing =TRUE)[1:20])
+tally.top <- r.fix[top_20] 
+
+
+#plot heatmap for top 20
+hm <- function(x,y) {
+  x <- x[, colSums(x!=0) > 0]
+  top_20 <- names(sort(colSums(x), decreasing =TRUE)[1:20])
+  tally.top <- x[top_20]
+  pheatmap(t(tally.top), main = y, cex = 1, cluster_rows=FALSE, cluster_cols=FALSE, angle_col = "315")
+}
+
+EukTop20 <- hm(r.fix, "18S Most Abundant Taxa")
+EukTop20
+
+#save heatmap
+save_pheatmap_pdf <- function(x, filename, width=10, height=6) {
+  stopifnot(!missing(x))
+  stopifnot(!missing(filename))
+  pdf(filename, width=width, height=height)
+  grid::grid.newpage()
+  grid::grid.draw(x$gtable)
+  dev.off()
+}
+save_pheatmap_pdf(EukTop20, "Figures/Preliminary/Heatmap_18STop20_all_unique.pdf")
+
+
+
+#extra plot iterations with clustering
+
+#all with bray clustering
+r <- unique.select 
+colnames(r) <- mapfile[colnames(r), 'Taxa']
+
+hm <- function(x,y) {
+  x <- x[, colSums(x!=0) > 0]
+  top_20 <- names(sort(colSums(x), decreasing =TRUE)[1:20])
+  tally.top <- x[top_20]
+  siteDist <- vegdist(t(tally.top), "bray", diag = TRUE)
+  siteDistcol<-vegdist(tally.top, 'bray', diag=TRUE)
+  pheatmap(t(tally.top), main = y, cex = 1, clustering_distance_rows = siteDist, clustering_distance_cols = siteDistcol)
+}
+
+EukTop20 <- hm(r.fix, "18S Most Abundant Taxa")
+
+save_pheatmap_pdf <- function(x, filename, width=10, height=10) {
+  stopifnot(!missing(x))
+  stopifnot(!missing(filename))
+  pdf(filename, width=width, height=height)
+  grid::grid.newpage()
+  grid::grid.draw(x$gtable)
+  dev.off()
+}
+save_pheatmap_pdf(EukTop20, "EukTop20_all_bray.pdf")
+
+#just incubation
+r.inc <- r[grep('ppt', rownames(r)),]
+
+hm <- function(x,y) {
+  x <- x[, colSums(x!=0) > 0]
+  top_20 <- names(sort(colSums(x), decreasing =TRUE)[1:20])
+  tally.top <- x[top_20]
+  pheatmap(t(tally.top), main = y, cex = 1)
+}
+
+hm(r.inc, "18S Most Abundant Taxa")
+
+#just field with bray clustering
+r.field <- r.fix[grep('B|Ev|Hero', rownames(r.fix)),] 
+
+hm <- function(x,y) {
+  x <- x[, colSums(x!=0) > 0]
+  top_20 <- names(sort(colSums(x), decreasing =TRUE)[1:20])
+  tally.top <- x[top_20]
+  siteDist <- vegdist(t(tally.top), "bray", diag = TRUE)
+  siteDistcol<-vegdist(tally.top, 'bray', diag=TRUE)
+  pheatmap(t(tally.top), main = y, cex = 1, clustering_distance_rows = siteDist, clustering_distance_cols = siteDistcol)
+}
+
+EukTop20 <- hm(r.field, "18S Most Abundant Taxa")
+
+save_pheatmap_pdf <- function(x, filename, width=10, height=10) {
+  stopifnot(!missing(x))
+  stopifnot(!missing(filename))
+  pdf(filename, width=width, height=height)
+  grid::grid.newpage()
+  grid::grid.draw(x$gtable)
+  dev.off()
+}
+save_pheatmap_pdf(EukTop20, "EukTop20_field_bray_fix.pdf")
+
+
+#just inc with bray clustering
+r.inc <- r.fix[grep('ppt', rownames(r.fix)),]
+
+hm <- function(x,y) {
+  x <- x[, colSums(x!=0) > 0]
+  top_20 <- names(sort(colSums(x), decreasing =TRUE)[1:20])
+  tally.top <- x[top_20]
+  siteDist <- vegdist(t(tally.top), "bray", diag = TRUE)
+  siteDistcol<-vegdist(tally.top, 'bray', diag=TRUE)
+  pheatmap(t(tally.top), main = y, cex = 1, clustering_distance_rows = siteDist, clustering_distance_cols = siteDistcol)
+}
+
+EukTop20 <-hm(r.inc, "18S Most Abundant Taxa")
+
+
+save_pheatmap_pdf <- function(x, filename, width=10, height=10) {
+  stopifnot(!missing(x))
+  stopifnot(!missing(filename))
+  pdf(filename, width=width, height=height)
+  grid::grid.newpage()
+  grid::grid.draw(x$gtable)
+  dev.off()
+}
+save_pheatmap_pdf(EukTop20, "EukTop20_inc_bray_fix.pdf")
+
+
+
+
+#-----------------------------------------------------------------------------------
+#16S
+#-----------------------------------------------------------------------------------
+
+
+#load formatted data
+r.fix <- read.csv('Intermediates/16S_unique_rel_cleaned_heatmap.csv', header = T, row.names = 1)
+
+#reorder
+r.fix <- r.fix[ order(row.names(r.fix)), ]
+
+#select top taxa for plotting
+top_20 <- names(sort(colSums(r.fix), decreasing =TRUE)[1:20])
+tally.top <- r.fix[top_20] 
+
+
+#plot heatmap for top 20
+hm <- function(x,y) {
+  x <- x[, colSums(x!=0) > 0]
+  top_20 <- names(sort(colSums(x), decreasing =TRUE)[1:20])
+  tally.top <- x[top_20]
+  pheatmap(t(tally.top), main = y, cex = 1, cluster_rows=FALSE, cluster_cols=FALSE, angle_col = "315")
+}
+
+ProTop20 <- hm(r.fix, "16S Most Abundant Taxa")
+ProTop20
+
+#save heatmap
+save_pheatmap_pdf <- function(x, filename, width=10, height=6) {
+  stopifnot(!missing(x))
+  stopifnot(!missing(filename))
+  pdf(filename, width=width, height=height)
+  grid::grid.newpage()
+  grid::grid.draw(x$gtable)
+  dev.off()
+}
+save_pheatmap_pdf(ProTop20, "Figures/Preliminary/Heatmap_16STop20_all_unique.pdf")
+
+
+
+#extra plot iterations with clustering
+
+#all with bray clustering
+r <- unique.select 
+colnames(r) <- mapfile[colnames(r), 'Taxa']
+
+hm <- function(x,y) {
+  x <- x[, colSums(x!=0) > 0]
+  top_20 <- names(sort(colSums(x), decreasing =TRUE)[1:20])
+  tally.top <- x[top_20]
+  siteDist <- vegdist(t(tally.top), "bray", diag = TRUE)
+  siteDistcol<-vegdist(tally.top, 'bray', diag=TRUE)
+  pheatmap(t(tally.top), main = y, cex = 1, clustering_distance_rows = siteDist, clustering_distance_cols = siteDistcol)
+}
+
+ProTop20 <- hm(r.fix, "16S Most Abundant Taxa")
+
+save_pheatmap_pdf <- function(x, filename, width=10, height=10) {
+  stopifnot(!missing(x))
+  stopifnot(!missing(filename))
+  pdf(filename, width=width, height=height)
+  grid::grid.newpage()
+  grid::grid.draw(x$gtable)
+  dev.off()
+}
+save_pheatmap_pdf(ProTop20, "ProTop20_all_bray.pdf")
+
+#just incubation
+r.inc <- r[grep('ppt', rownames(r)),]
+
+hm <- function(x,y) {
+  x <- x[, colSums(x!=0) > 0]
+  top_20 <- names(sort(colSums(x), decreasing =TRUE)[1:20])
+  tally.top <- x[top_20]
+  pheatmap(t(tally.top), main = y, cex = 1)
+}
+
+hm(r.inc, "16S Most Abundant Taxa")
+
+#just field with bray clustering
+r.field <- r.fix[grep('B|Ev|Hero', rownames(r.fix)),] 
+
+hm <- function(x,y) {
+  x <- x[, colSums(x!=0) > 0]
+  top_20 <- names(sort(colSums(x), decreasing =TRUE)[1:20])
+  tally.top <- x[top_20]
+  siteDist <- vegdist(t(tally.top), "bray", diag = TRUE)
+  siteDistcol<-vegdist(tally.top, 'bray', diag=TRUE)
+  pheatmap(t(tally.top), main = y, cex = 1, clustering_distance_rows = siteDist, clustering_distance_cols = siteDistcol)
+}
+
+ProTop20 <- hm(r.field, "16S Most Abundant Taxa")
+
+save_pheatmap_pdf <- function(x, filename, width=10, height=10) {
+  stopifnot(!missing(x))
+  stopifnot(!missing(filename))
+  pdf(filename, width=width, height=height)
+  grid::grid.newpage()
+  grid::grid.draw(x$gtable)
+  dev.off()
+}
+save_pheatmap_pdf(ProTop20, "ProTop20_field_bray_fix.pdf")
+
+
+#just inc with bray clustering
+r.inc <- r.fix[grep('ppt', rownames(r.fix)),]
+
+hm <- function(x,y) {
+  x <- x[, colSums(x!=0) > 0]
+  top_20 <- names(sort(colSums(x), decreasing =TRUE)[1:20])
+  tally.top <- x[top_20]
+  siteDist <- vegdist(t(tally.top), "bray", diag = TRUE)
+  siteDistcol<-vegdist(tally.top, 'bray', diag=TRUE)
+  pheatmap(t(tally.top), main = y, cex = 1, clustering_distance_rows = siteDist, clustering_distance_cols = siteDistcol)
+}
+
+ProTop20 <-hm(r.inc, "16S Most Abundant Taxa")
+
+
+save_pheatmap_pdf <- function(x, filename, width=10, height=10) {
+  stopifnot(!missing(x))
+  stopifnot(!missing(filename))
+  pdf(filename, width=width, height=height)
+  grid::grid.newpage()
+  grid::grid.draw(x$gtable)
+  dev.off()
+}
+save_pheatmap_pdf(ProTop20, "ProTop20_inc_bray_fix.pdf")
+
+
+
+#combo plot of 18S and 16S heatmaps
+Fig3 <- plot_grid(EukTop20, ProTop20,
+                   labels = "AUTO", ncol = 2, rel_heights = c(2,2))
+Fig3
+
+save_plot("~/Documents/Research/Ant18_Tank_manuscript/DATA/Metabolomics/Data_processing/Figures/Preliminary/Draft_MS/Figure_S1_ancillary.pdf", 
+          FigS1, base_width = 10, base_height = 6, units = "in")
+
+
+
+
